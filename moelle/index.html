@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Moelle Épinière — Cours interactif</title>
+<link rel="stylesheet" href="../shared.css" />
+<link rel="stylesheet" href="moelle.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body data-course="moelle">
+
+<header class="topbar">
+  <button id="menuToggle" class="icon-btn" aria-label="Menu">☰</button>
+  <a href="../index.html" class="brand brand-link">
+    <span class="brand-logo">🦴</span>
+    <div>
+      <strong>Moelle Épinière</strong>
+      <small>SNC · 2ᵉ année médecine · Oran</small>
+    </div>
+  </a>
+  <div class="topbar-actions">
+    <a href="../index.html" class="icon-btn home-btn" title="Retour aux cours">🏠</a>
+    <input type="search" id="searchInput" placeholder="🔍 Rechercher…" />
+    <button id="themeToggle" class="icon-btn" aria-label="Thème">🌙</button>
+    <button id="printBtn" class="icon-btn" aria-label="Imprimer">🖨️</button>
+  </div>
+</header>
+
+<div class="progress-container"><div id="progressBar" class="progress-bar"></div></div>
+
+<aside id="sidebar" class="sidebar">
+  <nav>
+    <h4>📖 Sommaire</h4>
+    <a href="#intro">1. Définition</a>
+    <a href="#anatomie">2. Anatomie microscopique</a>
+    <a href="#sg">3. Substance grise</a>
+    <a href="#neurones">↳ Cellules nerveuses</a>
+    <a href="#rexed">↳ Lamination de Rexed</a>
+    <a href="#sb">4. Substance blanche</a>
+    <a href="#nevroglie">5. Éléments névrogliques</a>
+    <hr/>
+    <h4>🎓 S'entraîner</h4>
+    <a href="#flashcards">🃏 Flashcards</a>
+    <a href="#quiz">❓ Quiz</a>
+    <a href="#fiche">📋 Fiche révision</a>
+  </nav>
+</aside>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="kicker">Système Nerveux Central · Conduction &amp; réflexes</p>
+    <h1>Moelle Épinière <span class="eye-emoji">🦴</span></h1>
+    <p class="subtitle">Cours interactif — substance grise en H, motoneurones, lamination de Rexed et substance blanche</p>
+    <div class="hero-stats">
+      <div><strong>2</strong><span>substances</span></div>
+      <div><strong>5</strong><span>types neuronaux</span></div>
+      <div><strong>10</strong><span>couches Rexed</span></div>
+      <div><strong>3</strong><span>cordons</span></div>
+    </div>
+    <a href="#intro" class="cta">Commencer le cours ↓</a>
+  </div>
+</section>
+
+<main>
+
+<!-- INTRO -->
+<section id="intro" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>Définition</h2>
+  </div>
+
+  <p class="lead">La <strong>moelle épinière</strong> est une portion du système nerveux central logée dans le canal rachidien, dont elle est séparée par les méninges.</p>
+
+  <div class="me-overview">
+    <div class="me-card">
+      <div class="me-icon">📡</div>
+      <h4>Conduction</h4>
+      <p>Conduction de l'<strong>influx nerveux</strong> de la périphérie vers les régions médullaires supérieures.</p>
+    </div>
+    <div class="me-card">
+      <div class="me-icon">⚡</div>
+      <h4>Réflexes</h4>
+      <p>Siège de <strong>nombreux réflexes</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ANATOMIE -->
+<section id="anatomie" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>Anatomie microscopique</h2>
+  </div>
+
+  <p class="lead">Sur une coupe transversale, la moelle épinière a une <strong>forme ovoïde</strong> et est formée de <strong>2 substances</strong> :</p>
+
+  <div class="me-svg-wrapper">
+    <svg class="me-svg" viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer oval (moelle outline) -->
+      <ellipse cx="250" cy="180" rx="220" ry="160" fill="#e0f2fe" stroke="#0369a1" stroke-width="3"/>
+      <!-- White matter band (just inside) -->
+      <ellipse cx="250" cy="180" rx="200" ry="140" fill="#ffffff" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3"/>
+
+      <!-- Substance grise en H (butterfly) -->
+      <path d="M 170 80 Q 130 100 130 150 Q 110 165 110 195 Q 130 240 175 250 Q 200 285 230 280
+               L 230 220 L 250 210 L 270 220 L 270 280 Q 300 285 325 250 Q 370 240 390 195
+               Q 390 165 370 150 Q 370 100 330 80 Q 290 80 280 110 L 280 170 L 250 175 L 220 170 L 220 110 Q 210 80 170 80 Z"
+            fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+
+      <!-- Canal épendymaire (center) -->
+      <circle cx="250" cy="175" r="8" fill="#fbbf24" stroke="#92400e" stroke-width="2"/>
+      <text x="250" y="178" text-anchor="middle" font-size="9" font-weight="700" fill="#451a03">CE</text>
+
+      <!-- Sillon antérieur -->
+      <line x1="250" y1="40" x2="250" y2="100" stroke="#0369a1" stroke-width="2"/>
+      <text x="265" y="55" font-size="11" font-weight="700" fill="#0369a1">Sillon ant.</text>
+
+      <!-- Sillon postérieur -->
+      <line x1="250" y1="260" x2="250" y2="320" stroke="#0369a1" stroke-width="2"/>
+      <text x="260" y="305" font-size="11" font-weight="700" fill="#0369a1">Sillon post.</text>
+
+      <!-- Cornes labels -->
+      <text x="155" y="110" font-size="11" font-weight="700" fill="#1e293b">Corne ant. ←</text>
+      <text x="345" y="110" font-size="11" font-weight="700" fill="#1e293b">→ Corne ant.</text>
+      <text x="155" y="280" font-size="11" font-weight="700" fill="#1e293b">Corne post. ←</text>
+      <text x="345" y="280" font-size="11" font-weight="700" fill="#1e293b">→ Corne post.</text>
+
+      <!-- Corne latérale (T1-L2) -->
+      <circle cx="120" cy="195" r="6" fill="#dc2626"/>
+      <text x="55" y="200" font-size="10" font-weight="700" fill="#dc2626">Corne lat.</text>
+      <text x="55" y="212" font-size="9" fill="#dc2626">(C8-L2)</text>
+
+      <!-- Substance grise et blanche labels -->
+      <text x="250" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0369a1">Coupe transversale de la moelle</text>
+      <text x="40" y="170" font-size="11" font-weight="700" fill="#475569">SG</text>
+      <text x="40" y="155" font-size="9" fill="#475569">(en H)</text>
+      <text x="450" y="170" font-size="11" font-weight="700" fill="#0369a1">SB</text>
+    </svg>
+  </div>
+
+  <div class="grid-2">
+    <div class="key-points">
+      <h4>🩶 Substance grise centrale</h4>
+      <ul>
+        <li>En forme de <strong>H ou de papillon</strong></li>
+        <li>Disposée autour du <strong>canal épendymaire</strong></li>
+        <li><strong>Cornes antérieures</strong> : arrondies, de part et d'autre du sillon médian antérieur</li>
+        <li><strong>Cornes postérieures</strong> : effilées, de part et d'autre du sillon postérieur</li>
+        <li><strong>Corne latérale</strong> : entre <strong>C8 et L2</strong>, sur le versant externe des cornes antérieures</li>
+      </ul>
+    </div>
+    <div class="key-points">
+      <h4>🤍 Substance blanche périphérique</h4>
+      <ul>
+        <li>Disposée entre l'<strong>enveloppe méningée</strong> et la <strong>substance grise</strong></li>
+        <li>Occupée par des <strong>faisceaux de fibres nerveuses</strong> :
+          <ul>
+            <li>Fibres <strong>ascendantes</strong> (sensitives)</li>
+            <li>Fibres <strong>descendantes</strong> (motrices)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSTANCE GRISE -->
+<section id="sg" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>La substance grise</h2>
+  </div>
+
+  <p class="lead">Il existe <strong>2 types</strong> de substance grise selon la topographie :</p>
+
+  <div class="sg-grid">
+    <div class="sg-card">
+      <span class="sg-tag">Type 1</span>
+      <h4>🟦 Substance grise gélatineuse</h4>
+      <p>Répartie en <strong>2 points précis</strong> de l'axe gris :</p>
+      <ul>
+        <li><strong>Substance gélatineuse de Stilling</strong> : autour du canal épendymaire</li>
+        <li><strong>Substance gélatineuse de Rolando</strong> : en arrière de la tête de la corne postérieure</li>
+      </ul>
+    </div>
+    <div class="sg-card">
+      <span class="sg-tag">Type 2</span>
+      <h4>🟫 Substance grise spongieuse</h4>
+      <p>Correspond au <strong>reste de l'axe gris</strong>.</p>
+    </div>
+  </div>
+
+  <h3>🧬 Composition de la substance grise</h3>
+  <ul>
+    <li><strong>Cellules nerveuses motrices</strong> (axones → nerf rachidien)</li>
+    <li><strong>Cellules végétatives pré-ganglionnaires</strong> (axones → ganglions végétatifs)</li>
+    <li><strong>Cellules interneurales = cellules de Renshaw</strong></li>
+    <li><strong>Fibres névrogliques</strong> venant des ganglions cérébro-spinaux et autres centres nerveux</li>
+    <li><strong>Astrocytes protoplasmiques</strong></li>
+  </ul>
+
+  <!-- CELLULES NERVEUSES -->
+  <div id="neurones" class="subsection">
+    <h3>🧠 Les cellules nerveuses — 5 catégories</h3>
+
+    <p>La classification se fait selon <strong>la morphologie du cytone</strong> et surtout <strong>la destinée de l'axone</strong>, ce qui donne 2 grands groupes :</p>
+
+    <div class="neurones-grid">
+      <div class="neurone-card quitte">
+        <div class="neurone-icon">⚡</div>
+        <h4>a. Motoneurones de la corne antérieure</h4>
+        <span class="sg-tag" style="background:#dc2626">Axone quitte la moelle</span>
+        <ul>
+          <li>Cellules <strong>multipolaires volumineuses</strong> (100-150 µm)</li>
+          <li><strong>Dendrites</strong> richement arborisées avec <strong>épines de Cajal</strong></li>
+          <li><strong>Axone</strong> myélinisé → racine antérieure du nerf rachidien</li>
+          <li>L'axone donne des branches → autres motoneurones ou cellules de Renshaw</li>
+          <li><strong>≈ 400 000</strong> cellules motrices au total</li>
+        </ul>
+
+        <div class="moto-types">
+          <div class="moto-type moto-alpha">
+            <div class="greek">α</div>
+            <h4>Alpha</h4>
+            <p><strong>Grande taille</strong> · Plaque motrice du muscle strié</p>
+          </div>
+          <div class="moto-type moto-gamma">
+            <div class="greek">γ</div>
+            <h4>Gamma</h4>
+            <p><strong>Petite taille</strong> · Fuseau neuromusculaire</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="neurone-card quitte">
+        <div class="neurone-icon">🔄</div>
+        <h4>b. Neurones végétatifs préganglionnaires</h4>
+        <span class="sg-tag" style="background:#dc2626">Axone quitte la moelle</span>
+        <ul>
+          <li>= Neurones de la <strong>colonne latérale</strong></li>
+          <li>Dans la <strong>moelle thoracique</strong></li>
+          <li>Cellules multipolaires de <strong>25-45 µm</strong></li>
+          <li>2 panaches dendritiques opposito-polaires</li>
+          <li>Axone → racine antérieure → ganglions végétatifs</li>
+        </ul>
+        <p class="info-mini"><strong>NB :</strong> Motoneurones + neurones végétatifs = <strong>cellules radiculaires</strong> (axone quitte la moelle)</p>
+      </div>
+
+      <div class="neurone-card reste">
+        <div class="neurone-icon">🔗</div>
+        <h4>c. Cellules funiculaires (cordonales)</h4>
+        <span class="sg-tag" style="background:#16a34a">Axone reste dans le SNC</span>
+        <p>Regroupées en 2 territoires :</p>
+        <ul>
+          <li><strong>Colonne de Clarke</strong> : cytone volumineux 70 µm, axones épais → faisceau cérébelleux direct</li>
+          <li><strong>Noyau propre de la corne post.</strong> : cytone petit 15-20 µm, axones minces → faisceau cérébelleux croisé</li>
+        </ul>
+      </div>
+
+      <div class="neurone-card reste">
+        <div class="neurone-icon">⭐</div>
+        <h4>d. Cellules de Golgi type II</h4>
+        <span class="sg-tag" style="background:#16a34a">Axone reste dans le SNC</span>
+        <ul>
+          <li>Petites cellules <strong>étoilées</strong></li>
+          <li>Pointe des cornes postérieures</li>
+          <li>Axone <strong>amyélinique</strong></li>
+          <li>Connectent ¢ ganglionnaires ↔ motoneurones / funiculaires</li>
+        </ul>
+      </div>
+
+      <div class="neurone-card reste">
+        <div class="neurone-icon">🟦</div>
+        <h4>e. Cellules de la substance gélatineuse</h4>
+        <span class="sg-tag" style="background:#16a34a">Axone reste dans le SNC</span>
+        <ul>
+          <li><strong>Stilling</strong> : fusiformes, 8-10 µm, axone → cordons antérieurs</li>
+          <li><strong>Rolando</strong> : petites, axone → cordon latéral ou postérieur</li>
+        </ul>
+      </div>
+
+      <div class="neurone-card reste">
+        <div class="neurone-icon">🧬</div>
+        <h4>f. Cellules de Renshaw (interneurones)</h4>
+        <span class="sg-tag" style="background:#16a34a">Axone reste dans le SNC</span>
+        <ul>
+          <li>Rôle fondamental dans <strong>excitation/inhibition</strong> neuronale</li>
+          <li>Dans toutes les lames de la moelle</li>
+          <li>Cytone <strong>10-20 µm</strong></li>
+          <li>Dendrites très ramifiées · Axone à nombreuses collatérales</li>
+          <li><strong>Synapses caractéristiques avec les motoneurones</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAMINATION DE REXED -->
+  <div id="rexed" class="subsection">
+    <h3>📚 Cytoarchitectonie : Lamination de Rexed</h3>
+    <p>La substance grise se distribue en <strong>10 couches</strong> jouant un rôle dans le traitement de l'information :</p>
+
+    <div class="rexed-layers">
+      <div class="rexed-layer" style="--c:#fbbf24">
+        <div class="layer-num">I</div>
+        <div class="layer-body">
+          <h4>Couche zonale de Waldeyer</h4>
+          <p>La plus postérieure · <strong>Cellules de Golgi II</strong> et <strong>cellules funiculaires</strong> (axones → moelle ou thalamus)</p>
+        </div>
+      </div>
+
+      <div class="rexed-layer" style="--c:#f59e0b">
+        <div class="layer-num">II</div>
+        <div class="layer-body">
+          <h4>Substance gélatineuse de Rolando</h4>
+          <p>Peuplée essentiellement de <strong>cellules de Golgi type II</strong></p>
+        </div>
+      </div>
+
+      <div class="rexed-layer" style="--c:#dc2626">
+        <div class="layer-num">III</div>
+        <div class="layer-body">
+          <h4>Couche III</h4>
+          <p>Structure <strong>comparable à la couche II</strong></p>
+        </div>
+      </div>
+
+      <div class="rexed-layer" style="--c:#7c3aed">
+        <div class="layer-num">IV–V</div>
+        <div class="layer-body">
+          <h4>Noyau propre de la corne postérieure</h4>
+          <p>Cellules de taille moyenne articulées avec : <strong>cellules ganglionnaires</strong>, <strong>cellules de Golgi II</strong>, <strong>bulbe</strong> et <strong>thalamus</strong></p>
+        </div>
+      </div>
+
+      <div class="rexed-layer" style="--c:#0369a1">
+        <div class="layer-num">VI</div>
+        <div class="layer-body">
+          <h4>Couche VI</h4>
+          <p>Représentée seulement dans les régions <strong>cervicale et lombaire</strong></p>
+        </div>
+      </div>
+
+      <div class="rexed-layer" style="--c:#0d9488">
+        <div class="layer-num">VII</div>
+        <div class="layer-body">
+          <h4>Couche VII (2 colonnes)</h4>
+          <p><strong>Colonne de Clarke</strong> (D1-L4) : grands neurones → cervelet · <strong>Colonne intermédio-latérale</strong> (C8-L4) : neurones pré-ganglionnaires</p>
+        </div>
+      </div>
+
+      <div class="rexed-layer" style="--c:#16a34a">
+        <div class="layer-num">VIII</div>
+        <div class="layer-body">
+          <h4>Noyau commissural</h4>
+          <p>Hétérogène · l'axone gagne le <strong>côté opposé</strong> de la moelle</p>
+        </div>
+      </div>
+
+      <div class="rexed-layer" style="--c:#ec4899">
+        <div class="layer-num">IX</div>
+        <div class="layer-body">
+          <h4>Corne antérieure</h4>
+          <p>Contient les <strong>motoneurones groupés en colonnes</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <h3>🎯 Aires fonctionnelles</h3>
+    <div class="grid-2">
+      <div class="key-points">
+        <h4>⚡ Partie antérieure — Aire motrice</h4>
+        <ul>
+          <li><strong>Somato-motrice</strong> : partie plus antérieure</li>
+          <li><strong>Viscéro-motrice</strong> : partie postérieure</li>
+        </ul>
+      </div>
+      <div class="key-points">
+        <h4>👂 Partie postérieure — Aire sensitive</h4>
+        <ul>
+          <li><strong>Viscéro-sensible (intéroceptive)</strong> : partie antérieure</li>
+          <li><strong>Somato-sensible (extéroceptive)</strong> : partie postérieure</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSTANCE BLANCHE -->
+<section id="sb" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>La substance blanche</h2>
+  </div>
+
+  <p class="lead">Constituée par des <strong>fibres nerveuses</strong> et des <strong>éléments névrogliques</strong>, organisée en 3 cordons :</p>
+
+  <div class="cordons-grid">
+    <div class="cordon-card cordon-ant">
+      <div class="cordon-icon">⬇️</div>
+      <h4>Cordon antérieur</h4>
+      <p><strong>Voies descendantes motrices</strong></p>
+    </div>
+    <div class="cordon-card cordon-lat">
+      <div class="cordon-icon">↔️</div>
+      <h4>Cordon latéral</h4>
+      <p><strong>Voies ascendantes d'association</strong></p>
+    </div>
+    <div class="cordon-card cordon-post">
+      <div class="cordon-icon">⬆️</div>
+      <h4>Cordon postérieur</h4>
+      <p><strong>Voies ascendantes sensitives</strong></p>
+    </div>
+  </div>
+
+  <h3>1. Les fibres</h3>
+  <div class="grid-2">
+    <div class="key-points">
+      <h4>⬆️ Fibres ascendantes sensitives</h4>
+      <p>Prolongements des <strong>protoneurones ganglionnaires</strong> qui conduisent l'influx vers les <strong>cellules funiculaires</strong>, puis vers les centres supra-médullaires (<strong>cervelet et thalamus</strong>).</p>
+    </div>
+    <div class="key-points">
+      <h4>⬇️ Fibres descendantes motrices</h4>
+      <p>Issues des <strong>cellules pyramidales</strong> du <strong>cortex cérébral</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ELEMENTS NEVROGLIQUES -->
+<section id="nevroglie" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2>Les éléments névrogliques</h2>
+  </div>
+
+  <h3>🕸️ Fibres névrogliques</h3>
+  <div class="grid-2">
+    <div class="sg-card">
+      <h4>Fulcrum névroglique tangentiel</h4>
+      <p>Fibres névrogliques disposées <strong>tangentiellement</strong> à la surface médullaire, orientées <strong>perpendiculairement ou parallèlement</strong> à l'axe de la moelle.</p>
+    </div>
+    <div class="sg-card">
+      <h4>Fulcrum radiaire</h4>
+      <p>Fibres tendues entre <strong>l'épithélium épendymaire</strong> et <strong>la limitante névroglique externe</strong>. Dense entre le bord postérieur du canal épendymaire et le sillon postérieur → <strong>raphé médian postérieur</strong>.</p>
+    </div>
+  </div>
+
+  <h3>🧫 Cellules névrogliques</h3>
+  <table class="cb-table">
+    <thead>
+      <tr>
+        <th>Type cellulaire</th>
+        <th>Localisation principale</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Cellules épendymaires</th>
+        <td>Cellules cylindriques en une seule rangée limitant le <strong>canal épendymaire</strong></td>
+      </tr>
+      <tr>
+        <th>Astrocytes fibreux</th>
+        <td>Prédominent dans la <strong>substance blanche</strong></td>
+      </tr>
+      <tr>
+        <th>Astrocytes protoplasmiques</th>
+        <td>Prédominent dans la <strong>substance grise</strong></td>
+      </tr>
+      <tr>
+        <th>Oligodendrocytes</th>
+        <td>Présents dans les <strong>2 substances</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- FLASHCARDS -->
+<section id="flashcards" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">🃏</span>
+    <h2>Flashcards de révision</h2>
+  </div>
+  <p class="lead">Clique sur une carte pour la retourner. Utilise ← → pour naviguer.</p>
+
+  <div class="flashcards-controls">
+    <select id="flashCategory">
+      <option value="all">Toutes les catégories</option>
+      <option value="general">Généralités</option>
+      <option value="sg">Substance grise</option>
+      <option value="neurones">Cellules nerveuses</option>
+      <option value="rexed">Lamination de Rexed</option>
+      <option value="sb">Substance blanche</option>
+    </select>
+    <button id="shuffleBtn" class="btn">🔀 Mélanger</button>
+    <span class="flash-counter">Carte <strong id="flashCurrent">1</strong> / <span id="flashTotal">0</span></span>
+  </div>
+
+  <div class="flashcard-container">
+    <div class="flashcard" id="flashcard">
+      <div class="flashcard-inner">
+        <div class="flashcard-front">
+          <span class="flash-cat"></span>
+          <p class="flash-question"></p>
+          <small>Clique pour voir la réponse</small>
+        </div>
+        <div class="flashcard-back">
+          <p class="flash-answer"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcards-nav">
+    <button id="prevCard" class="btn">← Précédent</button>
+    <button id="nextCard" class="btn primary">Suivant →</button>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">❓</span>
+    <h2>Quiz noté</h2>
+  </div>
+  <p class="lead">Questions à choix multiples — testez vos connaissances !</p>
+
+  <div id="quizContainer"></div>
+
+  <div class="quiz-controls">
+    <button id="submitQuiz" class="btn primary">📊 Voir mon score</button>
+    <button id="resetQuiz" class="btn">🔄 Recommencer</button>
+  </div>
+
+  <div id="quizResult" class="quiz-result hidden"></div>
+</section>
+
+<!-- FICHE -->
+<section id="fiche" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">📋</span>
+    <h2>Fiche de révision</h2>
+  </div>
+
+  <div class="fiche">
+    <div class="fiche-block">
+      <h3>Définition</h3>
+      <ul>
+        <li>SNC dans le canal rachidien</li>
+        <li>Forme ovoïde en coupe</li>
+        <li>Conduction de l'influx + réflexes</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Substance grise</h3>
+      <ul>
+        <li>En H autour du canal épendymaire</li>
+        <li>Cornes ant. (arrondies) / post. (effilées)</li>
+        <li>Corne latérale : C8-L2</li>
+        <li>Gélatineuse de Stilling et Rolando</li>
+        <li>Spongieuse = reste</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>5 catégories de neurones</h3>
+      <ol>
+        <li>Motoneurones (α et γ)</li>
+        <li>Neurones végétatifs (corne lat.)</li>
+        <li>Cellules funiculaires (Clarke + noyau propre)</li>
+        <li>Golgi II (étoilées, amyélinique)</li>
+        <li>Cellules de la substance gélatineuse</li>
+      </ol>
+      <p>+ <strong>Cellules de Renshaw</strong> (interneurones)</p>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Motoneurones</h3>
+      <ul>
+        <li><strong>α</strong> : grande taille → plaque motrice</li>
+        <li><strong>γ</strong> : petite taille → fuseau neuromusculaire</li>
+        <li>~ 400 000 cellules motrices</li>
+        <li>Cytone 100-150 µm avec épines de Cajal</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Lamination de Rexed (Couches I-IX)</h3>
+      <ol>
+        <li>Couche zonale de Waldeyer</li>
+        <li>Substance gélatineuse de Rolando</li>
+        <li>Comparable à II</li>
+        <li>+ V : Noyau propre corne post.</li>
+        <li>VI : régions cervicale et lombaire</li>
+        <li>VII : Clarke (D1-L4) + intermédio-latérale (C8-L4)</li>
+        <li>VIII : Noyau commissural</li>
+        <li>IX : Motoneurones (corne ant.)</li>
+      </ol>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Substance blanche — 3 cordons</h3>
+      <ul>
+        <li><strong>Antérieur</strong> : voies descendantes motrices</li>
+        <li><strong>Latéral</strong> : voies ascendantes d'association</li>
+        <li><strong>Postérieur</strong> : voies ascendantes sensitives</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Aires fonctionnelles</h3>
+      <ul>
+        <li><strong>Antérieur (motrice)</strong> : somato + viscéro-motrice</li>
+        <li><strong>Postérieur (sensitive)</strong> : viscéro-sensible (intéro) + somato-sensible (extéro)</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Cellules névrogliques</h3>
+      <ul>
+        <li>Épendymaires : canal épendymaire</li>
+        <li>Astrocytes fibreux : SB</li>
+        <li>Astrocytes protoplasmiques : SG</li>
+        <li>Oligodendrocytes : SB + SG</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<button id="backToTop" class="back-to-top" aria-label="Retour en haut">↑</button>
+
+<footer>
+  <p>📚 D'après le polycopié <em>La Moelle Épinière</em>, Pr R. Ghalamoun-Slaimi, Faculté de Médecine d'Oran 1.</p>
+  <p><small>Site personnel de révision · 2ᵉ année médecine</small> · <a href="../index.html">← Retour aux cours</a></p>
+</footer>
+
+<script src="moelle.js"></script>
+</body>
+</html>

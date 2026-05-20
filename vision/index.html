@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Optique & Vision — Cours interactif de Biophysique</title>
+<link rel="stylesheet" href="vision.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <button id="menuToggle" class="icon-btn" aria-label="Menu">☰</button>
+  <a href="../index.html" class="brand brand-link" style="text-decoration:none;color:inherit">
+    <span class="brand-logo">🔬</span>
+    <div>
+      <strong>Optique & Vision</strong>
+      <small>Biophysique · 2ᵉ année médecine · Oran</small>
+    </div>
+  </a>
+  <div class="topbar-actions">
+    <a href="../index.html" class="icon-btn" title="Retour aux cours" style="text-decoration:none">🏠</a>
+    <input type="search" id="searchInput" placeholder="🔍 Rechercher…" />
+    <button id="themeToggle" class="icon-btn" aria-label="Thème">🌙</button>
+  </div>
+</header>
+
+<div class="progress-container"><div id="progressBar" class="progress-bar"></div></div>
+
+<!-- SIDEBAR -->
+<aside id="sidebar" class="sidebar">
+  <nav>
+    <h4>📖 Sommaire</h4>
+    <a href="#intro">1. Introduction</a>
+    <a href="#dioptrique">2. Dioptrique de l'œil</a>
+    <a href="#vision-nette">3. Vision nette</a>
+    <a href="#ametropies">4. Les amétropies</a>
+    <a href="#myopie">↳ Myopie</a>
+    <a href="#hypermetropie">↳ Hypermétropie</a>
+    <a href="#astigmatisme">↳ Astigmatisme</a>
+    <a href="#presbytie">↳ Presbytie</a>
+    <a href="#corrections">5. Corrections</a>
+    <a href="#couleurs">6. Vision des couleurs</a>
+    <hr/>
+    <h4>🎓 S'entraîner</h4>
+    <a href="#flashcards">🃏 Flashcards</a>
+    <a href="#quiz">❓ Quiz noté</a>
+  </nav>
+</aside>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="kicker">Biophysique · Faculté de Médecine d'Oran</p>
+    <h1>Optique appliquée à l'œil 🔬</h1>
+    <p class="subtitle">Dioptrique oculaire, amétropies, corrections optiques et vision des couleurs</p>
+    <div class="hero-stats">
+      <div><strong>6</strong><span>chapitres</span></div>
+      <div><strong>8</strong><span>schémas</span></div>
+      <div><strong>20+</strong><span>flashcards</span></div>
+      <div><strong>10</strong><span>questions quiz</span></div>
+    </div>
+    <a href="#intro" class="cta">Commencer le cours ↓</a>
+  </div>
+</section>
+
+<main>
+
+<!-- 1. INTRODUCTION -->
+<section id="intro" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>Introduction</h2>
+  </div>
+  <p class="lead">L'optique étudie les phénomènes lumineux. Elle se divise en optique physique et optique géométrique.</p>
+  <div class="grid-2">
+    <div class="key-points">
+      <h4>Optique physique</h4>
+      <p>Met en valeur la <strong>nature du rayonnement</strong> et des phénomènes lumineux.</p>
+    </div>
+    <div class="key-points">
+      <h4>Optique géométrique</h4>
+      <p>Rend compte de la <strong>trajectoire du rayon lumineux</strong> et de sa propagation dans les milieux traversés.</p>
+    </div>
+  </div>
+  <div class="info-box">
+    <strong>🎯</strong> Ces deux parties interagissent au niveau de l'œil pour donner <strong>la vision</strong> — sens important qui nous met en contact avec le monde extérieur.
+  </div>
+
+  <h3>Rappel : Dioptre sphérique & Lentille</h3>
+  <ul>
+    <li><strong>Dioptre sphérique</strong> : portion de sphère séparant deux milieux homogènes d'indices de réfraction différents (convergent ou divergent)</li>
+    <li><strong>Lentille mince</strong> : dioptre possédant deux surfaces de séparation entre milieux transparents et homogènes (convexes = convergentes, concaves = divergentes)</li>
+  </ul>
+</section>
+
+<!-- 2. DIOPTRIQUE -->
+<section id="dioptrique" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>Dioptrique de l'œil</h2>
+  </div>
+  <p class="lead">L'œil est un système dioptrique centré combinant quatre dioptres en un.</p>
+
+  <h3>Rappel anatomique</h3>
+  <ul>
+    <li><strong>Œil</strong> : forme sphérique, <strong>24 mm</strong> de diamètre</li>
+    <li><strong>Cornée</strong> : calotte sphérique transparente, rôle protecteur</li>
+    <li><strong>Iris</strong> : diaphragme avec orifice central = <strong>pupille</strong></li>
+    <li><strong>Cristallin</strong> : lentille biconvexe derrière la pupille</li>
+    <li><strong>Rétine</strong> : enveloppe neurosensorielle avec <strong>cônes et bâtonnets</strong></li>
+  </ul>
+
+  <h3>Œil réduit de Listing</h3>
+  <div class="grid-2">
+    <div class="key-points">
+      <h4>Caractéristiques</h4>
+      <ul>
+        <li>Indice de réfraction : entre <strong>1 et 1,337</strong></li>
+        <li>Puissance : <strong>D = +60 δ (dioptries)</strong></li>
+        <li>Axe : cornée – fovéa</li>
+        <li>Foyer image : sur la <strong>rétine</strong></li>
+      </ul>
+    </div>
+    <div class="info-box accent-box">
+      <strong>💡</strong> L'œil réduit de Listing simplifie le système optique complexe de l'œil en un seul dioptre sphérique équivalent.
+    </div>
+  </div>
+</section>
+
+<!-- 3. VISION NETTE -->
+<section id="vision-nette" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>La vision nette</h2>
+  </div>
+  <p class="lead">Pour percevoir une image nette, il faut le concours de 3 conditions :</p>
+
+  <div class="grid-3">
+    <div class="key-points">
+      <h4>Stigmatisme</h4>
+      <p>Un objet ponctuel donne une <strong>image ponctuelle</strong>. Sinon → astigmatisme.</p>
+    </div>
+    <div class="key-points">
+      <h4>Emmétropie</h4>
+      <p>Œil bien proportionné : objet à l'infini → image sur la rétine <strong>sans accommodation</strong>.</p>
+    </div>
+    <div class="key-points">
+      <h4>Accommodation</h4>
+      <p>Objet proche → le cristallin augmente sa puissance pour ramener l'image sur la rétine.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. AMÉTROPIES -->
+<section id="ametropies" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>Les amétropies</h2>
+  </div>
+  <p class="lead">Anomalies de la vision où l'image n'est plus projetée sur la rétine sans accommodation. Le remotum n'est plus à l'infini.</p>
+
+  <!-- MYOPIE -->
+  <div id="myopie" class="subsection">
+    <h3>👓 La Myopie</h3>
+    <div class="ametropie-cards">
+      <div class="ametropie-card">
+        <h4>Définition</h4>
+        <p>Le foyer image est <strong>en avant de la rétine</strong>. L'œil est trop puissant ou trop long.</p>
+        <p>Le myope voit <strong>bien de près</strong> et <strong>mal de loin</strong>.</p>
+      </div>
+      <div class="ametropie-card">
+        <h4>Caractéristiques</h4>
+        <ul>
+          <li>Œil trop convergent</li>
+          <li>Remotum R à distance <strong>finie</strong> (devant l'œil)</li>
+          <li>Image de l'infini = tache de diffusion sur la rétine</li>
+        </ul>
+      </div>
+      <div class="ametropie-card">
+        <h4>Causes</h4>
+        <ul>
+          <li><strong>Myopie axile</strong> : axe antéro-postérieur trop grand</li>
+          <li><strong>Myopie de courbure</strong> : rayon de courbure cornéen trop réduit</li>
+          <li><strong>Myopie d'indice</strong> : augmentation de l'indice du cristallin (rare)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- HYPERMÉTROPIE -->
+  <div id="hypermetropie" class="subsection">
+    <h3>👓 L'Hypermétropie</h3>
+    <div class="ametropie-cards">
+      <div class="ametropie-card">
+        <h4>Définition</h4>
+        <p>L'image se forme <strong>en arrière de la rétine</strong>. L'œil est trop faible ou trop court.</p>
+        <p>Vision de près <strong>mauvaise</strong>, vision de loin compensée par accommodation (degrés faibles).</p>
+      </div>
+      <div class="ametropie-card">
+        <h4>Caractéristiques</h4>
+        <ul>
+          <li>Œil faible et peu convergent</li>
+          <li>Proximum P anormalement <strong>éloigné</strong></li>
+          <li>Remotum R virtuel, derrière la rétine</li>
+          <li>L'œil accommode pour compenser</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ASTIGMATISME -->
+  <div id="astigmatisme" class="subsection">
+    <h3>👓 L'Astigmatisme</h3>
+    <div class="ametropie-cards">
+      <div class="ametropie-card">
+        <h4>Définition</h4>
+        <p>L'image d'un point <strong>ne peut être ponctuelle</strong>. Un objet ponctuel donne une image floue étalée.</p>
+        <p>Cercle → ovale, ligne → brouillée. Baisse de l'acuité visuelle.</p>
+      </div>
+      <div class="ametropie-card">
+        <h4>Types</h4>
+        <ul>
+          <li>Astigmatisme <strong>myopique simple</strong></li>
+          <li>Astigmatisme <strong>myopique composé</strong></li>
+          <li>Astigmatisme <strong>hypéropique simple</strong></li>
+          <li>Astigmatisme <strong>hypéropique composé</strong></li>
+          <li>Astigmatisme <strong>mixte</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRESBYTIE -->
+  <div id="presbytie" class="subsection">
+    <h3>👓 La Presbytie</h3>
+    <div class="ametropie-cards">
+      <div class="ametropie-card">
+        <h4>Définition</h4>
+        <p><strong>Diminution de l'amplitude d'accommodation avec l'âge</strong>.</p>
+        <p>Le Proximum P s'éloigne progressivement. Le Remotum R reste à l'infini.</p>
+      </div>
+      <div class="ametropie-card">
+        <h4>Mécanisme</h4>
+        <ul>
+          <li>Diminution de la <strong>plasticité du cristallin</strong></li>
+          <li>Diminution progressive de l'amplitude d'accommodation</li>
+          <li>Signalée quand le sujet ne peut <strong>lire sans fatigue</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CORRECTIONS -->
+<section id="corrections" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2>Corrections des amétropies</h2>
+  </div>
+  <p class="lead">Ramener l'image sur la rétine pour permettre une vision nette.</p>
+
+  <div class="ametropie-cards">
+    <div class="ametropie-card">
+      <h4>🔴 Myopie → Verres divergents</h4>
+      <p>Lentilles de contact divergentes ou chirurgie (photo-ablation au laser pour myopies faibles/moyennes).</p>
+    </div>
+    <div class="ametropie-card">
+      <h4>🔵 Hypermétropie → Verres convergents</h4>
+      <p>Lentilles de contact ou verres de lunettes convergents.</p>
+    </div>
+    <div class="ametropie-card">
+      <h4>🟡 Astigmatisme → Verres cylindriques</h4>
+      <p>Verres plans cylindriques + correction de l'amétropie sphérique associée.</p>
+    </div>
+    <div class="ametropie-card">
+      <h4>🟢 Presbytie → Verres convergents</h4>
+      <p>Verres convergents pour la vision de près (verres progressifs).</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. COULEURS -->
+<section id="couleurs" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2>Vision des couleurs</h2>
+  </div>
+
+  <h3>La lumière</h3>
+  <p>Ensemble d'ondes électromagnétiques auquel l'œil est sensible. Longueur d'onde visible : <strong>400 à 800 nm</strong>.</p>
+
+  <h3>Anomalies : Dyschromatopsies</h3>
+  <p>Déficit de certains types de récepteurs (cônes). La plus connue est le <strong>daltonisme</strong> : confusion du rouge et du vert.</p>
+
+  <div class="info-box">
+    <strong>📌 Conclusion :</strong> Les anomalies optiques (myopie, hypermétropie, astigmatisme) sont facilement corrigées par lentilles ou verres. La presbytie est liée à l'âge. Un dépistage précoce est nécessaire.
+  </div>
+</section>
+
+<!-- FLASHCARDS -->
+<section id="flashcards" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">🃏</span>
+    <h2>Flashcards</h2>
+  </div>
+  <div class="flashcards-controls">
+    <select id="flashCategory">
+      <option value="all">Toutes</option>
+      <option value="dioptrique">Dioptrique</option>
+      <option value="ametropie">Amétropies</option>
+      <option value="correction">Corrections</option>
+    </select>
+    <button class="btn" id="shuffleBtn">🔀 Mélanger</button>
+    <span class="flash-counter"><span id="flashCurrent">1</span> / <span id="flashTotal">20</span></span>
+  </div>
+  <div class="flashcard-wrapper">
+    <div class="flashcard" id="flashcard">
+      <div class="flash-face flash-front"><span class="flash-cat"></span><p class="flash-question">Chargement…</p></div>
+      <div class="flash-face flash-back"><p class="flash-answer">Réponse</p></div>
+    </div>
+  </div>
+  <div class="flash-nav">
+    <button class="btn" id="prevCard">← Précédente</button>
+    <button class="btn primary" id="nextCard">Suivante →</button>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">❓</span>
+    <h2>Quiz noté</h2>
+  </div>
+  <p class="lead">10 questions pour tester tes connaissances.</p>
+  <div id="quizContainer"></div>
+  <div class="quiz-actions">
+    <button class="btn primary" id="submitQuiz">📝 Soumettre</button>
+    <button class="btn" id="resetQuiz">🔄 Recommencer</button>
+  </div>
+  <div class="quiz-result hidden" id="quizResult"></div>
+</section>
+
+</main>
+
+<button class="back-to-top" id="backToTop">↑</button>
+<script src="vision.js"></script>
+</body>
+</html>

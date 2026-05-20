@@ -1,0 +1,179 @@
+/* ========================================
+   MOELLE ÉPINIÈRE — surcharges thématiques (bleu)
+   ======================================== */
+
+:root {
+  --accent: #0ea5e9;
+  --accent-light: #e0f2fe;
+  --accent-dark: #0369a1;
+  --gradient-hero: linear-gradient(135deg, #0c4a6e 0%, #0ea5e9 50%, #67e8f9 100%);
+  --gradient-card: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+[data-theme="dark"] {
+  --accent-light: rgba(14, 165, 233, .15);
+  --gradient-card: linear-gradient(135deg, rgba(14, 165, 233, .1) 0%, rgba(103, 232, 249, .1) 100%);
+}
+
+.brand-link { text-decoration: none; color: inherit; }
+.home-btn { font-size: 1.2rem; }
+
+/* ========== ME OVERVIEW ========== */
+.me-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.me-card {
+  background: var(--bg-soft);
+  padding: 1.4rem;
+  border-radius: var(--radius);
+  border-top: 5px solid var(--accent);
+  text-align: center;
+}
+.me-icon { font-size: 2.6rem; margin-bottom: .5rem; }
+.me-card h4 { color: var(--accent); margin-bottom: .4rem; }
+
+/* ========== SUBSTANCE GRISE TYPES ========== */
+.sg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.sg-card {
+  background: var(--bg-soft);
+  padding: 1.3rem;
+  border-radius: var(--radius);
+  border-left: 5px solid var(--accent);
+}
+.sg-card h4 { color: var(--accent); margin-bottom: .5rem; }
+.sg-tag {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  font-size: .72rem;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+/* ========== NEURONES CARDS ========== */
+.neurones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.neurone-card {
+  background: var(--bg-soft);
+  padding: 1.3rem;
+  border-radius: var(--radius);
+  border-top: 4px solid var(--accent);
+  transition: transform .2s;
+}
+.neurone-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.neurone-card.quitte { border-top-color: #dc2626; }
+.neurone-card.reste { border-top-color: #16a34a; }
+.neurone-card h4 { margin-bottom: .5rem; }
+.neurone-card.quitte h4 { color: #dc2626; }
+.neurone-card.reste h4 { color: #16a34a; }
+.neurone-icon { font-size: 2.2rem; margin-bottom: .3rem; }
+
+/* ========== MOTONEURONES TYPES ========== */
+.moto-types {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.moto-type {
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  color: white;
+}
+.moto-alpha {
+  background: linear-gradient(135deg, #0c4a6e, #0ea5e9);
+}
+.moto-gamma {
+  background: linear-gradient(135deg, #14532d, #16a34a);
+}
+.moto-type h4 { color: white; font-size: 1.15rem; margin-bottom: .3rem; }
+.moto-type p { font-size: .9rem; }
+.moto-type .greek {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========== REXED LAMINATION ========== */
+.rexed-layers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 1.5rem 0;
+}
+.rexed-layer {
+  display: flex;
+  background: var(--c);
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+.rexed-layer:hover {
+  transform: translateX(8px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+}
+.rexed-layer .layer-num {
+  background: rgba(255,255,255,.2);
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  flex-shrink: 0;
+}
+.rexed-layer .layer-body { padding: 1rem 1.2rem; flex: 1; }
+.rexed-layer h4 { color: white; margin: 0 0 .3rem; font-size: 1rem; }
+.rexed-layer p { font-size: .88rem; margin: 0; }
+.rexed-layer strong { color: #fde68a; }
+
+/* ========== CORDONS ========== */
+.cordons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.cordon-card {
+  padding: 1.4rem;
+  border-radius: var(--radius);
+  text-align: center;
+  color: white;
+}
+.cordon-ant { background: linear-gradient(135deg, #991b1b, #dc2626); }
+.cordon-lat { background: linear-gradient(135deg, #92400e, #f59e0b); }
+.cordon-post { background: linear-gradient(135deg, #1e40af, #3b82f6); }
+.cordon-card h4 { color: white; margin-bottom: .3rem; font-size: 1.1rem; }
+.cordon-card p { font-size: .9rem; }
+.cordon-icon { font-size: 2.2rem; margin-bottom: .4rem; }
+
+/* ========== ME SVG ========== */
+.me-svg-wrapper {
+  background: var(--gradient-card);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+.me-svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+/* Override flashcard back to blue */
+.flashcard-back {
+  background: linear-gradient(135deg, #0c4a6e, #0ea5e9) !important;
+}

@@ -1,0 +1,206 @@
+/* ========================================
+   MENINGES — surcharges thématiques (vert)
+   ======================================== */
+
+:root {
+  --accent: #16a34a;
+  --accent-light: #dcfce7;
+  --accent-dark: #15803d;
+  --gradient-hero: linear-gradient(135deg, #14532d 0%, #16a34a 50%, #84cc16 100%);
+  --gradient-card: linear-gradient(135deg, #f0fdf4 0%, #ecfccb 100%);
+}
+
+[data-theme="dark"] {
+  --accent-light: rgba(22, 163, 74, .15);
+  --gradient-card: linear-gradient(135deg, rgba(22, 163, 74, .1) 0%, rgba(132, 204, 22, .1) 100%);
+}
+
+.brand-link { text-decoration: none; color: inherit; }
+.home-btn { font-size: 1.2rem; }
+
+/* ========== MENINGES OVERVIEW ========== */
+.meninges-overview {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  margin: 1.5rem 0;
+}
+.meninge-row {
+  display: grid;
+  grid-template-columns: 60px 2fr 3fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+  border-left: 5px solid;
+  transition: transform .2s;
+}
+.meninge-row:hover { transform: translateX(5px); }
+.meninge-num {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+}
+.meninge-info h4 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.meninge-desc { color: var(--text-muted); font-size: .9rem; }
+
+.meninge-row.pachy {
+  background: #d1fae5;
+  border-color: #15803d;
+}
+.meninge-row.lepto {
+  background: #ede9fe;
+  border-color: #7c3aed;
+}
+[data-theme="dark"] .meninge-row.pachy { background: rgba(22, 163, 74, .15); }
+[data-theme="dark"] .meninge-row.lepto { background: rgba(124, 58, 237, .15); }
+
+.badge {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: .75rem;
+  font-weight: 600;
+  margin-top: .3rem;
+}
+.badge.soft { background: #7c3aed; }
+
+/* ========== DURE LAYER CARDS ========== */
+.dure-layer-card {
+  background: var(--bg-soft);
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--accent);
+}
+.dure-layer-card h5 {
+  color: var(--accent);
+  margin-bottom: .5rem;
+  font-size: 1rem;
+}
+.dure-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+/* ========== LEPTO CARDS ========== */
+.lepto-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.2rem;
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  margin: 1rem 0;
+  border-left: 5px solid;
+}
+.arachnoide-card { border-color: #7c3aed; background: #ede9fe; }
+.piemere-card { border-color: #f59e0b; background: #fef3c7; }
+[data-theme="dark"] .arachnoide-card { background: rgba(124, 58, 237, .15); }
+[data-theme="dark"] .piemere-card { background: rgba(245, 158, 11, .15); }
+
+.lepto-icon {
+  font-size: 3.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.lepto-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+.lepto-card h5 {
+  color: var(--accent);
+  margin: .8rem 0 .3rem;
+  font-size: .95rem;
+}
+.arachnoide-card h4, .arachnoide-card h5 { color: #7c3aed; }
+.piemere-card h4, .piemere-card h5 { color: #d97706; }
+
+/* ========== PLEXUS COMPONENTS ========== */
+.plexus-component {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: left;
+  border-top: 5px solid;
+}
+.epithel-card { border-color: #ca8a04; }
+.stroma-card { border-color: #dc2626; }
+.component-icon { font-size: 2.5rem; margin-bottom: .5rem; }
+.epithel-card h4 { color: #92400e; }
+.stroma-card h4 { color: #dc2626; }
+
+.info-mini {
+  margin-top: .8rem;
+  padding: .6rem .8rem;
+  background: var(--bg-card);
+  border-radius: 8px;
+  font-size: .85rem;
+  color: var(--text);
+  border-left: 3px solid var(--accent);
+}
+
+/* ========== PLEXUS SVG ========== */
+.plexus-svg-wrapper {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  margin: 1rem 0;
+  text-align: center;
+}
+.plexus-svg-wrapper svg { max-width: 100%; height: auto; }
+
+/* ========== BARRIERS ========== */
+.barriers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin: 1rem 0;
+}
+.barrier-card {
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-left: 5px solid;
+}
+.barrier-blood-csf {
+  background: #fee2e2;
+  border-color: #dc2626;
+}
+.barrier-brain-csf {
+  background: #dbeafe;
+  border-color: #2563eb;
+}
+[data-theme="dark"] .barrier-blood-csf { background: rgba(220, 38, 38, .15); }
+[data-theme="dark"] .barrier-brain-csf { background: rgba(37, 99, 235, .15); }
+
+.barrier-icon {
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+.barrier-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: .8rem;
+}
+.barrier-blood-csf h4 { color: #dc2626; }
+.barrier-brain-csf h4 { color: #2563eb; }
+.barrier-card p { margin-bottom: .5rem; font-size: .92rem; }
+
+/* SVG meninges */
+.meninges-svg [data-label] { transition: opacity .2s, filter .2s; cursor: pointer; }
+.meninges-svg [data-label]:hover { filter: brightness(1.1) drop-shadow(0 0 6px rgba(22, 163, 74, .8)); }
+
+/* Override flashcard back to green theme */
+.flashcard-back {
+  background: linear-gradient(135deg, #14532d, #15803d) !important;
+}
+
+/* CTA button uses theme color via existing .cta */

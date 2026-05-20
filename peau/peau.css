@@ -1,0 +1,232 @@
+/* ========================================
+   RECEPTEURS DE LA PEAU — surcharges thématiques (orange)
+   ======================================== */
+
+:root {
+  --accent: #f97316;
+  --accent-light: #ffedd5;
+  --accent-dark: #9a3412;
+  --gradient-hero: linear-gradient(135deg, #7c2d12 0%, #f97316 50%, #fed7aa 100%);
+  --gradient-card: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+}
+
+[data-theme="dark"] {
+  --accent-light: rgba(249, 115, 22, .15);
+  --gradient-card: linear-gradient(135deg, rgba(249, 115, 22, .1) 0%, rgba(254, 215, 170, .1) 100%);
+}
+
+.brand-link { text-decoration: none; color: inherit; }
+.home-btn { font-size: 1.2rem; }
+
+/* ========== TERMINAISONS GRID ========== */
+.terminaisons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.terminaison-card {
+  background: var(--bg-soft);
+  padding: 1.4rem;
+  border-radius: var(--radius);
+  border-left: 5px solid var(--accent);
+  transition: transform .2s;
+}
+.terminaison-card:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-lg);
+}
+.terminaison-card h4 { color: var(--accent-dark); margin-bottom: .5rem; }
+[data-theme="dark"] .terminaison-card h4 { color: var(--accent); }
+.terminaison-icon { font-size: 2.2rem; margin-bottom: .3rem; }
+
+/* ========== CORPUSCULES ========== */
+.corpuscule-card {
+  background: var(--gradient-card);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border: 2px solid var(--accent);
+}
+[data-theme="dark"] .corpuscule-card {
+  background: rgba(249, 115, 22, .08);
+}
+.corpuscule-banner {
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+  color: white;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.corp-emoji { font-size: 2.5rem; }
+.corpuscule-banner h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.3rem;
+}
+.corp-tag {
+  display: inline-block;
+  background: rgba(255,255,255,.25);
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: .72rem;
+  font-weight: 700;
+  margin-top: .3rem;
+}
+
+.corp-body {
+  padding: 1.5rem;
+}
+.corp-body .props-list {
+  list-style: none;
+  padding: 0;
+  margin: .5rem 0;
+}
+.corp-body .props-list li {
+  padding: .5rem .8rem;
+  background: var(--bg-card);
+  border-radius: 8px;
+  margin-bottom: .4rem;
+  border-left: 3px solid var(--accent);
+  font-size: .9rem;
+}
+.corp-body .fonction-tag {
+  background: var(--accent);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: .85rem;
+  display: inline-block;
+  margin-top: .8rem;
+}
+
+.corp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .corp-grid { grid-template-columns: 1fr; }
+}
+.corp-svg {
+  background: var(--bg-card);
+  padding: 1rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+.corp-svg svg { max-width: 100%; height: auto; }
+
+/* ========== RECEPTOR FILTER ========== */
+.adapt-tabs {
+  display: flex;
+  gap: .5rem;
+  margin: 2rem 0 1rem;
+  flex-wrap: wrap;
+  background: var(--bg-soft);
+  padding: .5rem;
+  border-radius: var(--radius);
+}
+.adapt-tab {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  padding: .6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: .9rem;
+  transition: all .2s;
+}
+.adapt-tab.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* ========== MERKEL ========== */
+.merkel-card {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border-left: 5px solid var(--accent-dark);
+  margin: 1.5rem 0;
+}
+[data-theme="dark"] .merkel-card {
+  background: rgba(245, 158, 11, .12);
+  border-left-color: var(--accent);
+}
+.merkel-card h3 { color: var(--accent-dark); margin-bottom: .8rem; }
+[data-theme="dark"] .merkel-card h3 { color: var(--accent); }
+.role-double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.role-card {
+  background: var(--bg-card);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+  font-size: .9rem;
+}
+
+/* ========== TABLEAU SYNTHESE ========== */
+.synthese-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  font-size: .9rem;
+}
+.synthese-table th, .synthese-table td {
+  padding: .8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.synthese-table thead th {
+  background: var(--gradient-hero);
+  color: white;
+  font-weight: 700;
+}
+.synthese-table tbody tr:hover { background: var(--bg-soft); }
+.tag-mini {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: .72rem;
+  font-weight: 600;
+}
+.tag-rapide { background: #dcfce7; color: #14532d; }
+.tag-lente { background: #fef3c7; color: #78350f; }
+.tag-thermo { background: #dbeafe; color: #1e3a8a; }
+.tag-noci { background: #fee2e2; color: #7f1d1d; }
+[data-theme="dark"] .tag-rapide { background: rgba(22, 163, 74, .25); color: #86efac; }
+[data-theme="dark"] .tag-lente { background: rgba(245, 158, 11, .25); color: #fbbf24; }
+[data-theme="dark"] .tag-thermo { background: rgba(37, 99, 235, .25); color: #93c5fd; }
+[data-theme="dark"] .tag-noci { background: rgba(220, 38, 38, .25); color: #fca5a5; }
+
+/* ========== ANALGESIE ========== */
+.analgesie-card {
+  background: linear-gradient(135deg, #fee2e2, #fecaca);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-left: 5px solid #dc2626;
+  margin: 1rem 0;
+}
+[data-theme="dark"] .analgesie-card {
+  background: rgba(220, 38, 38, .1);
+}
+.analgesie-card h4 { color: #991b1b; margin-bottom: .5rem; }
+[data-theme="dark"] .analgesie-card h4 { color: #fca5a5; }
+
+/* Override flashcard back */
+.flashcard-back {
+  background: linear-gradient(135deg, #7c2d12, #f97316) !important;
+}

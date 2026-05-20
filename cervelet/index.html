@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cervelet — Cours interactif</title>
+<link rel="stylesheet" href="../shared.css" />
+<link rel="stylesheet" href="cervelet.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body data-course="cervelet">
+
+<header class="topbar">
+  <button id="menuToggle" class="icon-btn" aria-label="Menu">☰</button>
+  <a href="../index.html" class="brand brand-link">
+    <span class="brand-logo">🌳</span>
+    <div>
+      <strong>Cervelet — Cortex cérébelleux</strong>
+      <small>SNC · 2ᵉ année médecine · Oran</small>
+    </div>
+  </a>
+  <div class="topbar-actions">
+    <a href="../index.html" class="icon-btn home-btn" title="Retour aux cours">🏠</a>
+    <input type="search" id="searchInput" placeholder="🔍 Rechercher…" />
+    <button id="themeToggle" class="icon-btn" aria-label="Thème">🌙</button>
+    <button id="printBtn" class="icon-btn" aria-label="Imprimer">🖨️</button>
+  </div>
+</header>
+
+<div class="progress-container"><div id="progressBar" class="progress-bar"></div></div>
+
+<aside id="sidebar" class="sidebar">
+  <nav>
+    <h4>📖 Sommaire</h4>
+    <a href="#intro">1. Introduction</a>
+    <a href="#structure">2. Structure</a>
+    <a href="#sg">↳ 3 couches de SG</a>
+    <a href="#purkinje">↳ Cellule de Purkinje</a>
+    <a href="#sb">3. Substance blanche</a>
+    <a href="#noyaux">↳ Noyaux gris profonds</a>
+    <a href="#glomerule">4. Glomérule de Held</a>
+    <a href="#nevroglie">5. Éléments névrogliques</a>
+    <a href="#vasc">6. Vascularisation</a>
+    <a href="#fonction">7. Synaptologie &amp; rôle</a>
+    <a href="#patho">8. Pathologie</a>
+    <hr/>
+    <h4>🎓 S'entraîner</h4>
+    <a href="#flashcards">🃏 Flashcards</a>
+    <a href="#quiz">❓ Quiz</a>
+    <a href="#fiche">📋 Fiche révision</a>
+  </nav>
+</aside>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="kicker">SNC · Encéphale · Organe de l'équilibration</p>
+    <h1>Cervelet <span class="eye-emoji">🌳</span></h1>
+    <p class="subtitle">Cours interactif — cortex cérébelleux à 3 couches, cellules de Purkinje, glomérule de Held et fonctionnement</p>
+    <div class="hero-stats">
+      <div><strong>3</strong><span>couches de SG</span></div>
+      <div><strong>2</strong><span>fibres afférentes</span></div>
+      <div><strong>4</strong><span>noyaux gris</span></div>
+      <div><strong>1</strong><span>cellule reine</span></div>
+    </div>
+    <a href="#intro" class="cta">Commencer le cours ↓</a>
+  </div>
+</section>
+
+<main>
+
+<!-- INTRO -->
+<section id="intro" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>Introduction</h2>
+  </div>
+
+  <p class="lead">Le <strong>cervelet</strong> est une partie de l'encéphale, <strong>impair et médian</strong>, situé dans l'étage inférieur du crâne, au-dessous des hémisphères cérébraux. C'est l'<strong>organe de l'équilibration</strong>.</p>
+
+  <div class="grid-2">
+    <div class="key-points">
+      <h4>🌿 Aspect macroscopique</h4>
+      <ul>
+        <li>Surface découpée par de profonds <strong>sillons</strong> qui délimitent des <strong>lamelles cérébelleuses</strong></li>
+        <li>Chaque lamelle contient une région superficielle de SG et un axe profond de SB</li>
+      </ul>
+    </div>
+    <div class="key-points">
+      <h4>🔬 Composition de la lamelle</h4>
+      <ul>
+        <li><strong>Substance grise superficielle</strong> = <strong>cortex cérébelleux</strong> (cellules nerveuses + fibres amyéliniques)</li>
+        <li><strong>Substance blanche profonde</strong> = fibres myélinisées + <strong>4 noyaux gris profonds</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- STRUCTURE -->
+<section id="structure" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>Structure du cortex cérébelleux</h2>
+  </div>
+
+  <p class="lead">La <strong>substance grise</strong> du cortex cérébelleux est <strong>épaisse de 1 mm</strong> et se compose de <strong>3 couches</strong> :</p>
+
+  <div id="sg" class="couches-grid">
+    <div class="couche-row" style="--c:#fbbf24">
+      <div class="layer-num">Superficielle<br/>I</div>
+      <div class="layer-body">
+        <h4>Couche moléculaire</h4>
+        <p>Contient des <strong>cellules étoilées</strong> de 2 types :</p>
+        <ul>
+          <li><strong>Cellules étoilées superficielles</strong> (1/3 externe) : petites · dendrites perpendiculaires à l'axe de la lamelle · axone se ramifie dans la couche moléculaire</li>
+          <li><strong>Cellules étoilées profondes (en panier ou corbeilles)</strong> (1/3 interne) : 8-18 µm · axone long amyélinique · forme une <strong>corbeille autour des cellules de Purkinje</strong> (1 cellule en panier ↔ 10 Purkinje)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="couche-row" style="--c:#f59e0b">
+      <div class="layer-num">Intermédiaire<br/>II</div>
+      <div class="layer-body">
+        <h4>Couche des cellules de Purkinje</h4>
+        <p>Voir la section dédiée ci-dessous 👇</p>
+      </div>
+    </div>
+
+    <div class="couche-row" style="--c:#92400e">
+      <div class="layer-num">Profonde<br/>III</div>
+      <div class="layer-body">
+        <h4>Couche des grains</h4>
+        <p>Comprend <strong>2 catégories de neurones</strong> :</p>
+        <ul>
+          <li><strong>Cellules à grains</strong> (7-10 µm, 2.5 millions/mm³) : sphériques, 4-5 dendrites en croix se terminant en griffe dans les <strong>glomérules de Held</strong>. Axone monte dans la couche moléculaire et se bifurque en T (= <strong>fibres parallèles</strong>, 1-1.5 mm)</li>
+          <li><strong>Cellules de Golgi type II</strong> : volumineuses, partie superficielle de la couche · dendrites ascendantes (↔ fibres parallèles) et descendantes (↔ fibres moussues) · axone très ramifié → glomérules de Held</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PURKINJE -->
+  <div id="purkinje" class="purkinje-card">
+    <h3>⭐ La cellule de Purkinje — la cellule reine</h3>
+
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li>Cellules <strong>hautement différenciées</strong></li>
+          <li>Cellules <strong>principales</strong> du cortex cérébelleux</li>
+          <li>Diamètre : <strong>30-40 µm</strong>, aspect <strong>piriforme</strong></li>
+          <li><strong>Base</strong> dirigée vers les grains, <strong>apex</strong> vers la zone moléculaire</li>
+          <li><strong>Dendrites</strong> : naissent à l'apex, s'arborisent dans toute la zone moléculaire, dans un plan <strong>perpendiculaire</strong> à l'axe de la lamelle</li>
+          <li>Une cellule de Purkinje peut entrer en contact avec <strong>+ de 200 000 neurones</strong> 😱</li>
+          <li><strong>Axone</strong> : naît à la base, traverse la couche des grains et gagne les <strong>noyaux gris profonds</strong></li>
+          <li>C'est <strong>l'efférence unique du cervelet</strong></li>
+        </ul>
+      </div>
+
+      <div class="schema-wrap">
+        <svg viewBox="0 0 250 380" xmlns="http://www.w3.org/2000/svg">
+          <!-- Dendritic arborization (perpendicular to lamella, fan-shaped) -->
+          <g stroke="#7c2d12" stroke-width="1.2" fill="none">
+            <path d="M 125 130 Q 125 90 110 60"/>
+            <path d="M 125 130 Q 125 90 140 60"/>
+            <path d="M 125 130 Q 100 100 80 70"/>
+            <path d="M 125 130 Q 150 100 170 70"/>
+            <path d="M 125 130 Q 90 110 60 90"/>
+            <path d="M 125 130 Q 160 110 190 90"/>
+            <path d="M 125 130 Q 80 120 50 110"/>
+            <path d="M 125 130 Q 170 120 200 110"/>
+            <!-- Sub branches -->
+            <path d="M 110 60 L 105 50 M 110 60 L 115 45"/>
+            <path d="M 140 60 L 135 45 M 140 60 L 145 50"/>
+            <path d="M 80 70 L 70 60 M 80 70 L 85 55"/>
+            <path d="M 170 70 L 180 60 M 170 70 L 165 55"/>
+          </g>
+
+          <!-- Cell body (piriform, pear-shaped) -->
+          <ellipse cx="125" cy="160" rx="18" ry="28" fill="#92400e" stroke="#451a03" stroke-width="2"/>
+          <circle cx="125" cy="160" r="8" fill="#fef3c7"/>
+
+          <!-- Axon (descending) -->
+          <line x1="125" y1="188" x2="125" y2="350" stroke="#dc2626" stroke-width="2"/>
+          <path d="M 119 340 L 125 350 L 131 340" fill="none" stroke="#dc2626" stroke-width="2"/>
+
+          <!-- Granular cells (couche des grains) -->
+          <g fill="#0369a1">
+            <circle cx="80" cy="220" r="3"/>
+            <circle cx="100" cy="240" r="3"/>
+            <circle cx="160" cy="225" r="3"/>
+            <circle cx="180" cy="245" r="3"/>
+            <circle cx="70" cy="260" r="3"/>
+            <circle cx="190" cy="270" r="3"/>
+          </g>
+
+          <!-- Layer separators (subtle) -->
+          <line x1="0" y1="200" x2="250" y2="200" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+          <line x1="0" y1="290" x2="250" y2="290" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+
+          <!-- Labels -->
+          <text x="125" y="20" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Couche moléculaire</text>
+          <text x="245" y="195" text-anchor="end" font-size="10" font-weight="600" fill="#64748b">Purkinje</text>
+          <text x="245" y="285" text-anchor="end" font-size="10" font-weight="600" fill="#64748b">Grains</text>
+          <text x="125" y="370" text-anchor="middle" font-size="11" font-weight="700" fill="#dc2626">Axone → Noyaux gris</text>
+          <text x="40" y="155" font-size="9" font-weight="700" fill="#92400e">30-40 µm</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <h3>🧬 Cellules de la couche des grains</h3>
+  <div class="cell-grid-cere">
+    <div class="cell-cere">
+      <div class="cell-cere-icon">🌾</div>
+      <span class="size-tag">7-10 µm · 2.5 M/mm³</span>
+      <h4>Cellules à grains</h4>
+      <ul>
+        <li>Petites, nombreuses, sphériques</li>
+        <li>Occupent presque toute la couche</li>
+        <li><strong>4-5 dendrites espacées</strong> en croix → <strong>griffes dans les glomérules de Held</strong></li>
+        <li>Axone monte dans la couche moléculaire et se <strong>bifurque en T</strong> (parallèle à la lamelle)</li>
+        <li>Branches = <strong>fibres parallèles</strong> (1 à 1.5 mm) → contacts avec Purkinje, étoilées et Golgi II</li>
+      </ul>
+    </div>
+
+    <div class="cell-cere">
+      <div class="cell-cere-icon">🌿</div>
+      <span class="size-tag">Volumineuses, peu nombreuses</span>
+      <h4>Cellules de Golgi type II</h4>
+      <ul>
+        <li>Partie superficielle de la zone des grains, à proximité des Purkinje</li>
+        <li>Plus grandes que les cellules à grains</li>
+        <li><strong>Dendrites ascendantes</strong> ↔ fibres parallèles</li>
+        <li><strong>Dendrites descendantes</strong> ↔ fibres moussues</li>
+        <li>Axone très fin, très ramifié → <strong>glomérules de Held</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSTANCE BLANCHE -->
+<section id="sb" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>La substance blanche</h2>
+  </div>
+
+  <p class="lead">Composée de <strong>2 fibres afférentes principales</strong> qui se groupent dans la SB associées aux axones des cellules de Purkinje.</p>
+
+  <div class="fibres-grid">
+    <div class="fibre-card fibre-mousse">
+      <div class="fibre-icon">🌱</div>
+      <h4>Fibres moussues</h4>
+      <ul>
+        <li><strong>Myélinisées, épaisses</strong></li>
+        <li>Proviennent des cellules de la <strong>colonne de Clarke</strong> (faisceau spino-cérébelleux direct) ou <strong>ponto-bulbaire</strong></li>
+        <li>Émettent rameaux dans la SB et collatérales vers les noyaux gris cérébelleux</li>
+        <li>Perdent leur myéline et se terminent par des <strong>rosettes de boutons</strong></li>
+        <li>S'engrènent avec dendrites des grains et axone des Golgi II au sein des <strong>glomérules de Held</strong></li>
+      </ul>
+    </div>
+
+    <div class="fibre-card fibre-grimpante">
+      <div class="fibre-icon">🌹</div>
+      <h4>Fibres grimpantes</h4>
+      <ul>
+        <li>Proviennent des <strong>neurones de l'olive bulbaire controlatérale</strong></li>
+        <li>Traversent la zone des grains avec collatérales pour grains et Golgi II</li>
+        <li>Perdent leur myéline</li>
+        <li><strong>Chaque fibre grimpante = 1 cellule de Purkinje</strong> (contact avec ses dendrites)</li>
+        <li>Activation <strong>directe</strong> des Purkinje (sans neurone intermédiaire)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- NOYAUX GRIS -->
+  <div id="noyaux" class="subsection">
+    <h3>🧠 Les 4 noyaux gris profonds</h3>
+    <p>Localisés dans la <strong>SB profonde du cervelet</strong>. Ils reçoivent les <strong>collatérales des voies afférentes</strong> et les <strong>axones des cellules de Purkinje</strong>.</p>
+
+    <div class="noyaux-grid">
+      <div class="noyau-card">
+        <div class="noyau-icon">🔝</div>
+        <h4>Noyau du toit (du faîte)</h4>
+        <p>Dans le <strong>vermis</strong>, proche de la ligne médiane · reçoit les axones de la <strong>région médiane</strong></p>
+      </div>
+      <div class="noyau-card">
+        <div class="noyau-icon">🔘</div>
+        <h4>Globulus</h4>
+        <p>Noyau interposé · reçoit les axones des <strong>hémisphères</strong></p>
+      </div>
+      <div class="noyau-card">
+        <div class="noyau-icon">🟦</div>
+        <h4>Embolus (emboliforme)</h4>
+        <p>Noyau interposé · reçoit les axones des <strong>hémisphères</strong></p>
+      </div>
+      <div class="noyau-card">
+        <div class="noyau-icon">🦷</div>
+        <h4>Noyau dentelé</h4>
+        <p>Reçoit les efférences des <strong>2/3 latéraux des hémisphères</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOMERULE -->
+<section id="glomerule" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>Glomérules cérébelleux (de Held)</h2>
+  </div>
+
+  <div class="glomerule-card">
+    <h3>🕸️ Structure synaptique complexe</h3>
+    <p>Le <strong>glomérule de Held</strong> est un véritable <strong>îlot synaptique</strong> situé dans la couche granuleuse, <strong>diamètre ≈ 20 µm</strong>, isolé du reste de la couche par des cellules névrogliques.</p>
+
+    <h4>4 éléments font synapse dans un glomérule :</h4>
+    <ol>
+      <li>🟢 <strong>Terminaisons des fibres moussues</strong></li>
+      <li>🟡 <strong>Dendrites des cellules à grains</strong></li>
+      <li>🟠 <strong>Dendrites descendantes des cellules de Golgi II</strong></li>
+      <li>🔴 <strong>Terminaisons axoniques des cellules de Golgi II</strong></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ELEMENTS NEVROGLIQUES -->
+<section id="nevroglie" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2>Éléments névrogliques</h2>
+  </div>
+
+  <div class="grid-2">
+    <div class="key-points">
+      <h4>🔵 Non spécifiques</h4>
+      <ul>
+        <li><strong>Astrocytes</strong> : couche des grains</li>
+        <li><strong>Oligodendrocytes</strong> : couche des grains</li>
+        <li><strong>Microgliocytes</strong> : couche moléculaire</li>
+      </ul>
+    </div>
+    <div class="key-points">
+      <h4>🟠 Spécifiques au cervelet</h4>
+      <ul>
+        <li><strong>Cellules épithéliales de Golgi</strong> avec leurs <strong>fibres de Bergmann</strong></li>
+        <li><strong>Cellules de Fañanas</strong> : petites astrocytes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- VASCULARISATION -->
+<section id="vasc" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2>Vascularisation</h2>
+  </div>
+
+  <p class="lead">Le cervelet reçoit ses vaisseaux de <strong>3 sources artérielles</strong> :</p>
+
+  <div class="vasc-grid">
+    <div class="vasc-card">
+      <h4>1. Artère cérébelleuse inférieure</h4>
+      <p><em>(inféro-postérieure)</em> Branche de l'<strong>artère vertébrale</strong> · vascularise la <strong>partie caudale</strong> du cervelet</p>
+    </div>
+    <div class="vasc-card">
+      <h4>2. Artère cérébelleuse moyenne</h4>
+      <p><em>(inféro-antérieure)</em> Branche du <strong>tronc basilaire</strong> · vascularise la partie de l'<strong>hémisphère</strong></p>
+    </div>
+    <div class="vasc-card">
+      <h4>3. Artère cérébelleuse supérieure</h4>
+      <p>Branche du <strong>tronc basilaire</strong> · vascularise la <strong>partie supérieure de l'hémisphère</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- FONCTIONNEMENT -->
+<section id="fonction" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">07</span>
+    <h2>Synaptologie &amp; fonctionnement</h2>
+  </div>
+
+  <h3>🔄 Schéma fonctionnel</h3>
+  <p>La <strong>cellule de Purkinje</strong> reçoit et intègre toutes les informations destinées au cervelet et les transmet par son axone : c'est <strong>l'efférence unique</strong>.</p>
+
+  <div class="info-box accent-box">
+    <strong>📡 2 chemins d'activation des Purkinje :</strong>
+    <ul style="margin-top:.5rem">
+      <li><strong>Fibres grimpantes</strong> → activation <strong>DIRECTE</strong> des Purkinje (sans neurone intermédiaire)</li>
+      <li><strong>Fibres moussues</strong> → glomérule de Held → cellules à grains → fibres parallèles → Purkinje</li>
+    </ul>
+  </div>
+
+  <h3>⚖️ Excitation puis inhibition</h3>
+  <p>Les <strong>grains</strong> entraînent une action <strong>excitatrice</strong> sur :</p>
+  <div class="flow-cere">
+    <div class="flow-cere-step excite"><strong>Grains</strong><br/><small>(seuls excitateurs)</small></div>
+    <div class="flow-arrow-cere">→</div>
+    <div class="flow-cere-step excite"><strong>Golgi II</strong><br/><small>+ étoilées + en panier</small></div>
+    <div class="flow-arrow-cere">→</div>
+    <div class="flow-cere-step inhib"><strong>Inhibition</strong><br/><small>des Purkinje</small></div>
+  </div>
+
+  <p class="info-mini">Ces interneurones (Golgi, étoilées, en panier) exercent un <strong>effet inhibiteur</strong> sur les Purkinje, peu de temps après l'arrivée de l'influx excitateur des grains.</p>
+
+  <div class="mnemo-box">
+    <h4>🏆 Conclusion</h4>
+    <p>La <strong>cellule de Purkinje</strong> représente <strong>l'élément de coordination essentiel</strong> du cortex cérébelleux : c'est le <strong>« véritable cervelet histophysiologique »</strong>.</p>
+    <p>Elle est le <strong>centre de convergence</strong> de toutes les informations aboutissant au cervelet et le <strong>point de départ</strong> de tous les influx efférents.</p>
+  </div>
+
+  <h3>🎯 Le cervelet joue un rôle dans :</h3>
+  <div class="cordons-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:1rem 0">
+    <div class="noyau-card">
+      <div class="noyau-icon">⚖️</div>
+      <h4>Équilibre</h4>
+      <p>Régulation des réflexes vestibulaires</p>
+    </div>
+    <div class="noyau-card">
+      <div class="noyau-icon">🧍</div>
+      <h4>Statique</h4>
+      <p>Tonus musculaire postural (proprioception)</p>
+    </div>
+    <div class="noyau-card">
+      <div class="noyau-icon">🏃</div>
+      <h4>Motricité</h4>
+      <p>Contrôle &amp; coordination des mouvements</p>
+    </div>
+    <div class="noyau-card">
+      <div class="noyau-icon">🎯</div>
+      <h4>Précision</h4>
+      <p>Réflexes volontaires</p>
+    </div>
+  </div>
+</section>
+
+<!-- PATHOLOGIE -->
+<section id="patho" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">08</span>
+    <h2>Pathologie : Syndrome cérébelleux</h2>
+  </div>
+
+  <p class="lead">Pathologie dégénérative ou expansive, par lésion directe ou compressive.</p>
+
+  <div class="grid-2">
+    <div class="key-points">
+      <h4>🔴 Triade clinique</h4>
+      <ul>
+        <li>Troubles de l'<strong>équilibre</strong></li>
+        <li>Trouble du <strong>tonus musculaire postural</strong> avec <strong>hypotonie</strong></li>
+        <li>Trouble de l'<strong>exécution du mouvement</strong> global</li>
+      </ul>
+    </div>
+    <div class="key-points">
+      <h4>🩺 Conséquences cliniques</h4>
+      <ul>
+        <li>Le patient se cogne</li>
+        <li>Laisse tomber les objets</li>
+        <li>Difficulté avec les gestes fins et précis</li>
+        <li>Écriture irrégulière (horizontale &amp; verticale)</li>
+        <li>Parole irrégulière (lente/accélérée, souvent <strong>explosive</strong>)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FLASHCARDS -->
+<section id="flashcards" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">🃏</span>
+    <h2>Flashcards de révision</h2>
+  </div>
+  <p class="lead">Clique sur une carte pour la retourner. Utilise ← → pour naviguer.</p>
+
+  <div class="flashcards-controls">
+    <select id="flashCategory">
+      <option value="all">Toutes les catégories</option>
+      <option value="general">Généralités</option>
+      <option value="couches">3 couches du cortex</option>
+      <option value="purkinje">Cellule de Purkinje</option>
+      <option value="fibres">Fibres &amp; noyaux</option>
+      <option value="fonction">Fonctionnement</option>
+    </select>
+    <button id="shuffleBtn" class="btn">🔀 Mélanger</button>
+    <span class="flash-counter">Carte <strong id="flashCurrent">1</strong> / <span id="flashTotal">0</span></span>
+  </div>
+
+  <div class="flashcard-container">
+    <div class="flashcard" id="flashcard">
+      <div class="flashcard-inner">
+        <div class="flashcard-front">
+          <span class="flash-cat"></span>
+          <p class="flash-question"></p>
+          <small>Clique pour voir la réponse</small>
+        </div>
+        <div class="flashcard-back">
+          <p class="flash-answer"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcards-nav">
+    <button id="prevCard" class="btn">← Précédent</button>
+    <button id="nextCard" class="btn primary">Suivant →</button>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">❓</span>
+    <h2>Quiz noté</h2>
+  </div>
+  <p class="lead">Questions à choix multiples — testez vos connaissances !</p>
+
+  <div id="quizContainer"></div>
+
+  <div class="quiz-controls">
+    <button id="submitQuiz" class="btn primary">📊 Voir mon score</button>
+    <button id="resetQuiz" class="btn">🔄 Recommencer</button>
+  </div>
+
+  <div id="quizResult" class="quiz-result hidden"></div>
+</section>
+
+<!-- FICHE -->
+<section id="fiche" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">📋</span>
+    <h2>Fiche de révision</h2>
+  </div>
+
+  <div class="fiche">
+    <div class="fiche-block">
+      <h3>Généralités</h3>
+      <ul>
+        <li>Encéphale, impair et médian, sous les hémisphères</li>
+        <li>Organe de l'équilibration</li>
+        <li>Lamelles : SG superficielle (cortex) + SB profonde (+ 4 noyaux gris)</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Cortex — 3 couches (1 mm)</h3>
+      <ol>
+        <li>Moléculaire (étoilées superficielles + en panier)</li>
+        <li>Cellules de Purkinje</li>
+        <li>Couche des grains (grains + Golgi II)</li>
+      </ol>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Cellules en panier</h3>
+      <ul>
+        <li>1/3 interne de la couche moléculaire, 8-18 µm</li>
+        <li>Axone horizontal en corbeille autour des Purkinje</li>
+        <li><strong>1 cellule en panier ↔ 10 Purkinje</strong></li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Cellule de Purkinje ⭐</h3>
+      <ul>
+        <li>30-40 µm, piriforme</li>
+        <li>Dendrites en éventail, plan ⊥ à l'axe de la lamelle</li>
+        <li>1 Purkinje ↔ + de 200 000 neurones</li>
+        <li>Axone → noyaux gris profonds</li>
+        <li><strong>Efférence unique du cervelet</strong></li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Cellules à grains</h3>
+      <ul>
+        <li>7-10 µm, 2.5 millions/mm³</li>
+        <li>4-5 dendrites en griffe → glomérules de Held</li>
+        <li>Axone bifurque en T = <strong>fibres parallèles</strong> (1-1.5 mm)</li>
+        <li>Seules cellules <strong>excitatrices</strong> du cortex cérébelleux</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>2 fibres afférentes</h3>
+      <ul>
+        <li><strong>Moussues</strong> : Clarke + ponto-bulbaire → glomérule de Held → grains → Purkinje</li>
+        <li><strong>Grimpantes</strong> : olive bulbaire controlatérale → DIRECT sur Purkinje (1↔1)</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>4 noyaux gris profonds</h3>
+      <ol>
+        <li>Noyau du toit (vermis)</li>
+        <li>Globulus</li>
+        <li>Embolus</li>
+        <li>Noyau dentelé (efférences hémisphères)</li>
+      </ol>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Glomérule de Held</h3>
+      <ul>
+        <li>Îlot synaptique de 20 µm dans la couche granuleuse</li>
+        <li>Contient : terminaisons fibres moussues + dendrites des grains + dendrites Golgi II + axones Golgi II</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Fonction</h3>
+      <ul>
+        <li>Équilibre + Statique + Motricité + Précision</li>
+        <li>Sd cérébelleux : équilibre + hypotonie + dyssynergie + parole explosive</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<button id="backToTop" class="back-to-top" aria-label="Retour en haut">↑</button>
+
+<footer>
+  <p>📚 D'après le polycopié <em>Cortex cérébelleux</em>, Dr Seddiki / Bougrassa, Faculté de Médecine d'Oran 1.</p>
+  <p><small>Site personnel de révision · 2ᵉ année médecine</small> · <a href="../index.html">← Retour aux cours</a></p>
+</footer>
+
+<script src="cervelet.js"></script>
+</body>
+</html>

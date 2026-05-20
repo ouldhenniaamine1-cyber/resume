@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>L'œil — Cours interactif d'Histologie & Embryologie</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <button id="menuToggle" class="icon-btn" aria-label="Menu">☰</button>
+  <a href="../index.html" class="brand brand-link" style="text-decoration:none;color:inherit">
+    <span class="brand-logo">👁️</span>
+    <div>
+      <strong>L'œil</strong>
+      <small>UEI 05 · 2ᵉ année médecine · Oran</small>
+    </div>
+  </a>
+  <div class="topbar-actions">
+    <a href="../index.html" class="icon-btn" title="Retour aux cours" style="text-decoration:none">🏠</a>
+    <input type="search" id="searchInput" placeholder="🔍 Rechercher…" />
+    <button id="themeToggle" class="icon-btn" aria-label="Thème">🌙</button>
+    <button id="printBtn" class="icon-btn" aria-label="Imprimer">🖨️</button>
+  </div>
+</header>
+
+<!-- PROGRESS BAR -->
+<div class="progress-container"><div id="progressBar" class="progress-bar"></div></div>
+
+<!-- SIDEBAR -->
+<aside id="sidebar" class="sidebar">
+  <nav>
+    <h4>📖 Sommaire</h4>
+    <a href="#intro">1. Introduction</a>
+    <a href="#embryo">2. Embryologie</a>
+    <a href="#anatomie">3. Anatomie générale</a>
+    <a href="#tuniques">4. Les 3 tuniques</a>
+    <a href="#cornee">↳ Cornée</a>
+    <a href="#sclere">↳ Sclérotique</a>
+    <a href="#uvee">↳ Uvée</a>
+    <a href="#contenu">5. Milieux transparents</a>
+    <a href="#annexes">6. Annexes</a>
+    <a href="#retine">7. La rétine</a>
+    <a href="#couches">↳ Les 10 couches</a>
+    <a href="#cellules">↳ Cellules nerveuses</a>
+    <a href="#regions">8. Particularités régionales</a>
+    <a href="#physio">9. Histophysiologie</a>
+    <a href="#patho">10. Pathologies</a>
+    <hr/>
+    <h4>🎓 S'entraîner</h4>
+    <a href="#flashcards">🃏 Flashcards</a>
+    <a href="#quiz">❓ Quiz noté</a>
+    <a href="#fiche">📋 Fiche révision</a>
+  </nav>
+</aside>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="kicker">UEI 05 · Appareil Nerveux et Organes des Sens</p>
+    <h1>L'œil <span class="eye-emoji">👁️</span></h1>
+    <p class="subtitle">Cours interactif complet — embryologie, histologie, rétine, histophysiologie</p>
+    <div class="hero-stats">
+      <div><strong>10</strong><span>chapitres</span></div>
+      <div><strong>17</strong><span>schémas</span></div>
+      <div><strong>30+</strong><span>flashcards</span></div>
+      <div><strong>15</strong><span>questions quiz</span></div>
+    </div>
+    <a href="#intro" class="cta">Commencer le cours ↓</a>
+  </div>
+</section>
+
+<main>
+
+<!-- INTRODUCTION -->
+<section id="intro" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>Introduction</h2>
+  </div>
+  <div class="grid-2">
+    <div>
+      <p>L'œil est <strong>le seul organe de sens tertiaire</strong> du corps humain. C'est un organe spécialisé dans la <strong>détection et l'analyse des signaux lumineux</strong>.</p>
+      <p>On peut le comparer à une <strong>chambre noire</strong> dont le fond est tapissé par la rétine — structure sensorielle sensible aux <strong>photons</strong> qui donnent naissance aux influx nerveux.</p>
+    </div>
+    <div class="key-points">
+      <h4>🎯 Points clés</h4>
+      <ul>
+        <li>Organe = <strong>rétine visuelle</strong></li>
+        <li>Cellules photosensibles = <strong>cellules visuelles</strong></li>
+        <li>Stimulus = <strong>photons</strong></li>
+        <li>Sortie = <strong>nerf optique</strong> (II)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="objectives">
+    <h3>📋 Objectifs pédagogiques</h3>
+    <div class="objectives-grid">
+      <div>1. Décrire le développement embryologique</div>
+      <div>2. Identifier les trois tuniques</div>
+      <div>3. Distinguer les dix couches de la rétine</div>
+      <div>4. Décrire les cellules de la rétine</div>
+      <div>5. Donner les particularités régionales</div>
+      <div>6. Expliquer l'histophysiologie</div>
+      <div>7. Comparer les annexes</div>
+    </div>
+  </div>
+</section>
+
+<!-- EMBRYOLOGIE -->
+<section id="embryo" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>Origine embryologique</h2>
+  </div>
+
+  <p class="lead">L'œil est d'origine <strong>ectoblastique</strong> et <strong>neuroectoblastique</strong>, avec participation du <strong>mésenchyme</strong> avoisinant.</p>
+
+  <h3>Les 3 origines tissulaires</h3>
+  <div class="origin-cards">
+    <div class="origin-card neuroectoblast">
+      <div class="origin-icon">🧠</div>
+      <h4>Neuroectoblaste</h4>
+      <p>Évagination du <strong>diencéphale</strong> (prosencéphale)</p>
+      <p class="origin-derives">→ Rétine (J22)</p>
+    </div>
+    <div class="origin-card ectoblast">
+      <div class="origin-icon">🪟</div>
+      <h4>Ectoblaste</h4>
+      <p><strong>Placode cristallinienne</strong></p>
+      <p class="origin-derives">→ Cristallin<br>→ Épithélium cornéen</p>
+    </div>
+    <div class="origin-card mesenchyme">
+      <div class="origin-icon">🧬</div>
+      <h4>Mésenchyme</h4>
+      <p>Tissu situé entre ectoblaste et ébauche neuroectoblastique</p>
+      <p class="origin-derives">→ Sclérotique<br>→ Uvée<br>→ Annexes</p>
+    </div>
+  </div>
+
+  <h3>Évolution de l'ébauche oculaire en 3 stades</h3>
+  <div class="timeline-detailed">
+    <div class="timeline-step">
+      <div class="timeline-marker">J18</div>
+      <div class="timeline-content">
+        <h4>Fossette optique</h4>
+        <p>Première dépression sur la paroi du diencéphale.</p>
+      </div>
+    </div>
+    <div class="timeline-step">
+      <div class="timeline-marker">J27</div>
+      <div class="timeline-content">
+        <h4>Vésicule optique primitive</h4>
+        <p>La fossette se creuse, se dédouble et s'allonge en <strong>pédicule optique</strong>. Reste attachée au diencéphale.</p>
+      </div>
+    </div>
+    <div class="timeline-step">
+      <div class="timeline-marker">J29</div>
+      <div class="timeline-content">
+        <h4>Vésicule optique secondaire = cupule optique</h4>
+        <p>Invagination → 2 feuillets (externe + interne), initialement séparés par une fente qui disparaît.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Devenir des feuillets de la cupule optique</h3>
+  <div class="cupule-svg">
+    <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+      <!-- Cupule schematic -->
+      <defs>
+        <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#dc2626"/>
+        </marker>
+      </defs>
+      <!-- External leaflet -->
+      <path d="M 50 100 Q 150 30 250 100 L 250 130 Q 150 70 50 130 Z" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
+      <text x="150" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Feuillet externe</text>
+
+      <!-- Internal leaflet -->
+      <path d="M 50 140 Q 150 80 250 140 L 250 200 Q 150 250 50 200 Z" fill="#fde68a" stroke="#ca8a04" stroke-width="2"/>
+      <text x="150" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">Feuillet interne</text>
+
+      <!-- Arrows -->
+      <line x1="270" y1="115" x2="350" y2="80" stroke="#dc2626" stroke-width="2" marker-end="url(#arr)"/>
+      <text x="380" y="80" font-size="13" font-weight="600" fill="#1f2937">Épithélium pigmentaire</text>
+
+      <line x1="270" y1="155" x2="350" y2="155" stroke="#dc2626" stroke-width="2" marker-end="url(#arr)"/>
+      <text x="380" y="148" font-size="13" font-weight="600" fill="#1f2937">2/3 post. → Rétine visuelle</text>
+      <text x="380" y="168" font-size="11" fill="#64748b">(épithélium sensoriel)</text>
+
+      <line x1="270" y1="190" x2="350" y2="220" stroke="#dc2626" stroke-width="2" marker-end="url(#arr)"/>
+      <text x="380" y="220" font-size="13" font-weight="600" fill="#1f2937">1/3 ant. → Rétine aveugle</text>
+      <text x="380" y="240" font-size="11" fill="#64748b">(épithélium unistratifié)</text>
+    </svg>
+  </div>
+
+  <div class="info-box">
+    <strong>🧠 Voies optiques :</strong> Les <strong>prolongements (axones) des cellules ganglionnaires</strong> se regroupent pour former le <strong>nerf optique</strong>.
+  </div>
+</section>
+
+<!-- ANATOMIE GLOBALE -->
+<section id="anatomie" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>Anatomie générale du globe oculaire</h2>
+  </div>
+
+  <p class="lead">L'œil comporte une <strong>paroi</strong> (3 tuniques concentriques) et un <strong>contenu</strong> (3 milieux transparents).</p>
+
+  <div class="eye-svg-wrapper">
+    <p class="hint">💡 Survole les zones colorées pour voir leur nom et leur fonction</p>
+
+    <div class="eye-interactive">
+      <svg viewBox="0 0 700 460" class="eye-svg" xmlns="http://www.w3.org/2000/svg">
+        <!-- Sclera (outermost) -->
+        <ellipse cx="340" cy="230" rx="270" ry="210" fill="#f8fafc" stroke="#1f2937" stroke-width="3" data-label="Sclérotique" data-info="Tunique externe fibreuse, opaque, blanc de l'œil. 3 couches : épisclère, stroma, supra-choroïde." />
+
+        <!-- Choroid -->
+        <ellipse cx="340" cy="230" rx="258" ry="198" fill="#7f1d1d" data-label="Choroïde" data-info="Tunique moyenne vasculaire et pigmentée. Assure la nutrition de la rétine via la couche choriocapillaire." />
+
+        <!-- Retina -->
+        <ellipse cx="340" cy="230" rx="245" ry="186" fill="#fde68a" data-label="Rétine" data-info="Tunique interne nerveuse, organisée en 10 couches dans sa portion visuelle." />
+
+        <!-- Vitreous -->
+        <ellipse cx="355" cy="230" rx="225" ry="172" fill="#dbeafe" data-label="Corps vitré" data-info="Substance gélatineuse transparente : 90% eau + glycosaminoglycanes + fibrilles de collagène. Remplit le segment postérieur." />
+
+        <!-- Cornea -->
+        <path d="M 95 170 Q 30 230 95 290 L 110 280 Q 70 230 110 180 Z" fill="#bae6fd" stroke="#0369a1" stroke-width="2" data-label="Cornée" data-info="Tunique externe transparente (¼ antérieur), 5 couches : épithélium pavimenteux stratifié non kératinisé, Bowman, stroma avasculaire, Descemet, endothélium." />
+
+        <!-- Anterior chamber -->
+        <path d="M 110 180 L 165 195 L 165 265 L 110 280 Q 70 230 110 180 Z" fill="#e0f2fe" data-label="Chambre antérieure" data-info="Espace entre cornée et iris, contient l'humeur aqueuse." />
+
+        <!-- Iris (top) -->
+        <path d="M 165 195 L 195 210 L 195 250 L 165 265 Z" fill="#1e3a8a" data-label="Iris" data-info="Diaphragme pigmenté, sépare chambre antérieure et postérieure. Centre = pupille. 3 couches. Couleur ↔ mélanocytes." />
+
+        <!-- Pupil -->
+        <ellipse cx="195" cy="230" rx="6" ry="20" fill="#000" data-label="Pupille" data-info="Centre de l'iris. Diaphragme variable contrôlé par les muscles iriens (constricteur et dilatateur)." />
+
+        <!-- Posterior chamber -->
+        <path d="M 165 265 L 195 250 L 220 268 L 200 290 Z" fill="#f0f9ff" data-label="Chambre postérieure" data-info="Entre iris et cristallin. L'humeur aqueuse y circule avant de passer en chambre antérieure par la pupille." />
+
+        <!-- Lens -->
+        <ellipse cx="225" cy="230" rx="28" ry="48" fill="#fef9c3" stroke="#ca8a04" stroke-width="2" data-label="Cristallin" data-info="Lentille biconvexe, flexible, transparente. Converge la lumière sur la rétine. 3 couches : capsule élastique, épithélium cubique simple antérieur, fibres cristalliniennes." />
+
+        <!-- Ciliary body -->
+        <path d="M 155 175 Q 180 165 200 185 L 200 175 Q 180 160 150 170 Z" fill="#a16207" data-label="Corps ciliaire" data-info="Partie de l'uvée entre ora serrata et iris. Procès ciliaires sécrètent l'humeur aqueuse. 3 couches de muscles lisses (accommodation)." />
+        <path d="M 155 285 Q 180 295 200 275 L 200 285 Q 180 300 150 290 Z" fill="#a16207" data-label="Corps ciliaire" data-info="Partie de l'uvée entre ora serrata et iris. Procès ciliaires sécrètent l'humeur aqueuse." />
+
+        <!-- Zonule -->
+        <line x1="200" y1="190" x2="225" y2="195" stroke="#92400e" stroke-width="1.5" data-label="Zonule de Zinn" data-info="Ligament suspenseur du cristallin, fixé sur la couronne ciliaire." />
+        <line x1="200" y1="270" x2="225" y2="265" stroke="#92400e" stroke-width="1.5" data-label="Zonule de Zinn" data-info="Ligament suspenseur du cristallin." />
+
+        <!-- Schlemm canal -->
+        <circle cx="160" cy="180" r="4" fill="#06b6d4" stroke="#0e7490" stroke-width="1" data-label="Canal de Schlemm" data-info="Voie de drainage de l'humeur aqueuse à l'angle irido-cornéen." />
+
+        <!-- Macula (yellow ring) -->
+        <circle cx="585" cy="230" r="22" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,3" data-label="Macula (tache jaune)" data-info="Zone arrondie de quelques mm sur l'axe optique, jaunâtre, avasculaire. Pigment jaune dans cellules de soutien." />
+
+        <!-- Fovea -->
+        <circle cx="585" cy="230" r="9" fill="#dc2626" data-label="Fovéa centralis" data-info="Dépression de 0,5 mm au centre de la macula. Cônes uniquement (80-100k). 1 cône → 1 bipolaire → 1 ganglionnaire. Vision la plus fine." />
+
+        <!-- Optic disc / papille -->
+        <rect x="565" y="290" width="55" height="35" rx="6" fill="#fbbf24" data-label="Papille du nerf optique" data-info="Point aveugle. Convergence des fibres du nerf optique. Pas de cellules visuelles. Artère centrale de la rétine au centre." />
+
+        <!-- Optic nerve -->
+        <path d="M 600 325 L 690 380 L 670 410 L 565 345 Z" fill="#facc15" stroke="#a16207" stroke-width="2" data-label="Nerf optique (II)" data-info="Formé par les axones non myélinisés des cellules ganglionnaires regroupés. Devient myélinisé après la papille." />
+
+        <!-- Ora serrata markers -->
+        <circle cx="105" cy="80" r="5" fill="#0f766e" data-label="Ora serrata" data-info="Limite antérieure de la rétine visuelle. Continuité avec la rétine ciliaire bistratifiée. Bâtonnets disparaissent." />
+        <circle cx="105" cy="380" r="5" fill="#0f766e" data-label="Ora serrata" data-info="Limite antérieure de la rétine visuelle." />
+
+        <!-- Light rays animation -->
+        <g class="light-rays">
+          <line x1="0" y1="200" x2="60" y2="220" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,3"/>
+          <line x1="0" y1="230" x2="60" y2="230" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,3"/>
+          <line x1="0" y1="260" x2="60" y2="240" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,3"/>
+        </g>
+      </svg>
+
+      <div class="info-panel" id="eyeInfoPanel">
+        <h4>👆 Survole une structure</h4>
+        <p>Les informations détaillées s'afficheront ici.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TUNIQUES -->
+<section id="tuniques" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>Les 3 tuniques de l'œil</h2>
+  </div>
+
+  <p class="lead">De l'extérieur vers l'intérieur :</p>
+
+  <div class="tuniques-overview">
+    <div class="tunique-row tunique-externe-row">
+      <div class="tunique-num">①</div>
+      <div class="tunique-name">Tunique externe fibreuse</div>
+      <div class="tunique-parts">Sclérotique (¾ post.) + Cornée (¼ ant.)</div>
+    </div>
+    <div class="tunique-row tunique-moyenne-row">
+      <div class="tunique-num">②</div>
+      <div class="tunique-name">Tunique moyenne — Uvée</div>
+      <div class="tunique-parts">Choroïde + Corps ciliaire + Iris</div>
+    </div>
+    <div class="tunique-row tunique-interne-row">
+      <div class="tunique-num">③</div>
+      <div class="tunique-name">Tunique interne nerveuse</div>
+      <div class="tunique-parts">Rétine visuelle + Rétine aveugle (ciliaire + irienne)</div>
+    </div>
+  </div>
+
+  <!-- CORNEE -->
+  <div id="cornee" class="subsection">
+    <h3>🔵 La cornée — 5 couches</h3>
+    <div class="grid-2">
+      <div>
+        <p>Transparente, située dans le ¼ antérieur. C'est la principale lentille convergente de l'œil.</p>
+        <ol class="numbered-list cornea-list">
+          <li><strong>Épithélium pavimenteux stratifié non kératinisé</strong></li>
+          <li><strong>Membrane de Bowman</strong> — partie superficielle homogène du stroma. Fines fibrilles de collagène.</li>
+          <li><strong>Stroma avasculaire</strong> — tissu conjonctif transparent dense, <strong>60 lamelles</strong> de collagène disposées régulièrement.</li>
+          <li><strong>Membrane de Descemet</strong> — lame basale épaisse, <strong>PAS+</strong></li>
+          <li><strong>Endothélium cornéen postérieur</strong> — épithélium pavimenteux ou cubique simple. Filtration de l'humeur aqueuse.</li>
+        </ol>
+      </div>
+      <div class="cornea-schema">
+        <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+          <!-- Layer 1: Epithelium -->
+          <rect x="40" y="20" width="200" height="50" fill="#fbbf24" stroke="#92400e" stroke-width="1.5"/>
+          <text x="140" y="50" text-anchor="middle" font-size="11" font-weight="600" fill="#451a03">1. Épithélium pavim. stratifié</text>
+
+          <!-- Layer 2: Bowman -->
+          <rect x="40" y="70" width="200" height="20" fill="#f87171"/>
+          <text x="140" y="84" text-anchor="middle" font-size="10" font-weight="600" fill="white">2. Membrane de Bowman</text>
+
+          <!-- Layer 3: Stroma -->
+          <rect x="40" y="90" width="200" height="160" fill="#fef3c7" stroke="#ca8a04" stroke-width="1"/>
+          <line x1="40" y1="115" x2="240" y2="115" stroke="#d97706" stroke-width="0.5" opacity="0.5"/>
+          <line x1="40" y1="140" x2="240" y2="140" stroke="#d97706" stroke-width="0.5" opacity="0.5"/>
+          <line x1="40" y1="165" x2="240" y2="165" stroke="#d97706" stroke-width="0.5" opacity="0.5"/>
+          <line x1="40" y1="190" x2="240" y2="190" stroke="#d97706" stroke-width="0.5" opacity="0.5"/>
+          <line x1="40" y1="215" x2="240" y2="215" stroke="#d97706" stroke-width="0.5" opacity="0.5"/>
+          <text x="140" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">3. Stroma</text>
+          <text x="140" y="195" text-anchor="middle" font-size="10" fill="#92400e">(60 lamelles de collagène)</text>
+
+          <!-- Layer 4: Descemet -->
+          <rect x="40" y="250" width="200" height="20" fill="#a78bfa"/>
+          <text x="140" y="264" text-anchor="middle" font-size="10" font-weight="600" fill="white">4. Membrane de Descemet (PAS+)</text>
+
+          <!-- Layer 5: Endothelium -->
+          <rect x="40" y="270" width="200" height="35" fill="#60a5fa"/>
+          <text x="140" y="292" text-anchor="middle" font-size="11" font-weight="600" fill="white">5. Endothélium postérieur</text>
+
+          <!-- Side labels -->
+          <text x="20" y="45" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 20 45)">AVANT</text>
+          <text x="260" y="285" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90 260 285)">ARRIÈRE</text>
+
+          <!-- Arrow -->
+          <path d="M 140 320 L 140 345 M 130 335 L 140 345 L 150 335" stroke="#dc2626" stroke-width="2" fill="none"/>
+          <text x="140" y="358" text-anchor="middle" font-size="10" font-weight="600" fill="#dc2626">Humeur aqueuse</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCLEROTIQUE -->
+  <div id="sclere" class="subsection">
+    <h3>⚪ La sclérotique — 3 couches</h3>
+    <p>Opaque dans ses ¾ postérieurs. Constitue le <strong>blanc de l'œil</strong>. De dehors en dedans :</p>
+    <div class="layer-cards">
+      <div class="layer-card"><strong>1. Tissu épiscléral</strong><br><small>Vascularisé</small></div>
+      <div class="layer-card"><strong>2. Stroma</strong><br><small>Tissu conjonctif dense et régulier</small></div>
+      <div class="layer-card"><strong>3. Supra-choroïde</strong><br><small>Conjonctif lâche, fibroblastes + mélanocytes</small></div>
+    </div>
+  </div>
+
+  <!-- UVEE -->
+  <div id="uvee" class="subsection">
+    <h3>🟤 L'uvée (tunique moyenne) — 3 parties</h3>
+
+    <div class="uvee-card">
+      <h4>a. Choroïde — 4 couches</h4>
+      <div class="grid-2">
+        <ul>
+          <li><strong>Supra-choroïde</strong> : commune à la sclérotique, fibroblastes + mélanocytes</li>
+          <li><strong>Couche des vaisseaux</strong> : gros vaisseaux</li>
+          <li><strong>Couche choriocapillaire</strong> : <em>nutrition de la rétine</em></li>
+          <li><strong>Membrane de Bruch</strong> : entre choroïde et rétine. Lame basale + collagène + élastine</li>
+        </ul>
+        <div class="diagram-mini">
+          <div class="diag-layer" style="background:#7f1d1d;color:#fff">Supra-choroïde</div>
+          <div class="diag-layer" style="background:#991b1b;color:#fff">Couche des vaisseaux</div>
+          <div class="diag-layer" style="background:#dc2626;color:#fff">Choriocapillaire 🍎</div>
+          <div class="diag-layer" style="background:#fca5a5">Membrane de Bruch</div>
+          <div class="diag-layer" style="background:#fde68a">⬇ Rétine</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uvee-card">
+      <h4>b. Corps ciliaire</h4>
+      <ul>
+        <li>Partie de l'uvée entre <strong>ora serrata</strong> et <strong>iris</strong></li>
+        <li><strong>Procès ciliaires</strong> : replis radiaires sécrétant l'<strong>humeur aqueuse</strong>, formant la couronne ciliaire à laquelle est fixé le <strong>ligament suspenseur du cristallin</strong> (zonule)</li>
+        <li><strong>3 couches de muscles lisses</strong> → rôle dans l'<strong>accommodation</strong></li>
+        <li>Couche des vaisseaux + couche choriocapillaire</li>
+        <li>Face interne bordée par <strong>l'épithélium ciliaire bistratifié</strong> : externe pigmentée + interne non pigmentée</li>
+      </ul>
+    </div>
+
+    <div class="uvee-card">
+      <h4>c. Iris — 3 couches</h4>
+      <p>Sépare chambre antérieure de chambre postérieure. Centre = <strong>pupille</strong>. De l'extérieur vers l'intérieur :</p>
+      <ol>
+        <li><strong>Épithélium pavimenteux simple</strong> — en continuité avec l'épithélium cornéen</li>
+        <li><strong>Stroma conjonctif</strong> — partie ant. non vascularisée + partie post. vascularisée riche en mélanocytes & fibroblastes</li>
+        <li><strong>Épithélium pigmenté postérieur</strong> — cubique simple</li>
+      </ol>
+      <p class="info-box">🎨 La <strong>couleur de l'œil</strong> dépend de l'abondance des mélanocytes du stroma irien.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENU -->
+<section id="contenu" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2>Les 3 milieux transparents</h2>
+  </div>
+
+  <div class="media-grid">
+    <div class="media-card">
+      <div class="media-icon">💎</div>
+      <h3>Cristallin</h3>
+      <p class="media-desc">Disque biconvexe, flexible et transparent — la lentille principale qui converge les rayons sur la rétine.</p>
+      <h4>3 couches :</h4>
+      <ol>
+        <li><strong>Capsule élastique</strong> — lame basale</li>
+        <li><strong>Épithélium cubique simple antérieur</strong></li>
+        <li><strong>Fibres cristalliniennes</strong> — cellules épithéliales modifiées issues de l'équateur</li>
+      </ol>
+    </div>
+
+    <div class="media-card">
+      <div class="media-icon">💧</div>
+      <h3>Humeur aqueuse</h3>
+      <p class="media-desc">Liquide plasmatique transparent.</p>
+      <h4>Production & circulation</h4>
+      <ul>
+        <li>Produite par les cellules recouvrant les <strong>procès ciliaires</strong></li>
+        <li>Circule de la <strong>chambre postérieure</strong> vers la <strong>chambre antérieure</strong> par l'espace entre cristallin et pupille</li>
+        <li>Drainée par le <strong>canal de Schlemm</strong></li>
+      </ul>
+    </div>
+
+    <div class="media-card">
+      <div class="media-icon">🔮</div>
+      <h3>Corps vitré</h3>
+      <p class="media-desc">Substance gélatineuse transparente remplissant le segment postérieur.</p>
+      <h4>Composition</h4>
+      <ul>
+        <li><strong>~90% eau</strong> + glycosaminoglycanes</li>
+        <li><strong>Charpente</strong> : fines fibrilles de collagène entrecroisées</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ANNEXES -->
+<section id="annexes" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2>Annexes du globe oculaire</h2>
+  </div>
+
+  <div class="annexes-grid">
+    <div class="annex">
+      <h4>👁️ Conjonctive</h4>
+      <p>Muqueuse <strong>transparente</strong> tapissant les paupières et se réfléchissant sur le globe oculaire.</p>
+    </div>
+    <div class="annex">
+      <h4>🪟 Paupières</h4>
+      <p>Contiennent les <strong>glandes de Meibomius</strong> (glandes sébacées modifiées) qui modifient la tension de surface des larmes et ralentissent leur évaporation.</p>
+    </div>
+    <div class="annex">
+      <h4>💧 Glandes lacrymales</h4>
+      <p>Sécrètent les <strong>larmes</strong> qui maintiennent humides la conjonctive et la cornée.</p>
+    </div>
+    <div class="annex">
+      <h4>💪 Muscles oculo-moteurs</h4>
+      <p>Muscles <strong>extrinsèques</strong> de l'œil — assurent la motricité du globe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RETINE -->
+<section id="retine" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">07</span>
+    <h2>La rétine</h2>
+  </div>
+
+  <p class="lead">La plus profonde des 3 tuniques. Comprend 3 portions :</p>
+
+  <div class="retine-overview">
+    <div class="retine-portion">
+      <h4>Rétine irienne</h4>
+      <p>Aveugle, fine couche épithéliale tapissant l'iris</p>
+    </div>
+    <div class="retine-portion">
+      <h4>Rétine ciliaire</h4>
+      <p>Aveugle, fine couche épithéliale tapissant le corps ciliaire</p>
+    </div>
+    <div class="retine-portion retine-visuelle">
+      <h4>🌟 Rétine visuelle</h4>
+      <p>Sensible aux stimulations lumineuses. S'étend jusqu'à <strong>l'ora serrata</strong>.</p>
+    </div>
+  </div>
+
+  <!-- 10 COUCHES -->
+  <div id="couches" class="subsection">
+    <h3>📚 Les 10 couches de la rétine visuelle</h3>
+    <p>De la <strong>choroïde</strong> (extérieur) vers l'<strong>intérieur</strong> du globe :</p>
+
+    <div class="retine-layers">
+      <div class="layer-detail" style="--c:#451a03">
+        <div class="layer-num">1</div>
+        <div class="layer-body">
+          <h4>Épithélium pigmentaire</h4>
+          <p>Épithélium <strong>prismatique simple</strong>, adhérent à la choroïde. Composé de <strong>cellules pigmentaires</strong>.</p>
+          <span class="tag">Soutien</span><span class="tag">Trophique</span><span class="tag">Pourpre rétinien</span>
+        </div>
+      </div>
+
+      <div class="layer-detail" style="--c:#7c2d12">
+        <div class="layer-num">2</div>
+        <div class="layer-body">
+          <h4>Couche des cônes et bâtonnets</h4>
+          <p>Articles <strong>externes</strong> et <strong>internes</strong> des photorécepteurs.</p>
+          <span class="tag">Photoréception</span>
+        </div>
+      </div>
+
+      <div class="layer-detail" style="--c:#9a3412">
+        <div class="layer-num">3</div>
+        <div class="layer-body">
+          <h4>Membrane limitante externe</h4>
+          <p>Formée par les <strong>complexes de jonctions</strong> entre photorécepteurs et prolongements des <strong>cellules de Müller</strong>.</p>
+        </div>
+      </div>
+
+      <div class="layer-detail" style="--c:#b45309">
+        <div class="layer-num">4</div>
+        <div class="layer-body">
+          <h4>Couche granulaire externe</h4>
+          <p><strong>Corps cellulaires des photorécepteurs</strong>. Au niveau de la <strong>fovéa centralis</strong>, seuls les cônes sont présents.</p>
+          <span class="tag highlight">⭐ Fovéa : cônes uniquement</span>
+        </div>
+      </div>
+
+      <div class="layer-detail" style="--c:#ca8a04">
+        <div class="layer-num">5</div>
+        <div class="layer-body">
+          <h4>Couche plexiforme externe</h4>
+          <p><strong>Synapses</strong> entre axones des photorécepteurs ↔ prolongements des cellules <strong>bipolaires</strong> et <strong>horizontales</strong>.</p>
+          <span class="tag">Synapses</span>
+        </div>
+      </div>
+
+      <div class="layer-detail" style="--c:#65a30d">
+        <div class="layer-num">6</div>
+        <div class="layer-body">
+          <h4>Couche granulaire interne</h4>
+          <p><strong>Corps cellulaires</strong> des cellules : <strong>Müller</strong>, <strong>amacrines</strong>, <strong>bipolaires</strong>, <strong>horizontales</strong>.</p>
+        </div>
+      </div>
+
+      <div class="layer-detail" style="--c:#0d9488">
+        <div class="layer-num">7</div>
+        <div class="layer-body">
+          <h4>Couche plexiforme interne</h4>
+          <p>Synapses : dendrites des <strong>ganglionnaires</strong> ↔ axones des <strong>bipolaires</strong>. Aussi prolongements de Müller et amacrines.</p>
+          <span class="tag">Synapses</span>
+        </div>
+      </div>
+
+      <div class="layer-detail" style="--c:#0369a1">
+        <div class="layer-num">8</div>
+        <div class="layer-body">
+          <h4>Couche des cellules ganglionnaires</h4>
+          <p>Corps cellulaires des <strong>neurones multipolaires</strong> et cellules gliales.</p>
+        </div>
+      </div>
+
+      <div class="layer-detail" style="--c:#4338ca">
+        <div class="layer-num">9</div>
+        <div class="layer-body">
+          <h4>Couche des fibres optiques</h4>
+          <p>Axones <strong>non myélinisés</strong> des cellules ganglionnaires se rassemblent pour former le <strong>nerf optique</strong>.</p>
+          <span class="tag">→ Nerf optique</span>
+        </div>
+      </div>
+
+      <div class="layer-detail" style="--c:#7e22ce">
+        <div class="layer-num">10</div>
+        <div class="layer-body">
+          <h4>Membrane limitante interne</h4>
+          <p>Comporte les <strong>extrémités des prolongements cytoplasmiques</strong> des cellules de Müller.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mnemo-box">
+      <h4>🧠 Astuce mnémotechnique</h4>
+      <p>Toujours alterné <strong>granulaire ↔ plexiforme</strong> :<br>
+      <em>Pigmentaire → Cônes-Bâtonnets → Limitante ext. → <strong>Granulaire ext.</strong> → <strong>Plexiforme ext.</strong> → <strong>Granulaire int.</strong> → <strong>Plexiforme int.</strong> → Ganglionnaire → Fibres optiques → Limitante int.</em></p>
+    </div>
+  </div>
+
+  <!-- CELLULES -->
+  <div id="cellules" class="subsection">
+    <h3>🔬 Les 4 types cellulaires de la rétine sensorielle</h3>
+
+    <div class="cells-grid">
+      <div class="cell-card">
+        <div class="cell-icon">👁️</div>
+        <h4>Photorécepteurs</h4>
+        <p>Cellules visuelles à <strong>cônes</strong> et <strong>bâtonnets</strong></p>
+      </div>
+      <div class="cell-card">
+        <div class="cell-icon">⚡</div>
+        <h4>Conduction</h4>
+        <p><strong>Bipolaires</strong> et <strong>ganglionnaires</strong> (multipolaires)</p>
+      </div>
+      <div class="cell-card">
+        <div class="cell-icon">🔗</div>
+        <h4>Association</h4>
+        <p><strong>Horizontales</strong> et <strong>amacrines</strong></p>
+      </div>
+      <div class="cell-card">
+        <div class="cell-icon">🏗️</div>
+        <h4>Soutien</h4>
+        <p>Cellules de <strong>Müller</strong></p>
+      </div>
+    </div>
+
+    <h3>Structure d'une cellule visuelle</h3>
+    <div class="grid-2">
+      <div>
+        <ol class="cell-anatomy">
+          <li>
+            <strong>Article externe</strong>
+            <p>Allongé (bâtonnets) ou conique (cônes). Renferme des <strong>disques membranaires aplatis empilés</strong>, supports du pigment visuel : <span class="pigment rhodopsine">Rhodopsine</span> (bâtonnets), <span class="pigment iodopsine">Iodopsine</span> (cônes).</p>
+          </li>
+          <li>
+            <strong>Cil connectif</strong>
+            <p>Relie les 2 articles.</p>
+          </li>
+          <li>
+            <strong>Article interne</strong>
+            <p>Corpuscule basal du cil + centriole + mitochondries++ + Golgi très développé. <strong>C'est le lieu de synthèse du pigment visuel.</strong></p>
+          </li>
+          <li>
+            <strong>Corps cellulaire</strong>
+            <p>Contient le noyau.</p>
+          </li>
+          <li>
+            <strong>Expansion interne</strong>
+            <p>Se termine par un <strong>renflement synaptique</strong> volumineux dans les cônes. S'articule avec les dendrites des cellules bipolaires.</p>
+          </li>
+        </ol>
+      </div>
+      <div class="photoreceptor-svg">
+        <svg viewBox="0 0 350 500" xmlns="http://www.w3.org/2000/svg">
+          <!-- BÂTONNET -->
+          <g>
+            <text x="80" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#7c2d12">BÂTONNET</text>
+            <!-- Article externe (cylindrique) -->
+            <rect x="65" y="30" width="30" height="120" fill="#7c2d12" stroke="#451a03" stroke-width="1.5"/>
+            <line x1="65" y1="50" x2="95" y2="50" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="65" y1="65" x2="95" y2="65" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="65" y1="80" x2="95" y2="80" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="65" y1="95" x2="95" y2="95" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="65" y1="110" x2="95" y2="110" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="65" y1="125" x2="95" y2="125" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="65" y1="140" x2="95" y2="140" stroke="#fde68a" stroke-width="0.8"/>
+            <!-- Cil connectif -->
+            <rect x="76" y="150" width="8" height="15" fill="#dc2626"/>
+            <!-- Article interne -->
+            <rect x="62" y="165" width="36" height="80" fill="#fbbf24" stroke="#92400e" stroke-width="1.5"/>
+            <circle cx="80" cy="190" r="3" fill="#dc2626"/>
+            <circle cx="73" cy="210" r="2" fill="#7c2d12"/>
+            <circle cx="87" cy="215" r="2" fill="#7c2d12"/>
+            <circle cx="78" cy="230" r="2" fill="#7c2d12"/>
+            <!-- Corps cellulaire -->
+            <ellipse cx="80" cy="280" rx="22" ry="30" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+            <circle cx="80" cy="280" r="14" fill="#a16207"/>
+            <!-- Expansion interne -->
+            <line x1="80" y1="310" x2="80" y2="430" stroke="#92400e" stroke-width="2"/>
+            <!-- Sphérule -->
+            <circle cx="80" cy="440" r="10" fill="#92400e"/>
+            <text x="80" y="475" text-anchor="middle" font-size="10" fill="#7c2d12">Sphérule</text>
+          </g>
+
+          <!-- CÔNE -->
+          <g>
+            <text x="240" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0369a1">CÔNE</text>
+            <!-- Article externe (conique) -->
+            <path d="M 220 30 L 260 30 L 250 150 L 230 150 Z" fill="#0369a1" stroke="#0c4a6e" stroke-width="1.5"/>
+            <line x1="222" y1="50" x2="258" y2="50" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="225" y1="70" x2="255" y2="70" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="228" y1="90" x2="252" y2="90" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="230" y1="110" x2="250" y2="110" stroke="#fde68a" stroke-width="0.8"/>
+            <line x1="232" y1="130" x2="248" y2="130" stroke="#fde68a" stroke-width="0.8"/>
+            <!-- Cil connectif -->
+            <rect x="236" y="150" width="8" height="15" fill="#dc2626"/>
+            <!-- Article interne -->
+            <rect x="220" y="165" width="40" height="80" fill="#fbbf24" stroke="#92400e" stroke-width="1.5"/>
+            <circle cx="240" cy="190" r="3" fill="#dc2626"/>
+            <circle cx="232" cy="210" r="2" fill="#7c2d12"/>
+            <circle cx="248" cy="215" r="2" fill="#7c2d12"/>
+            <circle cx="238" cy="230" r="2" fill="#7c2d12"/>
+            <!-- Corps cellulaire -->
+            <ellipse cx="240" cy="270" rx="24" ry="28" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+            <circle cx="240" cy="270" r="14" fill="#0c4a6e"/>
+            <!-- Expansion interne -->
+            <line x1="240" y1="298" x2="240" y2="420" stroke="#0369a1" stroke-width="2"/>
+            <!-- Pédicule -->
+            <path d="M 218 425 L 262 425 L 255 450 L 225 450 Z" fill="#0c4a6e"/>
+            <text x="240" y="475" text-anchor="middle" font-size="10" fill="#0369a1">Pédicule</text>
+          </g>
+
+          <!-- Labels middle -->
+          <line x1="105" y1="90" x2="170" y2="90" stroke="#1f2937" stroke-width="1" stroke-dasharray="2,2"/>
+          <text x="160" y="86" text-anchor="end" font-size="9" font-weight="600" fill="#1f2937">Article externe</text>
+          <text x="160" y="98" text-anchor="end" font-size="8" fill="#64748b">(disques + pigment)</text>
+
+          <line x1="105" y1="200" x2="170" y2="200" stroke="#1f2937" stroke-width="1" stroke-dasharray="2,2"/>
+          <text x="160" y="196" text-anchor="end" font-size="9" font-weight="600" fill="#1f2937">Article interne</text>
+          <text x="160" y="208" text-anchor="end" font-size="8" fill="#64748b">(synthèse pigment)</text>
+
+          <line x1="105" y1="280" x2="170" y2="280" stroke="#1f2937" stroke-width="1" stroke-dasharray="2,2"/>
+          <text x="160" y="285" text-anchor="end" font-size="9" font-weight="600" fill="#1f2937">Corps cellulaire</text>
+
+          <line x1="105" y1="430" x2="170" y2="430" stroke="#1f2937" stroke-width="1" stroke-dasharray="2,2"/>
+          <text x="160" y="435" text-anchor="end" font-size="9" font-weight="600" fill="#1f2937">Synapse</text>
+        </svg>
+      </div>
+    </div>
+
+    <h3>📊 Comparaison Cônes vs Bâtonnets</h3>
+    <table class="cb-table">
+      <thead>
+        <tr>
+          <th>Critère</th>
+          <th>🌙 Bâtonnets</th>
+          <th>☀️ Cônes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th>Nombre</th><td>120 millions</td><td>6–7 millions</td></tr>
+        <tr><th>Pigment(s)</th><td><strong>Rhodopsine</strong> (1 seul)</td><td><strong>Iodopsines</strong> (3 : <span style="color:#16a34a">vert</span>, <span style="color:#dc2626">rouge</span>, <span style="color:#2563eb">bleu</span>)</td></tr>
+        <tr><th>Vision</th><td>Basse lumière (nuit, crépuscule)</td><td>Vision des couleurs (jour)</td></tr>
+        <tr><th>Article externe</th><td>Allongé / cylindrique</td><td>Conique</td></tr>
+        <tr><th>Noyau</th><td>Plutôt interne</td><td>Plutôt externe</td></tr>
+        <tr><th>Terminaison synaptique</th><td>Sphérule</td><td>Pédicule (plus large)</td></tr>
+        <tr><th>Localisation</th><td>Périphérie de la rétine</td><td>Concentrés à la fovéa</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Détail des autres cellules</h3>
+    <div class="cells-detail-grid">
+      <div class="cell-detail">
+        <h4>🔵 Cellules bipolaires <span class="tag">Conduction</span></h4>
+        <ul>
+          <li>Les <strong>plus nombreuses</strong></li>
+          <li><strong>Cytone</strong> : couche granulaire interne</li>
+          <li><strong>Dendrites externes</strong> : synapse en couche plexiforme externe</li>
+          <li><strong>Axone interne</strong> : synapse avec ganglionnaires en couche plexiforme interne</li>
+        </ul>
+      </div>
+      <div class="cell-detail">
+        <h4>🟣 Cellules ganglionnaires <span class="tag">Conduction</span></h4>
+        <ul>
+          <li><strong>Multipolaires</strong>, cytone volumineux à noyau arrondi</li>
+          <li>Dans la <strong>couche ganglionnaire</strong></li>
+          <li><strong>Axone très long</strong> → devient <strong>myélinisé</strong> dans le nerf optique</li>
+          <li>Dendrites synapsent avec axones des bipolaires (plexiforme interne)</li>
+        </ul>
+      </div>
+      <div class="cell-detail">
+        <h4>🟡 Cellules horizontales & amacrines <span class="tag">Association</span></h4>
+        <ul>
+          <li>Situées dans la <strong>couche granulaire interne</strong></li>
+          <li>Dendrites & axones synapsent en plexiforme interne</li>
+          <li>L'axone de la cellule <strong>amacrine est bien défini</strong></li>
+        </ul>
+      </div>
+      <div class="cell-detail">
+        <h4>🟢 Cellules de Müller <span class="tag">Soutien</span></h4>
+        <ul>
+          <li>Remplissent par leurs corps et prolongements <strong>tous les espaces restants</strong> entre les cellules nerveuses</li>
+          <li>Forment les <strong>2 membranes limitantes</strong> (externe et interne)</li>
+        </ul>
+      </div>
+      <div class="cell-detail">
+        <h4>⚫ Cellules pigmentaires <span class="tag">Soutien</span></h4>
+        <ul>
+          <li>Forment un <strong>épithélium prismatique simple</strong></li>
+          <li>Adhérent à la choroïde (membrane de Bruch)</li>
+          <li>3 fonctions : soutien/protection, élaboration du pourpre rétinien, nutrition</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGIONS -->
+<section id="regions" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">08</span>
+    <h2>Particularités régionales</h2>
+  </div>
+
+  <div class="region-cards">
+    <div class="region-card">
+      <h3>🟡 Macula (tache jaune)</h3>
+      <ul>
+        <li>Située sur l'<strong>axe optique</strong></li>
+        <li>Zone arrondie de quelques mm de diamètre</li>
+        <li>Apparaît <strong>jaunâtre</strong> et <strong>avasculaire</strong> au fond d'œil</li>
+        <li>Teinte due au <strong>pigment jaune</strong> dans les cellules de soutien</li>
+      </ul>
+    </div>
+
+    <div class="region-card highlight-card">
+      <h3>🎯 Fovéa centralis</h3>
+      <p><strong>Dépression de 0,5 mm</strong> au centre de la macula = zone de plus grande sensibilité.</p>
+      <h4>Disparition des couches :</h4>
+      <ul>
+        <li>❌ Couches plexiformes</li>
+        <li>❌ Couche granulaire interne</li>
+        <li>❌ Cellules multipolaires</li>
+        <li>❌ Fibres du nerf optique</li>
+        <li>✅ <strong>Couche granulaire externe très haute</strong></li>
+      </ul>
+      <p>→ Forme un <strong>V ouvert</strong></p>
+      <h4>Cellules :</h4>
+      <ul>
+        <li><strong>Cônes uniquement</strong> (80 000 – 100 000)</li>
+        <li><strong>1 cône → 1 bipolaire → 1 multipolaire</strong></li>
+      </ul>
+    </div>
+
+    <div class="region-card">
+      <h3>⚪ Papille du nerf optique</h3>
+      <ul>
+        <li>= <strong>Point aveugle</strong> de la rétine</li>
+        <li><strong>Aucune cellule visuelle</strong></li>
+        <li>Convergence des fibres du nerf optique</li>
+        <li>Au centre : <strong>artère centrale de la rétine</strong> (vascularisation visible au fond d'œil)</li>
+      </ul>
+    </div>
+
+    <div class="region-card">
+      <h3>〰️ Ora serrata</h3>
+      <ul>
+        <li><strong>Limite antérieure</strong> de la rétine visuelle</li>
+        <li>Continuité avec la rétine ciliaire <strong>bistratifiée</strong></li>
+        <li>Forme des <strong>arcades à concavité antérieure</strong></li>
+        <li>Les 2 couches granulaires fusionnent</li>
+        <li>Bâtonnets moins longs, rares puis disparaissent</li>
+        <li>Cellules de Müller deviennent plus volumineuses</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>🎯 Pourquoi la fovéa a-t-elle la meilleure acuité ?</h3>
+  <div class="conditions-grid">
+    <div class="condition">
+      <div class="condition-icon">📐</div>
+      <h4>Morphologique</h4>
+      <p>Les <strong>cônes</strong> sont les seuls récepteurs de la fovéa</p>
+    </div>
+    <div class="condition">
+      <div class="condition-icon">🎯</div>
+      <h4>Topographique</h4>
+      <p>La fovéa se situe sur l'<strong>axe optique</strong> de l'œil</p>
+    </div>
+    <div class="condition">
+      <div class="condition-icon">🔗</div>
+      <h4>Synaptologique</h4>
+      <p><strong>1 cône → 1 bipolaire → 1 ganglionnaire</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- HISTOPHYSIOLOGIE -->
+<section id="physio" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">09</span>
+    <h2>Histophysiologie de la vision</h2>
+  </div>
+
+  <h3>Parcours de la lumière</h3>
+  <div class="vision-flow">
+    <div class="flow-step"><div class="flow-icon">☀️</div><strong>Photons</strong><small>Lumière visible</small></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="flow-icon">👁️</div><strong>Traversent toute la rétine</strong></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="flow-icon">🪞</div><strong>Réflexion</strong><small>Épithélium pigmentaire</small></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="flow-icon">🔴</div><strong>Cellules visuelles</strong><small>Cônes / bâtonnets</small></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="flow-icon">🔵</div><strong>Cellules bipolaires</strong></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="flow-icon">🟣</div><strong>Cellules ganglionnaires</strong></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="flow-icon">🧠</div><strong>Nerf optique</strong><small>Cerveau</small></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="info-box">
+      <h4>📉 Convergence (en dehors de la fovéa)</h4>
+      <p>Cellules visuelles &gt; bipolaires &gt; ganglionnaires</p>
+      <p><small>Plusieurs photorécepteurs convergent sur une bipolaire, plusieurs bipolaires sur une ganglionnaire.</small></p>
+    </div>
+    <div class="info-box accent-box">
+      <h4>🎯 À la fovéa centralis</h4>
+      <p>Connexion 1:1:1</p>
+      <p><small>1 cône → 1 bipolaire → 1 ganglionnaire = acuité maximale</small></p>
+    </div>
+  </div>
+
+  <h3>🌗 Vision diurne vs nocturne</h3>
+  <div class="grid-2">
+    <div class="vision-card vision-night">
+      <h4>🌙 Vision nocturne</h4>
+      <p>Rôle des <strong>bâtonnets</strong></p>
+      <ul>
+        <li>Vision en basse lumière</li>
+        <li>Crépusculaire</li>
+        <li>Pigment : <strong>Rhodopsine</strong></li>
+      </ul>
+    </div>
+    <div class="vision-card vision-day">
+      <h4>☀️ Vision diurne</h4>
+      <p>Rôle des <strong>cônes</strong></p>
+      <ul>
+        <li>Vision discriminative</li>
+        <li>Vision des couleurs</li>
+        <li>Pigments : <strong>Iodopsines</strong> (vert, rouge, bleu)</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>3 fonctions essentielles de l'épithélium pigmentaire</h3>
+  <div class="functions-grid">
+    <div class="function-card">
+      <div class="function-icon">🛡️</div>
+      <h4>Soutien & protection</h4>
+      <p>Des cônes et bâtonnets par l'intermédiaire de ses <strong>franges</strong></p>
+    </div>
+    <div class="function-card">
+      <div class="function-icon">🟣</div>
+      <h4>Élaboration</h4>
+      <p>Du <strong>pourpre rétinien</strong></p>
+    </div>
+    <div class="function-card">
+      <div class="function-icon">🍎</div>
+      <h4>Trophique</h4>
+      <p>Nutrition du <strong>tiers externe</strong> de la rétine</p>
+    </div>
+  </div>
+</section>
+
+<!-- PATHOLOGIES -->
+<section id="patho" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">10</span>
+    <h2>Pathologies</h2>
+  </div>
+
+  <div class="patho-grid">
+    <div class="patho-card">
+      <div class="patho-icon">🔴</div>
+      <h3>Glaucome</h3>
+      <ul>
+        <li><strong>Élévation de la pression intra-oculaire</strong></li>
+        <li>Cause : <strong>obstruction</strong> empêchant l'humeur aqueuse d'être résorbée au niveau de la chambre antérieure</li>
+        <li>Si méconnu et non traité : <strong>endommagement du nerf optique</strong> → cécité</li>
+      </ul>
+    </div>
+    <div class="patho-card">
+      <div class="patho-icon">🟠</div>
+      <h3>Décollement de la rétine</h3>
+      <ul>
+        <li>Souvent suite à un <strong>traumatisme</strong></li>
+        <li><strong>Dissociation</strong> entre rétine neurosensorielle et épithélium pigmentaire</li>
+        <li>Lésions <strong>ischémiques</strong> des neurones</li>
+        <li>Cause de <strong>cécité partielle</strong></li>
+        <li>Traitement : <strong>chirurgical</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FLASHCARDS -->
+<section id="flashcards" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">🃏</span>
+    <h2>Flashcards de révision</h2>
+  </div>
+  <p class="lead">Clique sur une carte pour la retourner. Idéal pour réviser !</p>
+
+  <div class="flashcards-controls">
+    <select id="flashCategory">
+      <option value="all">Toutes les catégories</option>
+      <option value="embryo">Embryologie</option>
+      <option value="anatomie">Anatomie</option>
+      <option value="retine">Rétine</option>
+      <option value="cellules">Cellules</option>
+      <option value="physio">Histophysiologie</option>
+      <option value="patho">Pathologies</option>
+    </select>
+    <button id="shuffleBtn" class="btn">🔀 Mélanger</button>
+    <span class="flash-counter">Carte <strong id="flashCurrent">1</strong> / <span id="flashTotal">0</span></span>
+  </div>
+
+  <div class="flashcard-container">
+    <div class="flashcard" id="flashcard">
+      <div class="flashcard-inner">
+        <div class="flashcard-front">
+          <span class="flash-cat"></span>
+          <p class="flash-question"></p>
+          <small>Clique pour voir la réponse</small>
+        </div>
+        <div class="flashcard-back">
+          <p class="flash-answer"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcards-nav">
+    <button id="prevCard" class="btn">← Précédent</button>
+    <button id="nextCard" class="btn primary">Suivant →</button>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">❓</span>
+    <h2>Quiz noté</h2>
+  </div>
+  <p class="lead">15 questions à choix multiples — testez vos connaissances !</p>
+
+  <div id="quizContainer"></div>
+
+  <div class="quiz-controls">
+    <button id="submitQuiz" class="btn primary">📊 Voir mon score</button>
+    <button id="resetQuiz" class="btn">🔄 Recommencer</button>
+  </div>
+
+  <div id="quizResult" class="quiz-result hidden"></div>
+</section>
+
+<!-- FICHE -->
+<section id="fiche" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">📋</span>
+    <h2>Fiche de révision</h2>
+  </div>
+
+  <div class="fiche">
+    <div class="fiche-block">
+      <h3>Embryologie — l'essentiel</h3>
+      <ul>
+        <li>Origine : <strong>ectoblaste</strong> + <strong>neuroectoblaste</strong> + mésenchyme</li>
+        <li>Stades : <strong>J18</strong> fossette → <strong>J27</strong> vésicule primitive → <strong>J29</strong> cupule optique</li>
+        <li>Cupule : feuillet ext. → épithélium pigmentaire ; feuillet int. → rétine</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Tuniques (extérieur → intérieur)</h3>
+      <table class="fiche-table">
+        <tr><td>① Externe fibreuse</td><td>Sclérotique (3) + Cornée (5)</td></tr>
+        <tr><td>② Moyenne (uvée)</td><td>Choroïde (4) + Corps ciliaire + Iris (3)</td></tr>
+        <tr><td>③ Interne nerveuse</td><td>Rétine visuelle + aveugle</td></tr>
+      </table>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Cornée (5 couches)</h3>
+      <p>Épithélium pavimenteux strat. → <strong>Bowman</strong> → Stroma (60 lamelles) → <strong>Descemet</strong> (PAS+) → Endothélium</p>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Choroïde (4 couches)</h3>
+      <p>Supra-choroïde → Vaisseaux → <strong>Choriocapillaire</strong> (nutrition) → <strong>Bruch</strong></p>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Rétine visuelle — 10 couches (de la choroïde vers l'intérieur)</h3>
+      <ol>
+        <li>Épithélium pigmentaire</li>
+        <li>Cônes & bâtonnets</li>
+        <li>Limitante externe</li>
+        <li>Granulaire externe (corps photoréc.)</li>
+        <li>Plexiforme externe</li>
+        <li>Granulaire interne (Müller, amacr., bipol., horiz.)</li>
+        <li>Plexiforme interne</li>
+        <li>Cellules ganglionnaires</li>
+        <li>Fibres optiques</li>
+        <li>Limitante interne</li>
+      </ol>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Cônes vs Bâtonnets</h3>
+      <table class="fiche-table">
+        <tr><th></th><th>Bâtonnets</th><th>Cônes</th></tr>
+        <tr><td>Nb</td><td>120 M</td><td>6-7 M</td></tr>
+        <tr><td>Pigment</td><td>Rhodopsine</td><td>Iodopsines (3)</td></tr>
+        <tr><td>Vision</td><td>Nuit</td><td>Couleurs / jour</td></tr>
+        <tr><td>Term.</td><td>Sphérule</td><td>Pédicule</td></tr>
+      </table>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Particularités régionales</h3>
+      <ul>
+        <li><strong>Macula</strong> (tache jaune) : axe optique, avasculaire</li>
+        <li><strong>Fovéa</strong> : 0,5 mm, V ouvert, cônes++, 1:1:1</li>
+        <li><strong>Papille</strong> : point aveugle, artère centrale de la rétine</li>
+        <li><strong>Ora serrata</strong> : limite ant. de la rétine visuelle</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Épithélium pigmentaire — 3 fonctions</h3>
+      <ol>
+        <li>Soutien & protection (franges)</li>
+        <li>Élaboration du pourpre rétinien</li>
+        <li>Trophique (1/3 ext. de la rétine)</li>
+      </ol>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Pathologies clés</h3>
+      <ul>
+        <li><strong>Glaucome</strong> : ↑ PIO, obstruction humeur aqueuse, lésion nerf optique</li>
+        <li><strong>Décollement</strong> : dissociation rétine/EP, ischémie, traitement chirurgical</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- BACK TO TOP -->
+<button id="backToTop" class="back-to-top" aria-label="Retour en haut">↑</button>
+
+<!-- FOOTER -->
+<footer>
+  <p>📚 D'après le polycopié <em>UEI 05 — L'œil</em>, Dr N. Benzazoua, Université d'Oran 1, 2025/2026</p>
+  <p><small>Site personnel de révision · Histologie & Embryologie · 2ᵉ année médecine</small> · <a href="../index.html">← Retour aux cours</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

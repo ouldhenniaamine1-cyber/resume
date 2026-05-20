@@ -1,0 +1,315 @@
+/* ========================================
+   CORTEX CÉRÉBRAL — surcharges thématiques (violet)
+   ======================================== */
+
+:root {
+  --accent: #7c3aed;
+  --accent-light: #ede9fe;
+  --accent-dark: #5b21b6;
+  --gradient-hero: linear-gradient(135deg, #4c1d95 0%, #7c3aed 50%, #c084fc 100%);
+  --gradient-card: linear-gradient(135deg, #faf5ff 0%, #ede9fe 100%);
+}
+
+[data-theme="dark"] {
+  --accent-light: rgba(124, 58, 237, .15);
+  --gradient-card: linear-gradient(135deg, rgba(124, 58, 237, .1) 0%, rgba(192, 132, 252, .1) 100%);
+}
+
+.brand-link { text-decoration: none; color: inherit; }
+.home-btn { font-size: 1.2rem; }
+
+/* ========== PALLIUM CARDS ========== */
+.pallium-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.pallium-card {
+  padding: 1.8rem;
+  border-radius: var(--radius-lg);
+  border-top: 5px solid;
+  background: var(--bg-soft);
+}
+.archeo-card { border-color: #b45309; }
+.neo-card { border-color: var(--accent); background: var(--gradient-card); }
+[data-theme="dark"] .neo-card { background: rgba(124, 58, 237, .1); }
+
+.pallium-emoji { font-size: 3rem; margin-bottom: .5rem; }
+.pallium-tag {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: .75rem;
+  font-weight: 700;
+  margin-bottom: .8rem;
+  letter-spacing: .05em;
+}
+.archeo-card .pallium-tag { background: #b45309; }
+.pallium-card h4 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  margin-bottom: .3rem;
+}
+.archeo-card h4 { color: #b45309; }
+.pallium-card h5 {
+  margin: 1rem 0 .4rem;
+  color: var(--text);
+  font-size: .95rem;
+  font-weight: 700;
+}
+.pallium-anc {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--border);
+}
+.archeo-layers { margin-top: .5rem; }
+.archeo-layer-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  gap: .5rem;
+  align-items: center;
+  padding: .6rem .8rem;
+  background: var(--bg-card);
+  border-radius: 8px;
+  margin-bottom: .5rem;
+  font-size: .88rem;
+}
+.position {
+  color: var(--text-muted);
+  font-size: .8rem;
+  font-weight: 600;
+}
+.archeo-layer-row strong { color: var(--accent); }
+.role {
+  background: var(--accent);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: .75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info-mini {
+  margin-top: .8rem;
+  padding: .6rem .9rem;
+  background: var(--bg-card);
+  border-radius: 8px;
+  font-size: .85rem;
+  border-left: 3px solid var(--accent);
+}
+
+/* ========== CELLS OVERVIEW ========== */
+.cells-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: .8rem;
+  margin: 1.5rem 0;
+}
+.cell-overview-card {
+  background: var(--bg-soft);
+  padding: 1rem .8rem;
+  border-radius: var(--radius);
+  text-align: center;
+  border: 2px solid var(--border);
+  transition: transform .2s;
+  position: relative;
+}
+.cell-overview-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+.cell-overview-card.primary-cells {
+  background: var(--gradient-card);
+  border-color: var(--accent);
+}
+.cell-icon-big {
+  font-size: 2.2rem;
+  margin-bottom: .3rem;
+}
+.cell-overview-card h4 {
+  font-size: .9rem;
+  color: var(--text);
+  margin-bottom: .3rem;
+}
+.cell-tag {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 1px 8px;
+  border-radius: 8px;
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+/* ========== PYRAMIDAL & STELLATE SVG ========== */
+.pyramidal-svg, .stellate-svg {
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pyramidal-svg svg, .stellate-svg svg { max-width: 100%; height: auto; }
+
+.pyramide-size {
+  background: var(--bg-soft);
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  border: 2px solid var(--border);
+}
+.size-emoji { font-size: 2.5rem; margin-bottom: .5rem; letter-spacing: .2em; }
+.pyramide-size h5 {
+  color: var(--accent);
+  margin-bottom: .5rem;
+  font-size: 1rem;
+}
+
+/* ========== OTHER CELLS ========== */
+.other-cells-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.other-cell {
+  background: var(--bg-soft);
+  padding: 1.3rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--accent);
+  transition: transform .2s, box-shadow .2s;
+}
+.other-cell:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.other-icon { font-size: 2.2rem; margin-bottom: .5rem; }
+.other-cell h4 {
+  color: var(--accent);
+  margin-bottom: .5rem;
+  font-size: 1.05rem;
+}
+.other-cell ul, .other-cell p { font-size: .9rem; }
+
+/* ========== CORTEX LAYERS ========== */
+.cortex-layers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 1.5rem 0;
+}
+.cortex-layer {
+  display: flex;
+  background: var(--c);
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+.cortex-layer:hover {
+  transform: translateX(8px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+}
+.cortex-layer .layer-num {
+  background: rgba(255,255,255,.2);
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  flex-shrink: 0;
+}
+.cortex-layer .layer-body {
+  padding: 1rem 1.2rem;
+  flex: 1;
+}
+.cortex-layer h4 {
+  color: white;
+  margin: 0 0 .5rem;
+  font-size: 1.1rem;
+}
+.cortex-layer ul {
+  margin: 0 0 .5rem;
+  padding-left: 1.2rem;
+}
+.cortex-layer li {
+  font-size: .88rem;
+  margin-bottom: .2rem;
+}
+.cortex-layer strong { color: #fde68a; }
+
+.strie {
+  display: inline-block;
+  background: rgba(0,0,0,.25);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: .75rem;
+  font-weight: 600;
+  margin-right: .4rem;
+  margin-top: .3rem;
+}
+.strie.receptor { background: #16a34a; }
+.strie.effector { background: #dc2626; }
+.strie strong { color: #fde68a; }
+
+/* ========== AIRES ========== */
+.aires-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.aire-card {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  border-top: 5px solid var(--accent);
+}
+.aire-homo { border-top-color: var(--accent); }
+.aire-effector { border-top-color: #dc2626; }
+.aire-receptor { border-top-color: #16a34a; }
+
+.aire-icon { font-size: 3rem; margin-bottom: .5rem; }
+.aire-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+}
+.aire-tag {
+  display: inline-block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: .75rem;
+  font-weight: 600;
+  margin-bottom: .8rem;
+  color: var(--text-muted);
+}
+.aire-effector h4 { color: #dc2626; }
+.aire-receptor h4 { color: #16a34a; }
+
+/* ========== COLUMNS SVG ========== */
+.columns-svg {
+  background: var(--bg-soft);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin: 1rem 0;
+  text-align: center;
+}
+.columns-svg svg { max-width: 100%; height: auto; }
+
+/* Override flashcard back to purple */
+.flashcard-back {
+  background: linear-gradient(135deg, #4c1d95, #7c3aed) !important;
+}

@@ -1,0 +1,172 @@
+/* ========================================
+   ORGANES DES SENS — surcharges thématiques (rose)
+   ======================================== */
+
+:root {
+  --accent: #ec4899;
+  --accent-light: #fce7f3;
+  --accent-dark: #9d174d;
+  --gradient-hero: linear-gradient(135deg, #831843 0%, #ec4899 50%, #fbcfe8 100%);
+  --gradient-card: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+}
+
+[data-theme="dark"] {
+  --accent-light: rgba(236, 72, 153, .15);
+  --gradient-card: linear-gradient(135deg, rgba(236, 72, 153, .1) 0%, rgba(251, 207, 232, .1) 100%);
+}
+
+.brand-link { text-decoration: none; color: inherit; }
+.home-btn { font-size: 1.2rem; }
+
+/* ========== RECEPTEURS GRID ========== */
+.receptor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.receptor-card {
+  background: var(--bg-soft);
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  border-top: 4px solid var(--accent);
+  transition: transform .2s;
+}
+.receptor-card:hover { transform: translateY(-3px); }
+.receptor-icon { font-size: 2.5rem; margin-bottom: .3rem; }
+.receptor-card h4 { color: var(--accent-dark); margin-bottom: .2rem; }
+[data-theme="dark"] .receptor-card h4 { color: var(--accent); }
+
+/* ========== TYPE D'ORGANE ========== */
+.organe-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.organe-type {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-left: 5px solid var(--accent);
+}
+.organe-type.primaire { border-left-color: #f59e0b; }
+.organe-type.secondaire { border-left-color: #0ea5e9; }
+.organe-type.tertiaire { border-left-color: #7c3aed; }
+.organe-type h4 { margin-bottom: .5rem; }
+.organe-type.primaire h4 { color: #b45309; }
+.organe-type.secondaire h4 { color: #0369a1; }
+.organe-type.tertiaire h4 { color: #5b21b6; }
+.organe-tag {
+  display: inline-block;
+  font-size: .72rem;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  background: var(--accent);
+  color: white;
+}
+.organe-type.primaire .organe-tag { background: #f59e0b; }
+.organe-type.secondaire .organe-tag { background: #0ea5e9; }
+.organe-type.tertiaire .organe-tag { background: #7c3aed; }
+
+.flow-organe {
+  background: var(--bg-card);
+  padding: .6rem .8rem;
+  border-radius: 8px;
+  margin-top: .6rem;
+  font-size: .85rem;
+  border-left: 3px solid;
+  font-family: 'Poppins', sans-serif;
+}
+.organe-type.primaire .flow-organe { border-left-color: #f59e0b; }
+.organe-type.secondaire .flow-organe { border-left-color: #0ea5e9; }
+.organe-type.tertiaire .flow-organe { border-left-color: #7c3aed; }
+
+/* ========== OLFACTION SECTION ========== */
+.olf-section, .gus-section {
+  background: var(--gradient-card);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+[data-theme="dark"] .olf-section, [data-theme="dark"] .gus-section {
+  background: rgba(236, 72, 153, .05);
+}
+.olf-banner, .gus-banner {
+  background: linear-gradient(135deg, #831843, #ec4899);
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.olf-banner h3, .gus-banner h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.banner-emoji { font-size: 3rem; }
+
+.cell-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.cell-type-card {
+  background: var(--bg-card);
+  padding: 1.4rem;
+  border-radius: var(--radius);
+  border-top: 4px solid var(--accent);
+}
+.cell-type-card h4 { color: var(--accent); margin-bottom: .5rem; }
+.cell-type-icon { font-size: 2rem; margin-bottom: .3rem; }
+
+/* ========== SAVEURS ========== */
+.saveurs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.saveur-card {
+  padding: 1.4rem;
+  border-radius: var(--radius);
+  text-align: center;
+  color: white;
+}
+.saveur-sucre { background: linear-gradient(135deg, #ec4899, #fbcfe8); }
+.saveur-acide { background: linear-gradient(135deg, #65a30d, #a3e635); }
+.saveur-amer { background: linear-gradient(135deg, #78350f, #b45309); }
+.saveur-sale { background: linear-gradient(135deg, #0ea5e9, #67e8f9); }
+.saveur-card h4 { color: white; margin-bottom: .3rem; font-size: 1.1rem; }
+.saveur-icon { font-size: 2.2rem; margin-bottom: .3rem; }
+
+/* ========== SCHEMA ========== */
+.schema-wrap {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  margin: 1rem 0;
+}
+.schema-wrap svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+/* ========== PATHO ========== */
+.patho-card {
+  background: var(--accent-light);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-left: 5px solid var(--accent);
+  margin: 1.5rem 0;
+}
+.patho-card h4 { color: var(--accent-dark); margin-bottom: .5rem; }
+[data-theme="dark"] .patho-card h4 { color: var(--accent); }
+
+/* Override flashcard back */
+.flashcard-back {
+  background: linear-gradient(135deg, #831843, #ec4899) !important;
+}

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Oreille — Audition & Équilibration · Histologie</title>
+<link rel="stylesheet" href="oreille.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <button id="menuToggle" class="icon-btn" aria-label="Menu">☰</button>
+  <a href="../index.html" class="brand brand-link" style="text-decoration:none;color:inherit">
+    <span class="brand-logo">🦻</span>
+    <div>
+      <strong>Oreille — Audition & Équilibration</strong>
+      <small>Histologie · 2ᵉ année médecine · Oran</small>
+    </div>
+  </a>
+  <div class="topbar-actions">
+    <a href="../index.html" class="icon-btn" title="Retour aux cours" style="text-decoration:none">🏠</a>
+    <input type="search" id="searchInput" placeholder="🔍 Rechercher…" />
+    <button id="themeToggle" class="icon-btn" aria-label="Thème">🌙</button>
+  </div>
+</header>
+
+<!-- PROGRESS BAR -->
+<div class="progress-container"><div id="progressBar" class="progress-bar"></div></div>
+
+<!-- SIDEBAR -->
+<aside id="sidebar" class="sidebar">
+  <nav>
+    <h4>📖 Sommaire — Audition</h4>
+    <a href="#generalites">1. Généralités</a>
+    <a href="#anatomie">2. Rappel anatomique</a>
+    <a href="#cochlee">3. Structure de la cochlée</a>
+    <a href="#histophysio-audition">4. Histophysiologie</a>
+    <hr/>
+    <h4>📖 Sommaire — Équilibration</h4>
+    <a href="#equilibration">5. Organisation générale</a>
+    <a href="#recepteurs">6. Récepteurs vestibulaires</a>
+    <a href="#histophysio-vestibule">7. Histophysiologie du vestibule</a>
+    <hr/>
+    <h4>🎓 S'entraîner</h4>
+    <a href="#fiche">📋 Fiche révision</a>
+    <a href="#flashcards">🃏 Flashcards</a>
+    <a href="#quiz">❓ Quiz noté</a>
+  </nav>
+</aside>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="kicker">Histologie · Faculté de Médecine d'Oran</p>
+    <h1>Oreille — Audition & Équilibration 🦻</h1>
+    <p class="subtitle">Cours interactif — oreille externe, moyenne, interne, cochlée, organe de Corti, vestibule</p>
+    <div class="hero-stats">
+      <div><strong>7</strong><span>chapitres</span></div>
+      <div><strong>10</strong><span>schémas</span></div>
+      <div><strong>30+</strong><span>flashcards</span></div>
+      <div><strong>15</strong><span>questions quiz</span></div>
+    </div>
+    <a href="#generalites" class="cta">Commencer le cours ↓</a>
+  </div>
+</section>
+
+<main>
+
+<!-- 1. GÉNÉRALITÉS -->
+<section id="generalites" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>Généralités</h2>
+  </div>
+  <p class="lead">L'oreille est à la fois un organe auditif et un organe d'équilibration.</p>
+  <div class="grid-2">
+    <div class="key-points">
+      <h4>🔊 Nerf cochléaire</h4>
+      <p>Pour l'organe auditif</p>
+    </div>
+    <div class="key-points">
+      <h4>⚖️ Nerf vestibulaire</h4>
+      <p>Pour l'organe de l'équilibration</p>
+    </div>
+  </div>
+  <div class="info-box">
+    <strong>📌 VIIIème paire crânienne :</strong> Le nerf auditif comprend deux branches — cochléaire (audition) et vestibulaire (équilibration).
+  </div>
+
+  <h3>Les 3 parties de l'oreille</h3>
+  <div class="concept-cards">
+    <div class="concept-card">
+      <div class="concept-icon">📡</div>
+      <h4>Oreille externe</h4>
+      <p>Vibrations sonores captées par le pavillon et dirigées par le conduit auditif externe vers le tympan</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">⚙️</div>
+      <h4>Oreille moyenne</h4>
+      <p>Transmission mécanique par le système tympano-ossiculaire vers la fenêtre ovale</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">🌊</div>
+      <h4>Oreille interne</h4>
+      <p>Déplacements liquidiens captés par des récepteurs sensoriels → centres cérébraux</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. RAPPEL ANATOMIQUE -->
+<section id="anatomie" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>Rappel anatomique</h2>
+  </div>
+  <p class="lead">L'oreille avec ses trois parties est logée à l'intérieur du rocher du temporal.</p>
+
+  <div class="subsection">
+    <h3>A — Oreille externe</h3>
+    <p>Elle comporte le <strong>pavillon</strong>, le <strong>conduit auditif externe</strong> et la face externe du <strong>tympan</strong>.</p>
+
+    <div class="type-cards">
+      <div class="type-card">
+        <h4>1) Pavillon</h4>
+        <ul>
+          <li>Recueille les sons au niveau de la <strong>conque</strong> (dépression centrale)</li>
+          <li>Forme en entonnoir → concentration des vibrations sur le tympan</li>
+          <li>Histologie : <strong>lame cartilagineuse</strong> + peau fine, lisse, presque dépourvue de poils</li>
+        </ul>
+      </div>
+      <div class="type-card">
+        <h4>2) Conduit auditif externe</h4>
+        <ul>
+          <li>Tube d'environ <strong>2,5 cm</strong> de long</li>
+          <li>Épithélium <strong>malpighien kératinisé</strong></li>
+          <li><strong>Glandes sébacées</strong> annexées aux poils</li>
+          <li><strong>Glandes cérumineuses</strong> (sudoripares) → sécrétion grasse + sébum = <strong>cérumen</strong></li>
+        </ul>
+      </div>
+      <div class="type-card">
+        <h4>3) Tympan</h4>
+        <ul>
+          <li>Face externe → conduit auditif externe</li>
+          <li>Face interne → paroi de l'oreille moyenne</li>
+          <li>Structure (dehors en dedans) :
+            <ul>
+              <li>Épithélium externe : malpighien kératinisé, sans annexes</li>
+              <li>Partie centrale : conjonctive (fibres circulaires internes + fibres radiaires externes)</li>
+              <li>Épithélium interne : pavimenteux simple (épithélium tympanique)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>B — Oreille moyenne</h3>
+    <p>Elle comporte la <strong>caisse du tympan</strong> et le <strong>système tympano-ossiculaire</strong>.</p>
+
+    <div class="grid-2">
+      <div class="key-points">
+        <h4>Caisse du tympan</h4>
+        <ul>
+          <li>Muqueuse de type tympanique</li>
+          <li>En arrière : antre mastoïdien + cellules mastoïdiennes</li>
+          <li>En avant : <strong>trompe d'Eustache</strong> → communication avec le pharynx</li>
+          <li>Pressions égales sur les deux faces du tympan</li>
+        </ul>
+      </div>
+      <div class="key-points">
+        <h4>Paroi interne osseuse</h4>
+        <ul>
+          <li><strong>Fenêtre ovale</strong> : obturée par la platine de l'étrier</li>
+          <li><strong>Fenêtre ronde</strong> : fermée par une membrane souple</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info-box accent-box">
+      <strong>⚙️ Système tympano-ossiculaire :</strong> Chaîne de 3 osselets (marteau → enclume → étrier) reliant le tympan à la fenêtre ovale. Maintenue par le <em>tensor tympani</em> et le <em>stapédius</em>. Amplifie les vibrations.
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>C — Oreille interne</h3>
+    <p>Constituée de cavités creusées dans l'os temporal.</p>
+
+    <div class="grid-2">
+      <div class="key-points">
+        <h4>Labyrinthe osseux</h4>
+        <p>Cavités creusées dans l'os temporal</p>
+      </div>
+      <div class="key-points">
+        <h4>Labyrinthe membraneux</h4>
+        <p>Ensemble complexe de canaux à l'intérieur</p>
+      </div>
+    </div>
+
+    <h4>Espaces endolymphatiques</h4>
+    <ul>
+      <li>Contiennent les <strong>formations sensorielles</strong> (audition & équilibration)</li>
+      <li>Renferment l'<strong>endolymphe</strong> : riche en K⁺, pauvre en Na⁺</li>
+      <li>Endolymphe sécrétée par la <strong>strie vasculaire</strong> de la cochlée</li>
+      <li>Éliminée par le canal endolymphatique → sac endolymphatique</li>
+    </ul>
+
+    <h4>Espaces périlymphatiques</h4>
+    <ul>
+      <li>Entre espaces endolymphatiques et os</li>
+      <li><strong>Périlymphe</strong> : composition identique au LCR, riche en Na⁺, pauvre en K⁺</li>
+    </ul>
+
+    <h4>Vestibule (portion centrale)</h4>
+    <div class="concept-cards">
+      <div class="concept-card">
+        <div class="concept-icon">🏺</div>
+        <h4>Utricule</h4>
+        <p>Émet 3 formations dorsales : les canaux semi-circulaires</p>
+      </div>
+      <div class="concept-card">
+        <div class="concept-icon">🐚</div>
+        <h4>Saccule</h4>
+        <p>Donne naissance à la cochlée (limaçon) — organe de l'audition</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <strong>📌 N.B. :</strong> Le vestibule et les canaux semi-circulaires = organe de l'équilibration (appareil vestibulaire).
+    </div>
+  </div>
+</section>
+
+<!-- 3. STRUCTURE DE LA COCHLÉE -->
+<section id="cochlee" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>Structure de la cochlée</h2>
+  </div>
+
+  <div class="subsection">
+    <h3>A — Organisation générale</h3>
+    <p class="lead">La cochlée comporte un squelette (limaçon osseux) et des formations cellulaires/conjonctives (limaçon membraneux).</p>
+
+    <div class="grid-2">
+      <div class="key-points">
+        <h4>Axe osseux : Columelle</h4>
+        <p>Autour duquel s'enroule en spirale (≈ 2,5 tours)</p>
+      </div>
+      <div class="key-points">
+        <h4>Tube osseux : Lame des contours</h4>
+        <p>Divisée en rampe tympanique (bas) et rampe vestibulaire (haut)</p>
+      </div>
+    </div>
+
+    <div class="info-box accent-box">
+      <strong>🔑 Division :</strong> La lame spirale osseuse se prolonge par la <strong>membrane basilaire</strong> qui supporte le canal cochléaire et se fixe sur la lame des contours via le <strong>ligament spiral</strong>.
+    </div>
+
+    <ul>
+      <li>Rampe tympanique + rampe vestibulaire = espaces <strong>périlymphatiques</strong></li>
+      <li>Communication au sommet par l'<strong>hélicotrème</strong></li>
+      <li>Canal cochléaire (espace endolymphatique) contient l'<strong>organe de Corti</strong></li>
+    </ul>
+  </div>
+
+  <div class="subsection">
+    <h3>B — Canal cochléaire</h3>
+    <p>Forme <strong>triangulaire</strong> en coupe transversale, isolé :</p>
+    <div class="concept-cards">
+      <div class="concept-card">
+        <div class="concept-icon">⬇️</div>
+        <h4>En bas</h4>
+        <p>Rampe tympanique (membrane basilaire + lame spirale osseuse)</p>
+      </div>
+      <div class="concept-card">
+        <div class="concept-icon">⬆️</div>
+        <h4>En haut</h4>
+        <p>Rampe vestibulaire (membrane de Reissner)</p>
+      </div>
+      <div class="concept-card">
+        <div class="concept-icon">➡️</div>
+        <h4>En dehors</h4>
+        <p>Ligament spiral (strie vasculaire — capillaires intra-épithéliaux, sécrète l'endolymphe)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>C — Organe de Corti</h3>
+    <p>Occupe la partie médiane du plancher du canal cochléaire, suit l'enroulement spiralé de la membrane basilaire.</p>
+
+    <h4>Bordures</h4>
+    <ul>
+      <li>En dedans : <strong>limbe spiral</strong> (couche tissulaire née du périoste de la lame spirale osseuse), séparé par le sillon spiral interne</li>
+      <li>En dehors : <strong>strie vasculaire</strong>, séparée par le sillon spiral externe</li>
+    </ul>
+
+    <h4>Membrana tectoria</h4>
+    <div class="info-box">
+      <strong>Structure fibreuse :</strong> géliforme (riche en protéoglycanes), très hydratée, acellulaire. Sa partie externe repose sur le pôle apical des cellules de Corti. Seuls les stéréocils les plus longs des CCE lui sont liés. Perforée de fins canalicules pour la circulation de l'endolymphe.
+    </div>
+
+    <h4>Tunnel de Corti</h4>
+    <p>Triangulaire en coupe, bordé par une rangée de <strong>piliers externes</strong> et une de <strong>piliers internes</strong> (cellules de soutien contenant des microfilaments d'actine F).</p>
+
+    <h4>Cellules de Deiters</h4>
+    <ul>
+      <li>Pôle basal sur la membrane basilaire</li>
+      <li>Partie supérieure enveloppe la base des cellules sensorielles</li>
+      <li>Prolongement → extrémité aplatie (<strong>phalange</strong>) → forme la <strong>membrane réticulaire</strong></li>
+    </ul>
+
+    <h4>Cellules auditives (CCI vs CCE)</h4>
+    <table class="data-table">
+      <thead>
+        <tr><th>Critère</th><th>CCI (internes)</th><th>CCE (externes)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Nombre</strong></td><td>≈ 3 500</td><td>≈ 12 000</td></tr>
+        <tr><td><strong>Forme</strong></td><td>Piriformes</td><td>Cylindriques</td></tr>
+        <tr><td><strong>Stéréocils</strong></td><td>2 rangées, courbe ouverte à concavité interne</td><td>3-4 rangées en W ouvert à pointe externe</td></tr>
+        <tr><td><strong>Réticulum lisse sous-membranaire</strong></td><td>Peu développé (1 couche)</td><td>Très développé (plusieurs couches)</td></tr>
+        <tr><td><strong>Pôle basal</strong></td><td colspan="2">Terminaisons nerveuses afférentes et efférentes</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 4. HISTOPHYSIOLOGIE DE L'AUDITION -->
+<section id="histophysio-audition" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>Histophysiologie de l'audition</h2>
+  </div>
+
+  <div class="subsection">
+    <h3>A — Mécanisme de l'audition</h3>
+    <div class="concept-cards">
+      <div class="concept-card">
+        <div class="concept-icon">🔊</div>
+        <h4>1. Vibrations</h4>
+        <p>Mettent en mouvement le tympan et la chaîne des osselets</p>
+      </div>
+      <div class="concept-card">
+        <div class="concept-icon">⚡</div>
+        <h4>2. Amplification</h4>
+        <p>Transmises amplifiées à la fenêtre ovale</p>
+      </div>
+      <div class="concept-card">
+        <div class="concept-icon">🌊</div>
+        <h4>3. Pression</h4>
+        <p>Étrier → fortes variations de pression dans la rampe vestibulaire</p>
+      </div>
+      <div class="concept-card">
+        <div class="concept-icon">📉</div>
+        <h4>4. Amortissement</h4>
+        <p>Parviennent affaiblies dans la rampe tympanique → fenêtre ronde</p>
+      </div>
+    </div>
+
+    <div class="info-box accent-box">
+      <strong>🔑 Transduction :</strong> L'inégalité des pressions déplace la membrane basilaire → flexion des stéréocils → ouverture de canaux ioniques (K⁺, Ca²⁺) → potentiel membranaire → transmission synaptique → potentiel d'action dans le nerf VIII.
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>B — Voies nerveuses auditives</h3>
+    <ul>
+      <li><strong>30 000 neurones afférents</strong> → SNC (péricaryon dans le ganglion spiral de Corti)</li>
+      <li>95% des fibres afférentes → CCI ; seulement 5% → CCE</li>
+      <li>≈ 1 000 fibres efférentes</li>
+      <li>Nerf cochléaire + nerf vestibulaire (ganglion de Scarpa) = <strong>nerf auditif (VIII)</strong></li>
+      <li>Relais : bulbe → thalamus (corps genouillé interne) → cortex temporal</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5. ÉQUILIBRATION — ORGANISATION GÉNÉRALE -->
+<section id="equilibration" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2>Oreille — Organe de l'équilibration</h2>
+  </div>
+  <p class="lead">Le vestibule (saccule + utricule) et les canaux semi-circulaires constituent l'organe de l'équilibration grâce à leurs zones sensorielles : les récepteurs vestibulaires.</p>
+
+  <div class="concept-cards">
+    <div class="concept-card">
+      <div class="concept-icon">🏺</div>
+      <h4>Utricule</h4>
+      <p>Chambre supérieure du vestibule, émet les canaux semi-circulaires</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">⚖️</div>
+      <h4>Saccule</h4>
+      <p>Chambre inférieure du vestibule</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">🔄</div>
+      <h4>3 Canaux semi-circulaires</h4>
+      <p>Formations dorsales issues de l'utricule</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. RÉCEPTEURS VESTIBULAIRES -->
+<section id="recepteurs" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2>Récepteurs vestibulaires</h2>
+  </div>
+
+  <div class="subsection">
+    <h3>A — Macules vestibulaires</h3>
+    <p>Plages sensorielles localisées dans l'<strong>utricule</strong> et le <strong>saccule</strong>.</p>
+
+    <h4>Constitution</h4>
+    <ul>
+      <li>Massif épithélial haut : cellules sensorielles vestibulaires <strong>type I</strong> et <strong>type II</strong></li>
+      <li>Couche de <strong>cellules de soutien</strong></li>
+      <li>Surmontées par la <strong>membrane otolithique</strong></li>
+    </ul>
+
+    <div class="info-box">
+      <strong>Membrane otolithique :</strong> Couche de substance gélatineuse contenant des faisceaux de fines fibrilles et, en surface, des cristaux de carbonate de calcium = <strong>otolithes</strong> (statoconies). Repose sur les stéréocils apicaux des cellules sensorielles.
+    </div>
+
+    <h4>Cellules sensorielles vestibulaires</h4>
+    <div class="grid-2">
+      <div class="key-points">
+        <h4>Type I — Forme de vase</h4>
+        <ul>
+          <li>Base arrondie à distance de la membrane basale (noyau rond)</li>
+          <li>Riche en mitochondries et REL vésiculaire</li>
+          <li>Zone apicale : étranglement puis dilatation</li>
+          <li>Plaque cuticulaire → 60-80 stéréocils</li>
+          <li>Pore cuticulaire → <strong>cil vibratile</strong> (kinétocil)</li>
+          <li>Stéréocils de taille décroissante</li>
+          <li>Innervation : <strong>calice nerveux</strong> (terminaison dendritique du ganglion de Scarpa)</li>
+        </ul>
+      </div>
+      <div class="key-points">
+        <h4>Type II — Cylindrique</h4>
+        <ul>
+          <li>Plus hautes, forme régulièrement cylindrique</li>
+          <li>Stéréocils à base étroite au pôle apical</li>
+          <li>Cil ou résidu ciliaire (corpuscule basal)</li>
+          <li>Contacts avec terminaisons nerveuses afférentes</li>
+          <li>Entourage intime par cellules de soutien</li>
+          <li>Innervation : <strong>boutons synaptiques dispersés</strong> (afférents + efférents)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info-box accent-box">
+      <strong>⚡ Différence essentielle :</strong> Type I = calice nerveux englobant (ganglion de Scarpa). Type II = boutons synaptiques dispersés (fibres afférentes + efférentes).
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>B — Crêtes ampullaires</h3>
+
+    <h4>Morphologie</h4>
+    <ul>
+      <li>Chaque canal semi-circulaire possède une dilatation à sa base : l'<strong>ampoule</strong></li>
+      <li>L'endoste s'invagine → repli perpendiculaire à l'axe = <strong>crête ampullaire</strong></li>
+      <li>3 crêtes ampullaires (une par canal semi-circulaire)</li>
+    </ul>
+
+    <h4>Structure histologique</h4>
+    <p>Semblable à la macule, sauf que la <strong>cupule</strong> (analogue de la membrane otolithique) <strong>ne contient pas d'otolithes</strong>.</p>
+    <div class="grid-2">
+      <div class="key-points">
+        <h4>Cupule</h4>
+        <ul>
+          <li>Masse géliforme riche en glycosaminoglycanes</li>
+          <li>Réseau fibrillaire</li>
+          <li>Creusée de canaux où s'enfoncent les stéréocils</li>
+        </ul>
+      </div>
+      <div class="key-points">
+        <h4>Cellules de soutien</h4>
+        <ul>
+          <li>Forme très irrégulière</li>
+          <li>Entourent les cellules sensorielles</li>
+          <li>Reposent sur la membrane basale</li>
+          <li>Liées par des complexes de jonction</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. HISTOPHYSIOLOGIE DU VESTIBULE -->
+<section id="histophysio-vestibule" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">07</span>
+    <h2>Histophysiologie du vestibule</h2>
+  </div>
+
+  <div class="subsection">
+    <h3>A — Nature du stimulus sensoriel</h3>
+    <p>Les cellules sensorielles vestibulaires ont une <strong>activité continue spontanée</strong> (potentiel d'action de base).</p>
+    <div class="grid-2">
+      <div class="key-points">
+        <h4>↗️ Activité accrue</h4>
+        <p>Stéréocils inclinés <strong>en direction du kinétocil</strong></p>
+      </div>
+      <div class="key-points">
+        <h4>↘️ Activité diminuée</h4>
+        <p>Inclinaison dans le <strong>sens opposé</strong> au kinétocil</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>B — Cellules maculaires</h3>
+    <p>Mises en jeu par les <strong>accélérations linéaires</strong> : la membrane otolithique (alourdie par les statoconies) possède une inertie → mouvement de cisaillement des stéréocils.</p>
+
+    <div class="grid-2">
+      <div class="key-points">
+        <h4>Macule utriculaire</h4>
+        <p>Réagit aux accélérations dans un <strong>plan horizontal</strong> (tête verticale)</p>
+      </div>
+      <div class="key-points">
+        <h4>Macule sacculaire</h4>
+        <p>Sensible aux accélérations linéaires <strong>verticales</strong>, y compris la pesanteur</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>C — Crêtes ampullaires</h3>
+    <p>Stimulées par les <strong>accélérations angulaires</strong> → mouvement de l'endolymphe dans le canal → déformation de la cupule → inclinaison des stéréocils.</p>
+  </div>
+
+  <div class="info-box">
+    <strong>🎯 Conclusion :</strong> Les deux macules + les crêtes ampullaires, stimulées simultanément, renseignent sur la position de la tête dans l'espace.
+  </div>
+
+  <div class="subsection">
+    <h3>D — Voies nerveuses vestibulaires</h3>
+    <ul>
+      <li>Fibres afférentes → corps cellulaire dans le <strong>ganglion vestibulaire</strong></li>
+      <li>Axones forment le nerf auditif avec les fibres du nerf cochléaire</li>
+      <li>Premier relais : <strong>noyaux vestibulaires bulbaires</strong></li>
+      <li>Projections vers : moelle épinière, substance réticulée, noyaux oculomoteurs, cervelet, thalamus</li>
+    </ul>
+    <div class="info-box accent-box">
+      <strong>💡</strong> Ceci explique l'importance et la variété des réflexes vestibulaires.
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Tableau récapitulatif</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Zone sensorielle</th><th>Structure</th><th>Localisation</th><th>Nerf</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Macules</strong></td><td>Cell. vestibulaires I & II + soutien + membrane otolithique</td><td>Utricule, Saccule</td><td rowspan="2">Nerf vestibulaire</td></tr>
+        <tr><td><strong>Crêtes ampullaires</strong></td><td>Cell. vestibulaires I & II + soutien + cupule</td><td>Ampoules des 3 canaux semi-circulaires</td></tr>
+        <tr><td><strong>Organe de Corti</strong></td><td>Cell. auditives + soutien + membrana tectoria</td><td>Canal cochléaire</td><td>Nerf cochléaire</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- FICHE DE RÉVISION -->
+<section id="fiche" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">📋</span>
+    <h2>Fiche de révision</h2>
+  </div>
+
+  <div class="fiche">
+    <div class="fiche-block">
+      <h3>🦻 3 parties de l'oreille</h3>
+      <ul>
+        <li><strong>Externe</strong> : pavillon + conduit auditif externe + tympan</li>
+        <li><strong>Moyenne</strong> : caisse du tympan + osselets (marteau, enclume, étrier)</li>
+        <li><strong>Interne</strong> : labyrinthe osseux + labyrinthe membraneux</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>🔊 Tympan (3 couches)</h3>
+      <ol>
+        <li>Épithélium malpighien kératinisé (ext.) — sans annexes</li>
+        <li>Conjonctive : fibres circulaires (int.) + radiaires (ext.)</li>
+        <li>Épithélium pavimenteux simple (int.) — tympanique</li>
+      </ol>
+    </div>
+
+    <div class="fiche-block">
+      <h3>⚙️ Oreille moyenne</h3>
+      <ul>
+        <li>Trompe d'Eustache → pharynx (égalise pressions)</li>
+        <li>Fenêtre ovale : platine de l'étrier</li>
+        <li>Fenêtre ronde : membrane souple</li>
+        <li>Muscles : tensor tympani + stapédius</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>💧 Liquides de l'oreille interne</h3>
+      <ul>
+        <li><strong>Endolymphe</strong> : K⁺ ↑, Na⁺ ↓ (sécrétée par strie vasculaire)</li>
+        <li><strong>Périlymphe</strong> : Na⁺ ↑, K⁺ ↓ (= LCR)</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>🐚 Cochlée — Organisation</h3>
+      <ul>
+        <li>Columelle (axe) + lame des contours (tube)</li>
+        <li>Rampe vestibulaire (haut) + rampe tympanique (bas)</li>
+        <li>Canal cochléaire (triangulaire) = endolymphe</li>
+        <li>Hélicotrème : communication au sommet</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>🎵 Organe de Corti</h3>
+      <ul>
+        <li>Tunnel de Corti : piliers int. + ext. (actine F)</li>
+        <li>Cellules de Deiters → membrane réticulaire</li>
+        <li>Membrana tectoria : géliforme, acellulaire</li>
+        <li>CCI (3500, piriformes, 2 rangées stéréocils)</li>
+        <li>CCE (12000, cylindriques, 3-4 rangées en W)</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>⚡ Transduction auditive</h3>
+      <ul>
+        <li>Vibrations → tympan → osselets → fenêtre ovale</li>
+        <li>Pression rampe vestibulaire → membrane basilaire</li>
+        <li>Flexion stéréocils → K⁺/Ca²⁺ → potentiel d'action</li>
+        <li>95% fibres afférentes → CCI</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>🧠 Voies auditives</h3>
+      <ul>
+        <li>30 000 neurones afférents (ganglion spiral de Corti)</li>
+        <li>Nerf cochléaire + nerf vestibulaire = nerf auditif (VIII)</li>
+        <li>Relais : bulbe → thalamus (corps genouillé int.) → cortex temporal</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>⚖️ Récepteurs vestibulaires</h3>
+      <ul>
+        <li><strong>Macules</strong> (utricule + saccule) : membrane otolithique + otolithes</li>
+        <li><strong>Crêtes ampullaires</strong> (3 canaux) : cupule (sans otolithes)</li>
+        <li>Cellules type I (vase, calice nerveux) + type II (cylindrique, boutons synaptiques)</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>🔄 Histophysiologie vestibulaire</h3>
+      <ul>
+        <li>Activité spontanée continue</li>
+        <li>↑ si stéréocils → kinétocil ; ↓ si sens opposé</li>
+        <li>Macule utriculaire : accélérations horizontales</li>
+        <li>Macule sacculaire : accélérations verticales + pesanteur</li>
+        <li>Crêtes : accélérations angulaires (rotations)</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>🧠 Voies vestibulaires</h3>
+      <ul>
+        <li>Ganglion vestibulaire (de Scarpa)</li>
+        <li>1er relais : noyaux vestibulaires bulbaires</li>
+        <li>Projections : moelle, substance réticulée, noyaux oculomoteurs, cervelet, thalamus</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FLASHCARDS -->
+<section id="flashcards" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">🃏</span>
+    <h2>Flashcards</h2>
+  </div>
+
+  <div class="flashcards-controls">
+    <select id="flashCategory">
+      <option value="all">Toutes les catégories</option>
+      <option value="externe">Oreille externe</option>
+      <option value="moyenne">Oreille moyenne</option>
+      <option value="interne">Oreille interne & Cochlée</option>
+      <option value="corti">Organe de Corti</option>
+      <option value="equilibre">Équilibration</option>
+    </select>
+    <button class="btn" id="shuffleBtn">🔀 Mélanger</button>
+    <span class="flash-counter"><span id="flashCurrent">1</span> / <span id="flashTotal">30</span></span>
+  </div>
+
+  <div class="flashcard-wrapper">
+    <div class="flashcard" id="flashcard">
+      <div class="flash-face flash-front">
+        <span class="flash-cat"></span>
+        <p class="flash-question">Chargement…</p>
+      </div>
+      <div class="flash-face flash-back">
+        <p class="flash-answer">Réponse</p>
+      </div>
+    </div>
+  </div>
+  <div class="flash-nav">
+    <button class="btn" id="prevCard">← Précédente</button>
+    <button class="btn primary" id="nextCard">Suivante →</button>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">❓</span>
+    <h2>Quiz noté</h2>
+  </div>
+  <p class="lead">15 questions pour tester tes connaissances. Clique sur la bonne réponse puis soumets.</p>
+
+  <div id="quizContainer"></div>
+  <div class="quiz-actions">
+    <button class="btn primary" id="submitQuiz">📝 Soumettre</button>
+    <button class="btn" id="resetQuiz">🔄 Recommencer</button>
+  </div>
+  <div class="quiz-result hidden" id="quizResult"></div>
+</section>
+
+</main>
+
+<button class="back-to-top" id="backToTop">↑</button>
+
+<script src="oreille.js"></script>
+</body>
+</html>

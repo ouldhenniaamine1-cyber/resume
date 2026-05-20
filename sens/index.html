@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Olfaction &amp; Gustation — Cours interactif</title>
+<link rel="stylesheet" href="../shared.css" />
+<link rel="stylesheet" href="sens.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body data-course="sens">
+
+<header class="topbar">
+  <button id="menuToggle" class="icon-btn" aria-label="Menu">☰</button>
+  <a href="../index.html" class="brand brand-link">
+    <span class="brand-logo">👃</span>
+    <div>
+      <strong>Olfaction &amp; Gustation</strong>
+      <small>Organes des sens · 2ᵉ année médecine · Oran</small>
+    </div>
+  </a>
+  <div class="topbar-actions">
+    <a href="../index.html" class="icon-btn home-btn" title="Retour aux cours">🏠</a>
+    <input type="search" id="searchInput" placeholder="🔍 Rechercher…" />
+    <button id="themeToggle" class="icon-btn" aria-label="Thème">🌙</button>
+    <button id="printBtn" class="icon-btn" aria-label="Imprimer">🖨️</button>
+  </div>
+</header>
+
+<div class="progress-container"><div id="progressBar" class="progress-bar"></div></div>
+
+<aside id="sidebar" class="sidebar">
+  <nav>
+    <h4>📖 Sommaire</h4>
+    <a href="#general">1. Généralités</a>
+    <a href="#classification">2. Classification</a>
+    <a href="#olfaction">3. Olfaction</a>
+    <a href="#muqueuse-olf">↳ Muqueuse olfactive</a>
+    <a href="#anosmie">↳ Anosmie</a>
+    <a href="#gustation">4. Gustation</a>
+    <a href="#bourgeons">↳ Bourgeons du goût</a>
+    <a href="#agueusie">↳ Agueusie</a>
+    <hr/>
+    <h4>🎓 S'entraîner</h4>
+    <a href="#flashcards">🃏 Flashcards</a>
+    <a href="#quiz">❓ Quiz</a>
+    <a href="#fiche">📋 Fiche révision</a>
+  </nav>
+</aside>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="kicker">Organes des sens · Chémorécepteurs</p>
+    <h1>Olfaction &amp; Gustation <span class="eye-emoji">👃</span></h1>
+    <p class="subtitle">Cours interactif — généralités, classification, muqueuse olfactive et bourgeons du goût</p>
+    <div class="hero-stats">
+      <div><strong>5</strong><span>récepteurs</span></div>
+      <div><strong>3</strong><span>types d'organes</span></div>
+      <div><strong>3000</strong><span>bourgeons du goût</span></div>
+      <div><strong>4</strong><span>saveurs</span></div>
+    </div>
+    <a href="#general" class="cta">Commencer le cours ↓</a>
+  </div>
+</section>
+
+<main>
+
+<!-- GENERAL -->
+<section id="general" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>Généralités sur les organes des sens</h2>
+  </div>
+
+  <p class="lead">Les organes des sens sont des <strong>récepteurs sensoriels</strong>, formés de cellules capables de capter l'information et de la transmettre aux centres nerveux sous forme d'<strong>influx nerveux</strong>.</p>
+
+  <h3>🎯 Types de récepteurs</h3>
+  <div class="receptor-grid">
+    <div class="receptor-card">
+      <div class="receptor-icon">⚙️</div>
+      <h4>Mécanorécepteurs</h4>
+      <p>Actions mécaniques (pression, traction)</p>
+    </div>
+    <div class="receptor-card">
+      <div class="receptor-icon">🌡️</div>
+      <h4>Thermorécepteurs</h4>
+      <p>Modifications de la température</p>
+    </div>
+    <div class="receptor-card">
+      <div class="receptor-icon">💡</div>
+      <h4>Photorécepteurs</h4>
+      <p>Lumière</p>
+    </div>
+    <div class="receptor-card">
+      <div class="receptor-icon">🧪</div>
+      <h4>Chémorécepteurs</h4>
+      <p>Saveur (bouche) et odeurs (nez)</p>
+    </div>
+    <div class="receptor-card">
+      <div class="receptor-icon">⚡</div>
+      <h4>Nocirécepteurs</h4>
+      <p>Douleur</p>
+    </div>
+  </div>
+
+  <h3>🔬 Constitution générale d'un organe des sens</h3>
+  <p>3 sortes d'éléments sont retrouvés dans un organe des sens :</p>
+  <ol class="numbered-list">
+    <li><strong>Cellules sensorielles principales</strong> — cellules nerveuses, situées :
+      <ul>
+        <li><strong>Superficiellement</strong> = cellules <em>neurosensorielles</em> (de siège épithélial)</li>
+        <li><strong>Profondément</strong>, dans un ganglion nerveux (caractères morphologiques d'un neurone)</li>
+      </ul>
+    </li>
+    <li><strong>Cellules sensorielles accessoires</strong> = cellules <em>pseudo-sensorielles</em>, épithéliales différenciées superficielles, qui transmettent l'excitation à la cellule principale profonde</li>
+    <li><strong>Cellules de soutien</strong> — cellules épithéliales entourant les cellules sensorielles</li>
+  </ol>
+</section>
+
+<!-- CLASSIFICATION -->
+<section id="classification" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>Classification des organes des sens</h2>
+  </div>
+
+  <p class="lead">3 types d'organes des sens selon le nombre de neurones articulés :</p>
+
+  <div class="organe-types">
+    <div class="organe-type primaire">
+      <span class="organe-tag">1 neurone</span>
+      <h4>🥇 Organe primaire</h4>
+      <p>Le <strong>neurone sensoriel</strong> est récepteur, placé au sein d'un épithélium.</p>
+      <div class="flow-organe">¢ sensorielle principale → synapse dans le bulbe olfactif</div>
+      <p class="info-mini"><strong>Exemple :</strong> Épithélium olfactif (muqueuse olfactive)</p>
+    </div>
+
+    <div class="organe-type secondaire">
+      <span class="organe-tag">2 neurones</span>
+      <h4>🥈 Organe secondaire</h4>
+      <p>Corps des neurones sensoriels dans un <strong>ganglion cérébro-spinal</strong> · prolongements dendritiques arrivant à l'épithélium → synapse avec une <strong>cellule sensorielle accessoire</strong>.</p>
+      <div class="flow-organe">¢ sensorielle accessoire → ¢ sensorielle principale → bulbe rachidien</div>
+      <p class="info-mini"><strong>Exemples :</strong> Bourgeons du goût, organe de Corti (audition), équilibration, peau</p>
+    </div>
+
+    <div class="organe-type tertiaire">
+      <span class="organe-tag">3 neurones</span>
+      <h4>🥉 Organe tertiaire</h4>
+      <p>Structure nerveuse en continuité avec une structure encéphalique, articulant <strong>3 neurones</strong>.</p>
+      <div class="flow-organe">¢ à cônes/bâtonnets → ¢ bipolaires → ¢ multipolaires</div>
+      <p class="info-mini"><strong>Exemple :</strong> Rétine visuelle (organe de la vision)</p>
+    </div>
+  </div>
+</section>
+
+<!-- OLFACTION -->
+<section id="olfaction" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>Organe de l'olfaction</h2>
+  </div>
+
+  <div class="olf-section">
+    <div class="olf-banner">
+      <div class="banner-emoji">👃</div>
+      <div>
+        <h3>Muqueuse olfactive</h3>
+        <p style="margin:0;color:white;opacity:.95">Le seul organe des sens primaire</p>
+      </div>
+    </div>
+
+    <div style="padding:1.5rem 2rem">
+      <h3>📍 Localisation — Tâche jaune</h3>
+      <p>La muqueuse olfactive recouvre :</p>
+      <ul>
+        <li>Face inférieure de la <strong>lame criblée de l'ethmoïde</strong></li>
+        <li>Région supérieure de la <strong>cloison nasale</strong></li>
+        <li>Partie moyenne du <strong>cornet supérieur</strong></li>
+      </ul>
+      <p>Elle réalise la <strong>tâche olfactive (jaune)</strong>.</p>
+    </div>
+  </div>
+
+  <!-- STRUCTURE -->
+  <div id="muqueuse-olf" class="subsection">
+    <h3>🧬 Structure de la muqueuse olfactive</h3>
+    <p>La muqueuse olfactive comprend :</p>
+    <ol>
+      <li><strong>Neuro-épithélium olfactif</strong> chémorécepteur (épaisseur 60 µm) reposant sur un chorion</li>
+      <li><strong>Chorion</strong> : tissu conjonctif traversé par les axones et occupé par les <strong>glandes de Bowman</strong></li>
+    </ol>
+
+    <h3>1. Neuro-épithélium olfactif (60 µm) — 3 types cellulaires</h3>
+    <div class="cell-types-grid">
+      <div class="cell-type-card">
+        <div class="cell-type-icon">🧠</div>
+        <h4>Cellules nerveuses olfactives</h4>
+        <p>Neurones bipolaires :</p>
+        <ul>
+          <li><strong>Bâtonnet olfactif</strong> apical → vésicule olfactive avec <strong>6 à 8 cils olfactifs</strong></li>
+          <li>Corps cellulaire ovoïde (<strong>7-9 µm</strong>) dans la moitié basale</li>
+          <li>Axone = <strong>filet olfactif</strong> (0.5 µm) traverse la lame basale</li>
+          <li><strong>Durée de vie : 30-60 jours</strong></li>
+        </ul>
+      </div>
+
+      <div class="cell-type-card">
+        <div class="cell-type-icon">🛡️</div>
+        <h4>Cellules de soutien</h4>
+        <p>Cylindriques hautes, bordure en brosse apicale :</p>
+        <ul>
+          <li>Synthèse d'un <strong>pigment jaunâtre</strong> (rétinal + carotène) → couleur jaune brun</li>
+          <li>Riches en enzymes → <strong>phagocytose des cellules vieillies</strong></li>
+        </ul>
+      </div>
+
+      <div class="cell-type-card">
+        <div class="cell-type-icon">🌱</div>
+        <h4>Cellules basales</h4>
+        <p>Petites et nombreuses, contre la lame basale :</p>
+        <ul>
+          <li>Rôle de <strong>remplacement</strong></li>
+          <li><strong>Neurogènes</strong> — permettent le renouvellement des neurones olfactifs</li>
+          <li>👉 Les neurones olfactifs sont les <strong>seuls neurones capables de régénération</strong> !</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>2. Chorion</h3>
+    <ul>
+      <li><strong>Axones des cellules olfactives</strong> regroupés → <strong>nerf olfactif</strong></li>
+      <li><strong>Glandes de Bowman</strong> (séreuses tubulo-alvéolaires) sécrétant :
+        <ul>
+          <li><strong>OBP</strong> (Odorant Binding Protein) — fixe les substances odorantes</li>
+          <li><strong>Lysozyme</strong> (défense)</li>
+          <li><strong>IgA</strong> (par les plasmocytes du chorion)</li>
+        </ul>
+      </li>
+      <li>Vascularisation importante (réseau capillaire sous-épithélial → thermorégulation)</li>
+      <li>Infiltrat lymphocytaire</li>
+    </ul>
+
+    <h3>🔄 Voies olfactives</h3>
+    <p>Les axones se réunissent en <strong>filets nerveux</strong> qui :</p>
+    <ol>
+      <li>Franchissent la <strong>lame criblée de l'ethmoïde</strong></li>
+      <li>Pénètrent dans le <strong>bulbe olfactif</strong></li>
+      <li>S'articulent avec les dendrites des <strong>cellules à panache et mitrales</strong></li>
+      <li>Le signal va à la <strong>5ᵉ circonvolution temporale</strong> (centres cérébraux)</li>
+    </ol>
+
+    <h3>⚙️ Histophysiologie</h3>
+    <div class="info-box accent-box">
+      <p><strong>Substances odoriférantes</strong> → transportées par <strong>OBP</strong> jusqu'aux cils olfactifs → dissolution dans les sécrétions des glandes de Bowman → <strong>ouverture des canaux ioniques</strong> → <strong>dépolarisation</strong> → influx nerveux → bulbe olfactif → centres nerveux.</p>
+    </div>
+  </div>
+
+  <!-- ANOSMIE -->
+  <div id="anosmie" class="subsection">
+    <div class="patho-card">
+      <h4>🦠 Pathologie : L'Anosmie</h4>
+      <ul>
+        <li><strong>Définition</strong> : perte de l'odorat</li>
+        <li><strong>Causes</strong> : traumatismes, infections mal soignées (rhinite), origine génétique ou congénitale</li>
+        <li><strong>Anosmie et Covid-19</strong> : symptôme précoce fréquent. Le SARS-CoV-2 entraîne :
+          <ul>
+            <li>Un <strong>gonflement de la muqueuse</strong> empêchant les molécules odorantes d'arriver aux récepteurs</li>
+            <li>Une <strong>attaque des cils</strong> des cellules sensorielles</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GUSTATION -->
+<section id="gustation" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>Organe de la gustation</h2>
+  </div>
+
+  <div class="gus-section">
+    <div class="gus-banner">
+      <div class="banner-emoji">👅</div>
+      <div>
+        <h3>Bourgeons du goût</h3>
+        <p style="margin:0;color:white;opacity:.95">Organe des sens secondaire · ~3000 bourgeons</p>
+      </div>
+    </div>
+
+    <div style="padding:1.5rem 2rem">
+      <p>Chez l'Homme, la sensibilité gustative s'enrichit par les <strong>réflexes olfacto-gustatifs</strong>. L'organe de la gustation est représenté par les <strong>bourgeons du goût</strong> :</p>
+      <ul>
+        <li>Au nombre de <strong>≈ 3000</strong> chez l'Homme</li>
+        <li>Siègent surtout au niveau des <strong>papilles caliciformes du V lingual</strong> et <strong>papilles fongiformes</strong></li>
+        <li>Peuvent être isolés dans la muqueuse bucco-pharyngée : palais, pharynx, épiglotte</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- STRUCTURE BOURGEONS -->
+  <div id="bourgeons" class="subsection">
+    <h3>🧬 Structure des bourgeons du goût</h3>
+    <p>Les bourgeons du goût sont :</p>
+    <ul>
+      <li>Des formations <strong>intra-épithéliales ovoïdes</strong></li>
+      <li>Mesurant <strong>80 µm de haut</strong> sur <strong>40 µm de large</strong></li>
+      <li>Faits par une cinquantaine de cellules associées comme les <strong>lamelles d'un bulbe d'oignon</strong></li>
+      <li>Extrémité profonde large (atteint la lame basale) + extrémité superficielle effilée</li>
+      <li>L'extrémité superficielle comporte un <strong>canal gustatif (4 µm)</strong> qui s'ouvre dans la cavité buccale par un <strong>pore gustatif</strong></li>
+    </ul>
+
+    <h3>🔬 En microscopie optique — 2 types cellulaires</h3>
+    <div class="cell-types-grid">
+      <div class="cell-type-card">
+        <div class="cell-type-icon">🛡️</div>
+        <h4>Cellules de soutien</h4>
+        <ul>
+          <li>Les <strong>plus nombreuses</strong>, volumineuses</li>
+          <li>Cytoplasme clair</li>
+          <li>Noyau <strong>vésiculeux</strong></li>
+        </ul>
+      </div>
+
+      <div class="cell-type-card">
+        <div class="cell-type-icon">👅</div>
+        <h4>Cellules gustatives</h4>
+        <ul>
+          <li>Fusiformes</li>
+          <li>Cytoplasme très coloré</li>
+          <li>Noyau compact</li>
+          <li>Surmontées par un <strong>bâtonnet (cil) gustatif</strong> qui fait saillie dans la fossette gustative</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="info-mini"><strong>⏰ Durée de vie</strong> des cellules réceptrices du goût : <strong>10 à 14 jours</strong>.</p>
+
+    <h3>🔌 Innervation</h3>
+    <p>Des fibres nerveuses <strong>amyéliniques</strong> arrivent au bourgeon :</p>
+    <ul>
+      <li><strong>Nerf facial (VII)</strong> : partie antérieure de la langue</li>
+      <li><strong>Nerf glosso-pharyngien (IX)</strong> : partie postérieure</li>
+    </ul>
+    <div class="info-box accent-box">
+      <strong>NB :</strong> La différenciation des cellules épithéliales en cellules gustatives est <strong>neurogène</strong> — section du nerf glosso-pharyngien → dégénérescence des bourgeons → réapparition après régénération nerveuse.
+    </div>
+
+    <h3>⚙️ Histophysiologie — 4 saveurs</h3>
+    <p>Toutes les cellules gustatives possèdent les récepteurs des 4 saveurs, mais avec des <strong>territoires préférentiels</strong> :</p>
+
+    <div class="saveurs-grid">
+      <div class="saveur-card saveur-sucre">
+        <div class="saveur-icon">🍬</div>
+        <h4>Sucré</h4>
+        <p><strong>Pointe</strong> de la langue</p>
+      </div>
+      <div class="saveur-card saveur-acide">
+        <div class="saveur-icon">🍋</div>
+        <h4>Acide</h4>
+        <p><strong>Bords</strong> de la langue</p>
+      </div>
+      <div class="saveur-card saveur-amer">
+        <div class="saveur-icon">☕</div>
+        <h4>Amer</h4>
+        <p><strong>Partie postérieure</strong></p>
+      </div>
+      <div class="saveur-card saveur-sale">
+        <div class="saveur-icon">🧂</div>
+        <h4>Salé</h4>
+        <p>Toute la <strong>surface</strong></p>
+      </div>
+    </div>
+
+    <div class="info-box accent-box">
+      <p>Les <strong>glandes de Von Ebner</strong> sécrètent l'<strong>ébnerine</strong> (protéine de 1290 a.a.) qui capte les molécules et les transporte aux bourgeons → fixation sur récepteurs → ouverture des canaux ioniques → influx nerveux → cellules sensorielles principales.</p>
+    </div>
+  </div>
+
+  <!-- AGUEUSIE -->
+  <div id="agueusie" class="subsection">
+    <div class="patho-card">
+      <h4>🩺 Pathologie : L'Agueusie</h4>
+      <ul>
+        <li><strong>Définition</strong> : impossibilité de percevoir le goût d'une substance déposée sur la langue</li>
+        <li><strong>Partielle</strong> (1-2 saveurs) ou <strong>totale</strong> (toutes les saveurs)</li>
+        <li><strong>Causes</strong> :
+          <ul>
+            <li>Lésion du nerf glosso-pharyngien</li>
+            <li>Paralysie faciale</li>
+            <li>Diminution de l'acuité gustative avec l'âge</li>
+            <li>Infections respiratoires hautes, stomatites, affections buccales</li>
+            <li>Tabagisme, cancers, médicaments</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h4>💡 L'apprentissage du goût</h4>
+      <p><em>« L'apprentissage de la nutrition ne suffit pas pour avoir une bonne alimentation, il faut aussi acquérir les goûts et le plaisir de manger. »</em> — Jean-Pierre Poulain</p>
+    </div>
+  </div>
+</section>
+
+<!-- FLASHCARDS -->
+<section id="flashcards" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">🃏</span>
+    <h2>Flashcards de révision</h2>
+  </div>
+  <p class="lead">Clique sur une carte pour la retourner. Utilise ← → pour naviguer.</p>
+
+  <div class="flashcards-controls">
+    <select id="flashCategory">
+      <option value="all">Toutes les catégories</option>
+      <option value="general">Généralités &amp; classification</option>
+      <option value="olf">Olfaction</option>
+      <option value="gus">Gustation</option>
+      <option value="patho">Pathologies</option>
+    </select>
+    <button id="shuffleBtn" class="btn">🔀 Mélanger</button>
+    <span class="flash-counter">Carte <strong id="flashCurrent">1</strong> / <span id="flashTotal">0</span></span>
+  </div>
+
+  <div class="flashcard-container">
+    <div class="flashcard" id="flashcard">
+      <div class="flashcard-inner">
+        <div class="flashcard-front">
+          <span class="flash-cat"></span>
+          <p class="flash-question"></p>
+          <small>Clique pour voir la réponse</small>
+        </div>
+        <div class="flashcard-back">
+          <p class="flash-answer"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcards-nav">
+    <button id="prevCard" class="btn">← Précédent</button>
+    <button id="nextCard" class="btn primary">Suivant →</button>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">❓</span>
+    <h2>Quiz noté</h2>
+  </div>
+  <p class="lead">Questions à choix multiples — testez vos connaissances !</p>
+
+  <div id="quizContainer"></div>
+
+  <div class="quiz-controls">
+    <button id="submitQuiz" class="btn primary">📊 Voir mon score</button>
+    <button id="resetQuiz" class="btn">🔄 Recommencer</button>
+  </div>
+
+  <div id="quizResult" class="quiz-result hidden"></div>
+</section>
+
+<!-- FICHE -->
+<section id="fiche" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">📋</span>
+    <h2>Fiche de révision</h2>
+  </div>
+
+  <div class="fiche">
+    <div class="fiche-block">
+      <h3>5 types de récepteurs</h3>
+      <ul>
+        <li>Mécano · Thermo · Photo · Chémo · Noci</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>3 types d'éléments cellulaires</h3>
+      <ul>
+        <li>¢ sensorielles principales (nerveuses)</li>
+        <li>¢ sensorielles accessoires (épithéliales)</li>
+        <li>¢ de soutien</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Classification des organes</h3>
+      <ul>
+        <li><strong>Primaire</strong> (1 neurone) : olfaction</li>
+        <li><strong>Secondaire</strong> (2 neurones) : gustation, audition, équilibration, peau</li>
+        <li><strong>Tertiaire</strong> (3 neurones) : vision (rétine)</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Olfaction — Localisation</h3>
+      <ul>
+        <li>Tâche jaune</li>
+        <li>Lame criblée de l'ethmoïde + cloison nasale + cornet supérieur</li>
+        <li>Seul organe sensoriel <strong>primaire</strong></li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Épithélium olfactif (60 µm)</h3>
+      <ol>
+        <li><strong>¢ olfactives</strong> : neurones bipolaires, vésicule + 6-8 cils, durée vie 30-60j</li>
+        <li><strong>¢ de soutien</strong> : pigment jaune, phagocytose</li>
+        <li><strong>¢ basales</strong> : neurogènes (régénération)</li>
+      </ol>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Glandes de Bowman</h3>
+      <ul>
+        <li>Séreuses tubulo-alvéolaires</li>
+        <li>OBP + lysozyme + IgA</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Bourgeons du goût</h3>
+      <ul>
+        <li>3000 chez l'Homme</li>
+        <li>Papilles caliciformes (V lingual) + fongiformes</li>
+        <li>80 × 40 µm, 50 cellules en bulbe d'oignon</li>
+        <li>Pore gustatif → canal gustatif</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>2 types cellulaires (bourgeon)</h3>
+      <ul>
+        <li><strong>¢ de soutien</strong> : volumineuses, noyau vésiculeux</li>
+        <li><strong>¢ gustatives</strong> : fusiformes, bâtonnet/cil gustatif, durée vie 10-14j</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Innervation</h3>
+      <ul>
+        <li><strong>VII (facial)</strong> : antérieur de la langue</li>
+        <li><strong>IX (glosso-pharyngien)</strong> : postérieur</li>
+        <li>Différenciation neurogène</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>4 saveurs</h3>
+      <ul>
+        <li>🍬 Sucré : pointe</li>
+        <li>🍋 Acide : bords</li>
+        <li>☕ Amer : postérieur</li>
+        <li>🧂 Salé : toute la surface</li>
+      </ul>
+    </div>
+
+    <div class="fiche-block">
+      <h3>Pathologies</h3>
+      <ul>
+        <li><strong>Anosmie</strong> = perte de l'odorat (Covid-19, rhinite, génétique)</li>
+        <li><strong>Agueusie</strong> = perte du goût (lésion IX, paralysie faciale, âge, tabac)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<button id="backToTop" class="back-to-top" aria-label="Retour en haut">↑</button>
+
+<footer>
+  <p>📚 D'après le polycopié <em>Généralités sur les organes des sens · Olfaction · Gustation</em>, Dr Seddiki-Bougrassa, Pr Belarbi-Amar, Faculté de Médecine d'Oran 1.</p>
+  <p><small>Site personnel de révision · 2ᵉ année médecine</small> · <a href="../index.html">← Retour aux cours</a></p>
+</footer>
+
+<script src="sens.js"></script>
+</body>
+</html>

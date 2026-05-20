@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Le Son & l'Audition — Cours interactif de Biophysique</title>
+<link rel="stylesheet" href="audition.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <button id="menuToggle" class="icon-btn" aria-label="Menu">☰</button>
+  <a href="../index.html" class="brand brand-link" style="text-decoration:none;color:inherit">
+    <span class="brand-logo">👂</span>
+    <div>
+      <strong>Le Son & l'Audition</strong>
+      <small>Biophysique · 2ᵉ année médecine · Oran</small>
+    </div>
+  </a>
+  <div class="topbar-actions">
+    <a href="../index.html" class="icon-btn" title="Retour aux cours" style="text-decoration:none">🏠</a>
+    <input type="search" id="searchInput" placeholder="🔍 Rechercher…" />
+    <button id="themeToggle" class="icon-btn" aria-label="Thème">🌙</button>
+  </div>
+</header>
+
+<!-- PROGRESS BAR -->
+<div class="progress-container"><div id="progressBar" class="progress-bar"></div></div>
+
+<!-- SIDEBAR -->
+<aside id="sidebar" class="sidebar">
+  <nav>
+    <h4>📖 Sommaire</h4>
+    <a href="#intro">1. Le Son</a>
+    <a href="#onde">2. L'onde sonore</a>
+    <a href="#caracteristiques">3. Caractéristiques</a>
+    <a href="#types">4. Types de sons</a>
+    <a href="#proprietes">5. Propriétés du son</a>
+    <a href="#subjectif">6. Phénomènes subjectifs</a>
+    <a href="#objectif">7. Phénomènes objectifs</a>
+    <a href="#exploration">8. Explorations</a>
+    <hr/>
+    <h4>🎓 S'entraîner</h4>
+    <a href="#flashcards">🃏 Flashcards</a>
+    <a href="#quiz">❓ Quiz noté</a>
+  </nav>
+</aside>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="kicker">Biophysique · Faculté de Médecine d'Oran</p>
+    <h1>Le Son & l'Audition 👂</h1>
+    <p class="subtitle">Cours interactif — onde sonore, caractéristiques, phénomènes auditifs et explorations</p>
+    <div class="hero-stats">
+      <div><strong>8</strong><span>chapitres</span></div>
+      <div><strong>12</strong><span>schémas</span></div>
+      <div><strong>25+</strong><span>flashcards</span></div>
+      <div><strong>12</strong><span>questions quiz</span></div>
+    </div>
+    <a href="#intro" class="cta">Commencer le cours ↓</a>
+  </div>
+</section>
+
+<main>
+
+<!-- 1. LE SON -->
+<section id="intro" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>Le Son</h2>
+  </div>
+  <div class="grid-2">
+    <div>
+      <h3>Acoustique</h3>
+      <p>Le son est un <strong>mouvement périodique des atomes ou de molécules</strong>. Ce mouvement se propage dans l'air ou dans la matière mais <strong>pas dans le vide</strong>, et sa vitesse dépend du milieu.</p>
+    </div>
+    <div>
+      <h3>Audition</h3>
+      <p>C'est la <strong>sensation provoquée par certaines vibrations</strong> ressenties comme sonores dans le domaine des sons audibles (entre <strong>20 Hz</strong> et <strong>20 000 Hz</strong>).</p>
+    </div>
+  </div>
+  <div class="info-box">
+    <strong>🎯 Objectifs :</strong> Citer les caractéristiques du son · Interpréter les phénomènes liés à l'audition · Énumérer les explorations de l'audition.
+  </div>
+</section>
+
+<!-- 2. L'ONDE SONORE -->
+<section id="onde" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>L'onde sonore</h2>
+  </div>
+  <p class="lead">L'onde sonore est une onde mécanique qui nécessite un milieu matériel pour se propager.</p>
+
+  <div class="concept-cards">
+    <div class="concept-card">
+      <div class="concept-icon">🔧</div>
+      <h4>Onde mécanique</h4>
+      <p>Nécessite un milieu matériel</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">↔️</div>
+      <h4>Longitudinale ou transversale</h4>
+      <p>Selon la direction de vibration</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">🚫</div>
+      <h4>Pas de transport de matière</h4>
+      <p>Seule l'énergie est transportée</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">⚡</div>
+      <h4>Transport d'énergie</h4>
+      <p>L'onde transmet de l'énergie</p>
+    </div>
+  </div>
+
+  <h3>Célérité selon le milieu</h3>
+  <table class="data-table">
+    <thead><tr><th>Matériau</th><th>Célérité (m/s)</th></tr></thead>
+    <tbody>
+      <tr><td>Air</td><td><strong>340</strong></td></tr>
+      <tr><td>Eau normale</td><td><strong>1 450</strong></td></tr>
+      <tr><td>Eau douce</td><td><strong>1 430</strong></td></tr>
+      <tr><td>Tissu mou</td><td><strong>1 540</strong></td></tr>
+      <tr><td>Glace</td><td><strong>3 200</strong></td></tr>
+      <tr><td>Tissu osseux</td><td><strong>3 300</strong></td></tr>
+    </tbody>
+  </table>
+  <div class="info-box accent-box">
+    <strong>💡 Règle :</strong> Plus le milieu est dense, plus la vitesse de propagation est grande.
+  </div>
+</section>
+
+<!-- 3. CARACTÉRISTIQUES -->
+<section id="caracteristiques" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>Caractéristiques du son</h2>
+  </div>
+
+  <div class="concept-cards">
+    <div class="concept-card">
+      <div class="concept-icon">🔄</div>
+      <h4>Fréquence ν</h4>
+      <p>Nombre de répétitions par unité de temps. Unité : <strong>Hertz (Hz)</strong>. ν = 1/T</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">⏱️</div>
+      <h4>Période T</h4>
+      <p>Temps entre deux états vibratoires identiques consécutifs</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">📏</div>
+      <h4>Longueur d'onde λ</h4>
+      <p>Distance parcourue durant une période. λ = c/ν</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">📊</div>
+      <h4>Amplitude A</h4>
+      <p>Élongation maximale à partir de la position d'équilibre</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">🔀</div>
+      <h4>Phase</h4>
+      <p>Deux ondes en phase : maximum d'amplitude au même moment</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">🚀</div>
+      <h4>Célérité c</h4>
+      <p>Vitesse de propagation, dépend du milieu</p>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <strong>⚠️ Important :</strong> La fréquence ne change pas lorsqu'on passe d'un milieu à un autre. Seules la célérité et la longueur d'onde changent.
+  </div>
+
+  <h3>Spectre</h3>
+  <p>C'est la <strong>représentation graphique de l'ensemble des fréquences</strong> caractérisant un son (fondamentale + harmoniques).</p>
+</section>
+
+<!-- 4. TYPES DE SONS -->
+<section id="types" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>Types de sons</h2>
+  </div>
+
+  <div class="type-cards">
+    <div class="type-card">
+      <h4>🎵 Sons purs</h4>
+      <ul>
+        <li>Son <strong>sinusoïdal et périodique</strong></li>
+        <li>Une seule fréquence simple (sinusoïde unique)</li>
+        <li>Exemple : son du <strong>diapason</strong></li>
+        <li>Utilisés comme <strong>référence</strong> en acoustique</li>
+      </ul>
+    </div>
+    <div class="type-card">
+      <h4>🎶 Sons complexes — Son musical</h4>
+      <ul>
+        <li>Réunit plusieurs fréquences qui sont des <strong>multiples entiers (harmoniques)</strong></li>
+        <li>Sons <strong>périodiques non sinusoïdaux</strong></li>
+        <li>Possède une fréquence fondamentale caractéristique</li>
+      </ul>
+    </div>
+    <div class="type-card">
+      <h4>🔊 Sons complexes — Bruit</h4>
+      <ul>
+        <li>Ne possède <strong>pas de fréquence caractéristique</strong></li>
+        <li>Sons <strong>non périodiques et non sinusoïdaux</strong></li>
+      </ul>
+    </div>
+    <div class="type-card">
+      <h4>💥 Sons transitoires</h4>
+      <ul>
+        <li>S'installent progressivement avant d'atteindre un état vibratoire caractéristique</li>
+        <li>Sons complexes <strong>non périodiques mais brefs</strong></li>
+        <li>Exemple : une <strong>claque</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PROPRIÉTÉS -->
+<section id="proprietes" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2>Propriétés du son</h2>
+  </div>
+
+  <div class="property-cards">
+    <div class="property-card">
+      <h4>📢 Intensité sonore (Puissance)</h4>
+      <p>Valeur de référence : <strong>W₀ = 10⁻¹² W·m⁻²</strong> (son pur de 1000 Hz juste audible).</p>
+      <p>Unité : <strong>décibels (dB)</strong> — échelle logarithmique.</p>
+      <p><em>I (dB) = 10 × log₁₀(W/W₀)</em></p>
+      <p>Gamme audible : <strong>0 à 140 dB</strong></p>
+    </div>
+    <div class="property-card">
+      <h4>🔄 Propagation d'un milieu à un autre</h4>
+      <p>À l'interface entre deux milieux : <strong>Wi = Wr + Wt</strong></p>
+      <p>(énergie incidente = réfléchie + transmise)</p>
+    </div>
+    <div class="property-card">
+      <h4>🧽 Absorption</h4>
+      <p>Le milieu absorbe une partie de l'énergie acoustique par <strong>frottement des molécules</strong> ou <strong>conversion en chaleur</strong>.</p>
+      <p>Matériaux à coefficient d'absorption élevé → <strong>insonorisation</strong>.</p>
+    </div>
+    <div class="property-card">
+      <h4>🌊 Diffraction</h4>
+      <p>Comportement des ondes face à un obstacle. L'obstacle diffuse une partie du son.</p>
+      <p>La diffraction est importante si la <strong>taille de l'obstacle est très petite</strong> vis-à-vis de la longueur d'onde.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. PHÉNOMÈNES SUBJECTIFS -->
+<section id="subjectif" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2>Phénomènes subjectifs de l'audition</h2>
+  </div>
+  <p class="lead">L'oreille apprécie qualitativement : Tonie (hauteur), Sonie (intensité), Timbre.</p>
+
+  <div class="subsection">
+    <h3>🎼 Tonie (Hauteur)</h3>
+    <p>Qualité qui permet de dire qu'un son est <strong>grave ou aigu</strong>. Dépend essentiellement de la <strong>fréquence</strong>.</p>
+    <ul>
+      <li>Sons graves → <strong>basses fréquences</strong></li>
+      <li>Sons aigus → <strong>fréquences élevées</strong></li>
+      <li>Domaine audible : <strong>20 à 20 000 Hz</strong> (varie selon l'âge → presbyacousie)</li>
+    </ul>
+  </div>
+
+  <div class="subsection">
+    <h3>📢 Sonie (Intensité)</h3>
+    <p>Qualité qui permet de dire que le son est <strong>fort ou faible</strong>. Dépend de la <strong>puissance surfacique</strong> et de la fréquence.</p>
+    <div class="grid-2">
+      <div class="key-points">
+        <h4>Seuil absolu bas</h4>
+        <p>Plus petite puissance acoustique produisant une sensation sonore perceptible. En dessous → l'oreille ne perçoit pas.</p>
+      </div>
+      <div class="key-points">
+        <h4>Seuil absolu haut (douloureux)</h4>
+        <p>Au-dessus de ce seuil, tous les sons donnent la même <strong>sensation douloureuse</strong>. C'est la limite de l'audition.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>🎸 Timbre</h3>
+    <p>Qualité qui permet de <strong>reconnaître deux sons de même tonie et même sonie</strong> émis par deux sources différentes (ex : le « LA » d'une guitare vs le « LA » d'un piano).</p>
+    <p>Lié à la <strong>richesse en harmoniques</strong> et à leurs proportions respectives.</p>
+  </div>
+
+  <div class="subsection">
+    <h3>🎧 Audition binaurale</h3>
+    <p>La différence de perception d'un même son par les deux oreilles permet de <strong>repérer une source sonore dans l'espace</strong>.</p>
+    <ul>
+      <li><strong>Différence d'intensité</strong> (effet masque/ombre de la tête)</li>
+      <li><strong>Différence de phase</strong> (le son met plus de temps pour l'oreille éloignée)</li>
+      <li>Dépend aussi de la <strong>position de la tête</strong></li>
+    </ul>
+  </div>
+
+  <div class="subsection">
+    <h3>😵 Fatigue auditive</h3>
+    <p>Exposition à un son intense sur une grande durée → <strong>surdité de perception partielle et transitoire</strong>.</p>
+  </div>
+</section>
+
+<!-- 7. PHÉNOMÈNES OBJECTIFS -->
+<section id="objectif" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">07</span>
+    <h2>Phénomènes objectifs de l'audition</h2>
+  </div>
+
+  <h3>Rôle de l'oreille</h3>
+  <ul>
+    <li>Organe neurosensoriel à double fonction : <strong>audition</strong> et <strong>équilibration</strong></li>
+    <li>Traduit les vibrations acoustiques de l'air en <strong>potentiel d'action</strong> transmis par le nerf auditif</li>
+    <li>Transmission <strong>aérienne</strong> ou <strong>osseuse</strong></li>
+  </ul>
+
+  <h3>Étapes de la transmission</h3>
+  <div class="concept-cards">
+    <div class="concept-card">
+      <div class="concept-icon">📡</div>
+      <h4>Captation</h4>
+      <p>Pavillon recueille les ondes de façon directionnelle</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">📦</div>
+      <h4>Transmission</h4>
+      <p>Conduit auditif transforme ondes sphériques en ondes planes → tympan</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">🔧</div>
+      <h4>Adaptation</h4>
+      <p>Osselets adaptent le son entre air et liquide (augmentent la pression)</p>
+    </div>
+    <div class="concept-card">
+      <div class="concept-icon">⚡</div>
+      <h4>Transduction</h4>
+      <p>Membrane basilaire → cellules ciliées → potentiel d'action</p>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <strong>🧠 Codage de la fréquence :</strong> La longueur de la membrane basilaire soumise à la vibration dépend de la fréquence du son. Base = hautes fréquences, Sommet = basses fréquences.
+  </div>
+</section>
+
+<!-- 8. EXPLORATIONS -->
+<section id="exploration" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">08</span>
+    <h2>Explorations de l'audition</h2>
+  </div>
+
+  <h3>Types de surdité</h3>
+  <div class="grid-3">
+    <div class="key-points"><h4>Surdité de transmission</h4><p>Atteinte de l'oreille externe ou moyenne</p></div>
+    <div class="key-points"><h4>Surdité de perception</h4><p>Atteinte de la cochlée ou du nerf auditif</p></div>
+    <div class="key-points"><h4>Surdité centrale</h4><p>Atteinte des centres de l'audition</p></div>
+  </div>
+
+  <div class="info-box">
+    <strong>📌 Acquis :</strong> CA > CO (conduction aérienne supérieure à la conduction osseuse). Oreille externe/moyenne = TRANSMISSION. Oreille interne = PERCEPTION.
+  </div>
+
+  <h3>Méthodes subjectives</h3>
+  <div class="explore-cards">
+    <div class="explore-card">
+      <h4>🗣️ Acoumétrie à la parole</h4>
+      <p>La voix chuchotée doit être entendue à <strong>6 mètres</strong>.</p>
+    </div>
+    <div class="explore-card">
+      <h4>⌚ Acoumétrie à la montre</h4>
+      <p>Le tic-tac doit être perçu à <strong>1 m 50</strong>.</p>
+    </div>
+    <div class="explore-card">
+      <h4>🔱 Épreuve de Weber</h4>
+      <p>Diapason sur le vertex. Étudie la <strong>conduction osseuse</strong>.</p>
+      <ul>
+        <li>Normal : son perçu symétriquement</li>
+        <li>Surdité de perception : latéralisé côté <strong>sain</strong></li>
+        <li>Surdité de transmission : latéralisé côté <strong>malade</strong></li>
+      </ul>
+    </div>
+    <div class="explore-card">
+      <h4>🔱 Épreuve de Rinne</h4>
+      <p>Compare CO et CA. Normalement <strong>CA > CO</strong>.</p>
+      <ul>
+        <li><strong>Rinne négatif</strong> (CO > CA) → surdité de transmission</li>
+        <li><strong>Rinne positif pathologique</strong> (CA > CO mais diminués) → surdité de perception</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Méthodes objectives</h3>
+  <div class="explore-cards">
+    <div class="explore-card">
+      <h4>📊 Audiométrie</h4>
+      <p>Générateur de sons purs (audiomètre), fréquences de 125 à 8000 Hz, puissance de 0 à 100 dB. Résultat = audiogramme.</p>
+    </div>
+    <div class="explore-card">
+      <h4>🧠 P.E.A (Potentiel Évoqué Auditif)</h4>
+      <p>Étude des réponses cérébrales électriques synchronisées avec des stimulations sonores. Résultat par moyennage.</p>
+    </div>
+    <div class="explore-card">
+      <h4>📈 Impédancemétrie (Tympanogramme)</h4>
+      <p>Examine la <strong>compliance du tympan</strong>. Mesure avec impédancemètre de MADSEN. Énergie absorbée = incidente − réfléchie.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FLASHCARDS -->
+<section id="flashcards" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">🃏</span>
+    <h2>Flashcards</h2>
+  </div>
+
+  <div class="flashcards-controls">
+    <select id="flashCategory">
+      <option value="all">Toutes les catégories</option>
+      <option value="son">Le son & onde</option>
+      <option value="caract">Caractéristiques</option>
+      <option value="subjectif">Phénomènes subjectifs</option>
+      <option value="exploration">Explorations</option>
+    </select>
+    <button class="btn" id="shuffleBtn">🔀 Mélanger</button>
+    <span class="flash-counter"><span id="flashCurrent">1</span> / <span id="flashTotal">25</span></span>
+  </div>
+
+  <div class="flashcard-wrapper">
+    <div class="flashcard" id="flashcard">
+      <div class="flash-face flash-front">
+        <span class="flash-cat"></span>
+        <p class="flash-question">Chargement…</p>
+      </div>
+      <div class="flash-face flash-back">
+        <p class="flash-answer">Réponse</p>
+      </div>
+    </div>
+  </div>
+  <div class="flash-nav">
+    <button class="btn" id="prevCard">← Précédente</button>
+    <button class="btn primary" id="nextCard">Suivante →</button>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="card" data-section>
+  <div class="section-header">
+    <span class="section-num">❓</span>
+    <h2>Quiz noté</h2>
+  </div>
+  <p class="lead">12 questions pour tester tes connaissances. Clique sur la bonne réponse puis soumets.</p>
+
+  <div id="quizContainer"></div>
+  <div class="quiz-actions">
+    <button class="btn primary" id="submitQuiz">📝 Soumettre</button>
+    <button class="btn" id="resetQuiz">🔄 Recommencer</button>
+  </div>
+  <div class="quiz-result hidden" id="quizResult"></div>
+</section>
+
+</main>
+
+<button class="back-to-top" id="backToTop">↑</button>
+
+<script src="audition.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* ========================================
+   CERVELET — surcharges thématiques (orange/ambre)
+   ======================================== */
+
+:root {
+  --accent: #f59e0b;
+  --accent-light: #fef3c7;
+  --accent-dark: #b45309;
+  --gradient-hero: linear-gradient(135deg, #78350f 0%, #f59e0b 50%, #fde68a 100%);
+  --gradient-card: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+[data-theme="dark"] {
+  --accent-light: rgba(245, 158, 11, .15);
+  --gradient-card: linear-gradient(135deg, rgba(245, 158, 11, .1) 0%, rgba(253, 230, 138, .1) 100%);
+}
+
+.brand-link { text-decoration: none; color: inherit; }
+.home-btn { font-size: 1.2rem; }
+
+/* ========== COUCHES CARDS ========== */
+.couches-grid {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  margin: 1.5rem 0;
+}
+.couche-row {
+  display: flex;
+  background: var(--c);
+  color: white;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+.couche-row:hover {
+  transform: translateX(8px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+}
+.couche-row .layer-num {
+  background: rgba(255,255,255,.2);
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
+  padding: .5rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: .85rem;
+}
+.couche-row .layer-body {
+  padding: 1rem 1.2rem;
+  flex: 1;
+}
+.couche-row h4 { color: white; margin: 0 0 .3rem; }
+.couche-row p, .couche-row li { color: white; }
+.couche-row strong { color: #fde68a; }
+
+/* ========== PURKINJE CARD ========== */
+.purkinje-card {
+  background: var(--gradient-card);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 1.5rem 0;
+}
+[data-theme="dark"] .purkinje-card {
+  background: rgba(245, 158, 11, .1);
+}
+.purkinje-card h3 {
+  color: var(--accent-dark);
+  margin-bottom: 1rem;
+}
+[data-theme="dark"] .purkinje-card h3 {
+  color: var(--accent);
+}
+
+/* ========== CELL CARDS ========== */
+.cell-grid-cere {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.cell-cere {
+  background: var(--bg-soft);
+  padding: 1.4rem;
+  border-radius: var(--radius);
+  border-top: 4px solid var(--accent);
+  transition: transform .2s, box-shadow .2s;
+}
+.cell-cere:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.cell-cere h4 {
+  color: var(--accent-dark);
+  margin-bottom: .5rem;
+}
+[data-theme="dark"] .cell-cere h4 {
+  color: var(--accent);
+}
+.cell-cere-icon { font-size: 2.5rem; margin-bottom: .3rem; }
+.cell-cere .size-tag {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: .75rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+/* ========== FIBRES CARDS ========== */
+.fibres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.fibre-card {
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  color: white;
+}
+.fibre-mousse {
+  background: linear-gradient(135deg, #166534, #16a34a);
+}
+.fibre-grimpante {
+  background: linear-gradient(135deg, #991b1b, #dc2626);
+}
+.fibre-card h4 { color: white; margin-bottom: .5rem; font-size: 1.15rem; }
+.fibre-card p, .fibre-card li { color: white; }
+.fibre-card strong { color: #fde68a; }
+.fibre-icon { font-size: 2.5rem; margin-bottom: .4rem; }
+
+/* ========== NOYAUX GRIS ========== */
+.noyaux-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.noyau-card {
+  background: var(--bg-soft);
+  padding: 1.3rem;
+  border-radius: var(--radius);
+  text-align: center;
+  border-top: 4px solid var(--accent);
+}
+.noyau-icon { font-size: 2.2rem; margin-bottom: .4rem; }
+.noyau-card h4 { color: var(--accent-dark); margin-bottom: .3rem; }
+[data-theme="dark"] .noyau-card h4 { color: var(--accent); }
+
+/* ========== GLOMERULE ========== */
+.glomerule-card {
+  background: linear-gradient(135deg, #fde68a, #fcd34d);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border-left: 5px solid var(--accent-dark);
+  margin: 1.5rem 0;
+  color: #451a03;
+}
+[data-theme="dark"] .glomerule-card {
+  background: rgba(245, 158, 11, .15);
+  color: var(--text);
+}
+.glomerule-card h3 { color: #92400e; margin-bottom: .8rem; }
+[data-theme="dark"] .glomerule-card h3 { color: var(--accent); }
+
+/* ========== VASCULARISATION ========== */
+.vasc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.vasc-card {
+  background: var(--bg-soft);
+  padding: 1.3rem;
+  border-radius: var(--radius);
+  border-left: 4px solid #dc2626;
+}
+.vasc-card h4 { color: #dc2626; margin-bottom: .3rem; }
+
+/* ========== SCHEMA WRAPPER ========== */
+.schema-wrap {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  margin: 1rem 0;
+}
+.schema-wrap svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+/* ========== EXCITATION/INHIBITION ========== */
+.flow-cere {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.flow-cere-step {
+  background: var(--bg-soft);
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+  flex: 1;
+  min-width: 180px;
+}
+.flow-cere-step.excite { border-left-color: #16a34a; }
+.flow-cere-step.inhib { border-left-color: #dc2626; }
+.flow-arrow-cere { font-size: 1.5rem; color: var(--accent); }
+
+/* Override flashcard back to amber */
+.flashcard-back {
+  background: linear-gradient(135deg, #78350f, #f59e0b) !important;
+}
